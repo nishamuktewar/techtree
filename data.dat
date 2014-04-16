@@ -1,0 +1,88 @@
+audio segmentation:
+    science: 5
+    products:
+      - a
+      - b
+    why:
+      - asdf
+
+emotion analysis in audio:
+    science: 3
+    depends on:
+      - audio segmentation
+    products:
+      - a
+      - b
+    why:
+      - asdf
+
+speech to text:
+    science: <N>
+    depends on:
+      - audio segmentation
+    products:
+      - <a>
+      - <b>
+    why:
+      - <desc>
+
+recommended agenda:
+    science: <N>
+    depends on:
+      - speech to text
+      - emotion analysis in audio
+    products:
+      - <a>
+      - <b>
+    why:
+      - <desc>
+
+augmented reality for conversation:
+    science: <N>
+    depends on:
+      - speech to text
+    products:
+      - <a>
+      - <b>
+    why:
+      - <desc>
+
+text to speech:
+    science: <N>
+    depends on:
+      - speech to text
+    products:
+      - <a>
+      - <b>
+    why:
+      - <desc>
+
+text summarization:
+    science: <N>
+    depends on:
+      - speech to text 
+    products:
+      - <a>
+      - <b>
+    why:
+      - <desc>
+
+text generation:
+    science: <N>
+    depends on:
+      - text summarization
+    products:
+      - <a>
+      - <b>
+    why:
+      - <desc>
+
+movie script generation:
+    science: <N>
+    depends on:
+      - text generation
+    products:
+      - <a>
+      - <b>
+    why:
+      - <desc>
