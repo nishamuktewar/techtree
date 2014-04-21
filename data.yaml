@@ -1,66 +1,81 @@
 audio segmentation:
     science: 5
+    business: 1
     products:
-      - a
-      - b
+      - meeting analytics
+      - audio split by person
     why:
-      - asdf
+      - Figure out who is speaking in a conversation.
 
 emotion analysis in audio:
     science: 3
-    depends on:
+    business: 4
+    depends:
       - audio segmentation
     products:
-      - a
-      - b
+      - emotion analytics - who feels how
+      - boredom detector
     why:
-      - asdf
+      - Audio sentiment analysis. Doesn't exist!
 
 speech to text:
     science: <N>
-    depends on:
+    business: 2
+    depends:
       - audio segmentation
     products:
-      - <a>
-      - <b>
+      - searchable audio (in: text out: relevant audio clip)
+      - theme detector
     why:
-      - <desc>
+      - We can start by using 3rd party APIs (like the ATT API)
 
 recommended agenda:
     science: <N>
-    depends on:
+    business: 5
+    depends:
       - speech to text
       - emotion analysis in audio
     products:
-      - <a>
-      - <b>
+      - predict what this group of people should talk about
+      - detect when meetings have gone off topic
     why:
-      - <desc>
+      - Could be part of a meeting analytics tool.
 
 augmented reality for conversation:
     science: <N>
-    depends on:
+    business: 4
+    depends:
       - speech to text
     products:
-      - <a>
-      - <b>
+      - Can software run a meeting?
+      - external dashboard for conversation
     why:
-      - <desc>
+      - How can we make you the greatest and most informed and smartest conversationalist of all time?
 
 text to speech:
     science: <N>
-    depends on:
+    business: 1
+    depends:
       - speech to text
     products:
-      - <a>
-      - <b>
+      - audio notifications
     why:
       - <desc>
 
+voice modeling:
+    science: <N>
+    business: 3
+    depends:
+      - text to speech
+    products:
+      - talk to yourself app
+      - generate speech in a specific voice
+
 text summarization:
     science: <N>
-    depends on:
-      - speech to text 
+    business: 4
+    depends:
+      - speech to text
     products:
       - <a>
       - <b>
@@ -68,21 +83,34 @@ text summarization:
       - <desc>
 
 text generation:
-    science: <N>
-    depends on:
+    science: 4
+    business: 5
+    depends:
       - text summarization
     products:
-      - <a>
-      - <b>
+      - automatic celebrity news service
+      - updated business analytics
+      - any formatted data as text
     why:
-      - <desc>
+      - Words are easier to undersand than graphs.
 
 movie script generation:
     science: <N>
-    depends on:
+    business: 5
+    depends:
       - text generation
     products:
       - <a>
       - <b>
     why:
       - <desc>
+
+speech to image:
+    science: <N>
+    business: 3
+    depends:
+      - speech to text
+    products:
+      - <a>
+    why:
+      - describe a scene then see the scene.
