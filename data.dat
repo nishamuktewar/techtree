@@ -8,7 +8,7 @@ audio segmentation:
 
 emotion analysis in audio:
     science: 3
-    depends on:
+    depends:
       - audio segmentation
     products:
       - a
@@ -18,7 +18,7 @@ emotion analysis in audio:
 
 speech to text:
     science: <N>
-    depends on:
+    depends:
       - audio segmentation
     products:
       - <a>
@@ -28,7 +28,7 @@ speech to text:
 
 recommended agenda:
     science: <N>
-    depends on:
+    depends:
       - speech to text
       - emotion analysis in audio
     products:
@@ -39,7 +39,7 @@ recommended agenda:
 
 augmented reality for conversation:
     science: <N>
-    depends on:
+    depends:
       - speech to text
     products:
       - <a>
@@ -49,7 +49,7 @@ augmented reality for conversation:
 
 text to speech:
     science: <N>
-    depends on:
+    depends:
       - speech to text
     products:
       - <a>
@@ -59,7 +59,7 @@ text to speech:
 
 text summarization:
     science: <N>
-    depends on:
+    depends:
       - speech to text 
     products:
       - <a>
@@ -69,7 +69,7 @@ text summarization:
 
 text generation:
     science: <N>
-    depends on:
+    depends:
       - text summarization
     products:
       - <a>
@@ -79,7 +79,7 @@ text generation:
 
 movie script generation:
     science: <N>
-    depends on:
+    depends:
       - text generation
     products:
       - <a>
