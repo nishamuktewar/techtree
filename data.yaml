@@ -114,3 +114,12 @@ speech to image:
       - <a>
     why:
       - describe a scene then see the scene.
+      
+image to human description:
+    science: <N>
+    business: <N>
+    depends:
+    products:
+      - human-style (vs machine style) directions, for example: "Turn left at the big tree."
+    why:
+      - awesome
