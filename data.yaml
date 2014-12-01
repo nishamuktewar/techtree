@@ -100,7 +100,7 @@ movie script generation:
     depends:
       - text generation
     products:
-      - <a>
+      - robot dungeon master
       - <b>
     why:
       - <desc>
