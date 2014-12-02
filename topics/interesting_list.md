@@ -43,3 +43,4 @@ All topics here are responding to the prompt, "What's up with..."
   * recommendation algorithms
   * ad targeting is BS, can we prove it?
   * the quantified workplace
+  * machine learning in science (paleobiology paper)
