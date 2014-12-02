@@ -42,3 +42,4 @@ All topics here are responding to the prompt, "What's up with..."
   * 3D rendering (Ikea catalogs, ??)
   * recommendation algorithms
   * ad targeting is BS, can we prove it?
+  * the quantified workplace
