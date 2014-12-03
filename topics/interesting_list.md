@@ -45,3 +45,4 @@ All topics here are responding to the prompt, "What's up with..."
   * the quantified workplace
   * machine learning in science (paleobiology paper)
   * machine learning is security (proactive vs reactive)
+  * face recognition as a service (kairos)
