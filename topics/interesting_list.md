@@ -46,3 +46,5 @@ All topics here are responding to the prompt, "What's up with..."
   * machine learning in science (paleobiology paper)
   * machine learning is security (proactive vs reactive)
   * face recognition as a service (kairos)
+  * zero-knowledge proofs
+  * random-random matricies (via Micha)
