@@ -48,3 +48,4 @@ All topics here are responding to the prompt, "What's up with..."
   * face recognition as a service (kairos)
   * zero-knowledge proofs
   * random-random matricies (via Micha)
+  * app for using mobile phones to amplify messages (in protests?)
