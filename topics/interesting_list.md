@@ -50,3 +50,5 @@ All topics here are responding to the prompt, "What's up with..."
   * random-random matricies (via Micha)
   * app for using mobile phones to amplify messages (in protests?)
   * internal company dashboards (pinterest post)
+  * crowdsourcing platforms (NYT lab's Hive)
+  * UX for older people (AARP app)
