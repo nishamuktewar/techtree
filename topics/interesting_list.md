@@ -54,3 +54,4 @@ All topics here are responding to the prompt, "What's up with..."
   * UX for older people (AARP app)
   * telepresence robots
   * exoskeletons
+  * input systems/sensors for VR (nimblevr, etc.)
