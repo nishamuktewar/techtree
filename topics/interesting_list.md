@@ -53,3 +53,4 @@ All topics here are responding to the prompt, "What's up with..."
   * crowdsourcing platforms (NYT lab's Hive)
   * UX for older people (AARP app)
   * telepresence robots
+  * exoskeletons
