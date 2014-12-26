@@ -57,3 +57,4 @@ All topics here are responding to the prompt, "What's up with..."
   * input systems/sensors for VR (nimblevr, etc.)
   * sentiment analysis
   * in-vehicle data collection
+  * cryptocurrencies (meh)
