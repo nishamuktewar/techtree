@@ -58,3 +58,4 @@ All topics here are responding to the prompt, "What's up with..."
   * sentiment analysis
   * in-vehicle data collection
   * cryptocurrencies (meh)
+  * Wirth's Law (http://en.wikipedia.org/wiki/Wirth%27s_law) -- is this true?
