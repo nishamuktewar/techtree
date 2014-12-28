@@ -5,7 +5,7 @@ All topics here are responding to the prompt, "What's up with..."
   * weather prediction
   * cryogenics
   * satellite image data analysis
-  * microsatellite launches and costs
+  * microsatellite launches and costs (http://kck.st/1wTgnjw)
   * city/urban data collection (Placemeter)
   * DNA storage and synthesis (Cambrian Genomics)
   * mobile phone malware
