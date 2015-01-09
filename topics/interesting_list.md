@@ -62,3 +62,4 @@ All topics here are responding to the prompt, "What's up with..."
   * Wirth's Law (http://en.wikipedia.org/wiki/Wirth%27s_law) -- is this true?
   * recipe analysis (chocolate chip cookie project v2?)
   * darknet
+  * tor and anonymization technologies
