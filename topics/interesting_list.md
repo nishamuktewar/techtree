@@ -63,3 +63,4 @@ All topics here are responding to the prompt, "What's up with..."
   * recipe analysis (chocolate chip cookie project v2?)
   * darknet
   * tor and anonymization technologies
+  * emerging programming languages
