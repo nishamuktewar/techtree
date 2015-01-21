@@ -65,3 +65,4 @@ All topics here are responding to the prompt, "What's up with..."
   * tor and anonymization technologies
   * emerging programming languages
   * data collection tattoos (like this one for blood glucose monitoring: http://bit.ly/1xUE86c)
+  * neuromorphic computing
