@@ -1,0 +1,58 @@
+Data in fashion for style recommenders.
+
+Fashion-exclusive companies: 
+Barneys - Has worked with Proclivity in the past
+Saks - Has worked with Proclivity in the past
+Lyst - Teeming with data scientists
+Net-A-Porter - Uses stylists
+PS Department - Uses tech to link existing stylists/store associates with potential clients
+
+Companies with fashion/e-commerce recommenders:
+Wanelo (N/A)
+Fancy (still relevant?)
+Want
+Nuji (potentially open?)
+Polyvore
+Netflix (potentially open?) http://www.wired.com/2013/08/qq_netflix-algorithm/
+Amazon
+Etsy (open) https://codeascraft.com/2014/11/17/personalized-recommendations-at-etsy/
+Gilt (relatively open)
+Ebay (search >> recommender)
+
+Potential Problems or Points of Interest:
+A/B Testing - is it the best way to judge?
+Amazon Mechanical Turk example from @echen
+http://www.quora.com/How-do-you-measure-and-test-the-quality-of-recommendation-engines/answer/Edwin-Chen-1
+
+Are there standard ways to judge the effectiveness of the algos? 
+Looping: For example, the Gilt algo will eventually run out of products. E.g. How many clicks before you run out of products? 
+Idea of discovery 
+
+Comparing & abstracting: 
+Gilt - eventually cycles through the same six pairs of wide-leg pants & runs out of ideas
+Gilt - doesn't remember whether you've clicked on this and vow to show something else
+Gilt - not styled by hand, only algo answer. does not show other outfit pieces
+Gilt - non-existant or hidden social component 
+Lyst - sometimes overly inclusive (more search engine than recommender) 
+Lyst - first-page recommender is content curated by branding team
+Lyst - very flexible for filtering out products when you have something very specific in mind
+Lyst - combines visual similarity and category filtering 
+Lyst - Usually has a new thing to click on without running into a closed-loop
+Lyst - Documented as using: "Weighted Alternating Least Squares" & "Collaborative Filtering for Implicit Feedback Datasets" 
+** Read some papers on this
+Wanelo - assumes you want to shop like other people (someone says this isn't true? Lyst?)
+Polyvore - clustery
+Etsy - TMI. How to adjust? Collapses a matrix cown
+Barneys - Check how many clicks before a loop. Does have some overlap
+
+
+Future Possibilities, Improvements:
+Approximate Bayesian Computation might be helpful for simulating recommendations based on a tiny number of clicks. 
+Bloom filters (?) Hmm 
+
+
+Reference Papers To Source: 
+Weight Alternating Least Squares 
+Collaborative Filtering for Implicit Feedback Datasets (Etsy, Lyst)
+
+
