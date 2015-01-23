@@ -67,3 +67,4 @@ All topics here are responding to the prompt, "What's up with..."
   * data collection tattoos (like this one for blood glucose monitoring: http://bit.ly/1xUE86c)
   * neuromorphic computing
   * Models in a box (Netflix Surus and yhat)
+  * 3d on consumer TVs and projectors
