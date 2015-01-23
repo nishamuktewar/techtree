@@ -62,9 +62,10 @@ All topics here are responding to the prompt, "What's up with..."
   * Wirth's Law (http://en.wikipedia.org/wiki/Wirth%27s_law) -- is this true?
   * recipe analysis (chocolate chip cookie project v2?)
   * darknet
-  * tor and anonymization technologies
+  * tor and anonymization technologies (adnauseum)
   * emerging programming languages
   * data collection tattoos (like this one for blood glucose monitoring: http://bit.ly/1xUE86c)
   * neuromorphic computing
   * Models in a box (Netflix Surus and yhat)
   * 3d on consumer TVs and projectors
+  * human behavior + ux for data products
