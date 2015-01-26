@@ -69,3 +69,5 @@ All topics here are responding to the prompt, "What's up with..."
   * Models in a box (Netflix Surus and yhat)
   * 3d on consumer TVs and projectors
   * human behavior + ux for data products
+  * knowldge discovery algorithms
+  * crowd-sourced science (like using mturk for experimenation)
