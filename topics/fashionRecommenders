@@ -52,7 +52,26 @@ Bloom filters (?) Hmm
 
 
 Reference Papers To Source: 
+[1] Collaborative Filtering for Implicit Feedback Datasets (Etsy, Lyst)
 Weight Alternating Least Squares 
-Collaborative Filtering for Implicit Feedback Datasets (Etsy, Lyst)
+[ ] Probabilistic Matrix Factorization, Salakhutdinov and Mnih. 
+
+Paper notes
+[1] Koren, Yehuda. ahoo Research. Bell & Volinsky, AT&T Labs. - 2009 IEEE paper: Matrix Factorization Techniques for Recommender Systems. 
+    Problems Raised. 
+      Content filtering - creates a user or product profile - *expensive to gather & merge external information
+      Collaborative filtering - identifies user-item associations, analyzes user relationships & item similarity
+          *Cold start problem - What to do with a new product or new user? Content filtering is better. 
+          Neighborhood method
+          Latent factor models - discovers its own categories which may or may not be immediately apparent
+            Matrix factorization - scale well, accurate predictions, flexible modeling options
+             *Explicit feedback - difficult, most users only rate a small number of products.
+             Implicit feedback - strength of matrix factorization.
+              *Computing the mapping of each item and user to factor vectors q and p. Matching items to hidden factors
+              SVD *must factor the user-item rating matrices
+              *sparseness in rating matrix continuing problem
+               *using only the known value causes overfitting
+               *data imputation (older method) increases amt. data
+               * model the observed only & avoid overfitting with regularized model. 
 
 
