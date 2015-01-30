@@ -43,12 +43,12 @@ Lyst - Documented as using: "Weighted Alternating Least Squares" & "Collaborativ
 Wanelo - assumes you want to shop like other people (someone says this isn't true? Lyst?)
 Polyvore - clustery
 Etsy - TMI. How to adjust? Collapses a matrix cown
-Barneys - Check how many clicks before a loop. Does have some overlap
-
+Barneys - Check how many clicks before a loop. Does have some overlap.
 
 Future Possibilities, Improvements:
 Approximate Bayesian Computation might be helpful for simulating recommendations based on a tiny number of clicks. 
 Bloom filters (?) Hmm 
+Tinder-like explicit feedback for product recommendations (why is this not happening?) 
 
 
 Reference Papers To Source: 
@@ -74,4 +74,7 @@ Paper notes
                *data imputation (older method) increases amt. data
                * model the observed only & avoid overfitting with regularized model. 
 
+This paper exactly is still being referenced by Etsy, 2014. 
+
+// Notes 1/23, 1/29 primarily offline. 
 
