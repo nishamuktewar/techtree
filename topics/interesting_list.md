@@ -72,3 +72,4 @@ All topics here are responding to the prompt, "What's up with..."
   * knowldge discovery algorithms
   * crowd-sourced science (like using mturk for experimenation)
   * logistics (trucking - http://bit.ly/1zYH5d7)
+  * software defined radio
