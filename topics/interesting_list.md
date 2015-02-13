@@ -73,3 +73,4 @@ All topics here are responding to the prompt, "What's up with..."
   * crowd-sourced science (like using mturk for experimenation)
   * logistics (trucking - http://bit.ly/1zYH5d7)
   * software defined radio
+  * home batteries for energy storage (like Tesla: http://cnet.co/1B7ZqF9)
