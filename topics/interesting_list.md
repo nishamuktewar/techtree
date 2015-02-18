@@ -74,3 +74,4 @@ All topics here are responding to the prompt, "What's up with..."
   * logistics (trucking - http://bit.ly/1zYH5d7)
   * software defined radio
   * home batteries for energy storage (like Tesla: http://cnet.co/1B7ZqF9)
+  * 3D user interfaces
