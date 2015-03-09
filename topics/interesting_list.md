@@ -76,3 +76,4 @@ All topics here are responding to the prompt, "What's up with..."
   * home batteries for energy storage (like Tesla: http://cnet.co/1B7ZqF9)
   * 3D user interfaces
   * economics of sensors (which are cheap, getting cheaper, and why?)
+  * new TLDs... how are they actually being used?
