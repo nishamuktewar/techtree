@@ -77,8 +77,13 @@ All topics here are responding to the prompt, "What's up with..."
   * 3D user interfaces
   * economics of sensors (which are cheap, getting cheaper, and why?)
   * new TLDs... how are they actually being used?
-  * causality, causal methods (new paper from Dec 2014 on cause and effect)
-  * word embedding and sentiment analysis
+  * causality, causal methods 
+  * word embeddings
+  * sentiment analysis
   * spectral
   * entity resolution and deduplication
-  
+  * multiworld testing
+  * Bayesian nonparametrics
+  * graph layout algorithms - data vis problems
+  * topic modeling
+  * deep learning 
