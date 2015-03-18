@@ -7,58 +7,81 @@ A recommender system is a computational framework for automatically matching use
 Most recommendations for one user are based on products other users enjoyed. If John likes Slayer and Feist, and you search for a Feist song, the next song may well be a Slayer song. (Or, other Feist songs. Or people she has collaborated with in the past. Or other songs that are labeled with the same genre, or year, or other factors). 
 It is computationally expensive for a site with millions of users and potentially millions of products to find the inner product of a matrix across all of these products. Products that have not been rated by many (or any) users, suffer (and must be counted for, somehow). Popular products that could potentially dominate all recommendations must be weighted against.
 
-Apparel and fashion recommenders can be found at sites like Gilt, Lyst, and Nordstrom to name a few. Other recommenders based on “taste” (rather than subject matter, etc) include SEE: list belo 
+Apparel and fashion recommenders can be found at sites like Gilt, Lyst, and Nordstrom to name a few. Other recommenders based on “taste” (rather than subject matter, etc) include SEE: list below 
 
-How does the algorithm work in the present? 
+_How does this work in the present?_
 
-Basically everyone is doing the same thing. Create a product matrix, create a user matrix, tweak a little bit. Do some svd, compute inner products (but not all of the inner products because it is too computationally expensive to do. There are some workarounds for the computational expense of the recommenders. 
+Basically everyone is doing the same thing. Create a product matrix, create a user matrix, tweak a little bit. Do some svd, compute inner products (but not all of the inner products because it is too computationally expensive to do. There are some workarounds for the computational expense of the recommenders. Weight against empty entries (1 = preference 0 = No preference (negative preference not measured))
 
 The paper I am reading now points out that probabilistic methods could be faster, more robust, more precise, more useful computational methods for computing inner products (?) restricting matrices to their low rank subspaces *by allowing for computations to a target matrix with a fixed amount of columns plus a tolerance of 5-10 extra columns, which drastically improves the probability of finding a better low-rank representation). 
 
 Which is great, but still says nothing about user testing. EChen has a conversation about this. 
 
-_Talk about the human-algorithm spectrum_
-_Make a visual for the human-algorithm spectrum of recommendations_
-Also note, computation is only one side of the story. More than one startup is using a human-computer combination to produce better recommendations. PS Dept app has a seamless integrated check out app that connects with stylists at tons of stores across the USA and does not need to pay them individually. Keaton Row also approaches this from a human perspective. (How are they doing financially?) There is also the MIT dude who has both an algorithm and human stylists that duke it out if there is a disagreement on the recommendations. 
+Well, first of all, no one seems to be measuring how good of a job they’re doing (or talking about it). What everyone’s talking about is the computational efficiency of the algorithms. And workarounds when they can’t 
 
-Are probabilistic matrix decompositions the only way to do a better job? Why aren’t the visual computers doing better? Why is Lyst doing so well? Is the problem tagged vs untagged data? How to you philosophically approach the nature of data? 
+
+__The human-algorithm spectrum__
+_Make a visual for the human-algorithm spectrum of recommendations_ Fill list of co's first
+
+Computation is only one side of the story. More than one startup is using a human-computer combination to produce better recommendations. 
+Human -- 
+*PS Dept app has a seamless integrated check out app that connects with stylists at tons of stores across the USA and does not need to pay them individually.
+*Keaton Row also approaches this from a human perspective. (How are they doing financially?)
+*There is also the MIT dude who has both an algorithm and human stylists that duke it out if there is a disagreement on the recommendations. 
+*Mr. Larkin (class of Shopify or fully manual recommenders??)
+*Net-a-Porter
+*Barneys
+*Bergdorf Goodman
+*Neiman marcus 
+*Saks
+*Ssense
+*?? Spring
+*Farfetch
+*Stitch Fix
+*Proclivity (separate retailer add on) 
+*Nordstrom 
+*Gilt (to a disadvantage)
+*Lyst is getting close to full automation - computer vision on products. Semantic analysis of product descriptions.
+*Slyce
+*(Etsy)
+-- Computation
+
+Are probabilistic matrix decompositions the only way to do a better job?
+Why aren’t the visual computers doing better? [BOF Article]
+Why is Lyst doing so well? [Targeted research, one at a time, CV, de-dupe, search, merge, etc]
+Is the problem tagged vs untagged data? [probably sometimes. many semantic models. few objective]
+How to you philosophically approach the nature of data? [how do you convert the data? are you objective (i.e. the rgbb contents of the image, the estimation of the pose) or personal (clicks, past likes, etc) 
 
 ... 
+_Sample Experiment_
+I have a lot of thoughts on this!! Ok, let’s say I am a female looking for a work-appropriate outfit for my new super strict office. How many clicks does it take before I end up in a loop of the same few products? How many peopel have built ways out of this loop? Investigation: websites and clicking: how many clicks until I get stuck? Are recommendations the same type of availability as the initial product (e.g. are they pooling from sold-out products?)
+Love to write a paper profiling different sites and what’s going on with the recommenders at that site. Don’t need to publish these sites and potentially alienate our clients but... want to get a better sense of the inner workings. 
 
-I have a lot of thoughts on this!! Ok, let’s say I am a female looking for a work-appropriate outfit for my new super strict office. How many clicks does it take before I end up in a loop? 
+All my shopping exclusively on Lyst because it’s easier than anything else to find what I need and no extras. Google searching can be a last resort - usually I’ll want to guess which ecomm sites have it and check there 
 
-() Love to write a paper profiling different sites and what’s going on with the recommenders at that site. Don’t need to publish these sites and potentially alienate our clients but... want to get a better sense of the inner workings. 
+_Observation_
+Lack of user experience, or integration with how people shop in 3D 
+What about integration with physical buying habits?
+What about RFID tags and seeing where a product moves in a store (which products covary in-store?) and using that to bolster online preferences?
+What’s the store front?
+Conceptually: 
+We would never ask a user to walk into a store and declare their purpose before seeing the contents of a store. How does the visual architecture of the recommender match with the structures of visual merchandising in the fashion industry that is presently standard? How about side/front/back views not working out? .
 
-All my shopping exclusively on Lyst because it’s easier than anything else to find what I need and no extras. Google searching can be a last resort - usually I’ll want to guess which ecomm sites have it and 
+Irrelevant - If i go in for a Mara Hoffman bikini and leave with a Clover Canyon, what can you do with that information? What can Mara Hoffman do? What are the bigger problems being pointed to with the blank matrix entries?
 
-What about integration with physical buying habits? What about RFID tags and seeing where a product moves in a store (which products covary in-store?) and using that to bolster online preferences? What’s the store front? We would never ask a user to walk into a store and declare their purpose before seeing the contents of an e-commerce site. If i go in for a Mara Hoffman bikini and leave with a Clover Canyon, what can you do with that information? What can Mara Hoffman do? What are the bigger problems being pointed to with the blank matrix entries?
+Is implicit the only way we should be gathering data? Ratings can be tacky for items. How do we review products we’ve seen in store but do not own? What is the right classification system? (I own this product. I have seen this product in person. Allow brands to respond. Allow clerks to respond).
+sample startup in seattle is doing this really well, allowing a conversational "rating" / q&a system
 
-Is implicit the only way we should be gathering data? Ratings can be tacky for items. How do we review products we’ve seen in store but do not own? What is the right classification system? (I own this product. I have seen this product in person. Allow brands to respond. Allow clerks to respond). .
-
-
-Investigation: websites and clicking: how many clicks until I get stuck? Are recommendations the same type of availability as the initial product (e.g. are they pooling from sold-out products?)
-
+_TODO: Experts_
 
 ** Must note that this came from the etsy engineering blog and should get a quote from an Etsy engineer.
 Read through the entirety of realtime and get a sense of how this might fit with a new paradigm. **
 
-
+_Deep Learning and other trends_
 Are there probabilistic machine learning methods for recommender systems that aren't doign a good enough job?
-
-Well, first of all, no one seems to be measuring how good of a job they’re doing (or talking about it). What everyone’s talking about is the computational efficiency of the algorithms. And workarounds when they can’t 
-
+Yes: Collaborative filtering / deep learning / read! check 
 
 
-_What is a recommender?:_
-
-How does the algorithm work in the present? 
-
-Basically everyone is doing the same thing.
-Create a product x user matrix
-Do some svd
-Compute inner products (but not all of the inner products because it is too computationally expensive to do)
-Choose what to compute probabilistically
-Weight against empty entries (1 = preference 0 = No preference (negative preference not measured))
 
 
 _Fashion-Native Companies:_
@@ -181,3 +204,25 @@ Works with other types of deep learning
 Tested on real-world data 
 Outperforms CTR 
 
+//
+
+Finding Structure with Randomness: Probabilistic Alogirthms for Const. Matrix Decomp.
+Use randomization for more powerful matrix decome 
+rand om sample -> subspace -> implicit/explicit compresse d matrix -> reduced matrix deterministic manipulation _. low rank factorization 
+benefits: 
+accuracy + speed + robustness
+O(mnlog(k)) vs O(mnk), k = dominant components of svd
+k passes instead of O(k) passes
+too big matrices, missing data, too many passes over data = :( 
+MC = low/uncertain accuracy, sensitive to rng
+Randomization = insensitive to rng quality, highly accurate result (what does accurate mean here?) 
+classic steps -- 
+(1) construct a low d subspace
+(2) restrict matrix to subspace & compute a strd factorization (qr, svd, etc...)
+Now: Use random samplling mathods instead. 
+
+__WORKS CITED__
+Etsy Blog
+Matrix Factorization for Recommender Systems 
+Collaborated 
+Weighted Low Rank 
