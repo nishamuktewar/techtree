@@ -1,3 +1,13 @@
+__Fashion Recommender Systems__
+
+_Fashion-Exclusive Companies:_
+
+* Barneys - Has worked with Proclivity in the past
+* Saks - Has worked with Proclivity in the past
+* Lyst - Teeming with data scientists
+* Net-A-Porter - Uses stylists
+* PS Dept - Uses tech to link in-store associates with shoppers
+
 Data in fashion for style recommenders.
 
 Fashion-exclusive companies: 
