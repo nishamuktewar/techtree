@@ -1,19 +1,32 @@
 __Fashion Recommender Systems__
 
-_What is a recommender?_
+__On Fashion Recommenders__ 
 
-A recommender system is a computational framework for automatically matching users to products/content primarily on e-commerce sites, whether or not the user has a history or login for that site.  
+*__What is a recommender system?__*
 
-Most recommendations for one user are based on products other users enjoyed. If John likes Slayer and Feist, and you search for a Feist song, the next song may well be a Slayer song. (Or, other Feist songs. Or people she has collaborated with in the past. Or other songs that are labeled with the same genre, or year, or other factors). 
-It is computationally expensive for a site with millions of users and potentially millions of products to find the inner product of a matrix across all of these products. Products that have not been rated by many (or any) users, suffer (and must be counted for, somehow). Popular products that could potentially dominate all recommendations must be weighted against.
+A recommender system is a computational framework for automatically matching users of e-commerce sites with personalized product suggestions, whether or not the user has a history on that site. Given a vector of _user preferences_ and another of _item characteristics_, the *inner products* of these two vectors attempt to estimate a user's _interest level_ in a product, even if it has not been seen before. But how does a recommender system try to tease out preferences from the user in the first place? 
 
-Apparel and fashion recommenders can be found at sites like Gilt, Lyst, and Nordstrom to name a few. Other recommenders based on “taste” (rather than subject matter, etc) include SEE: list below 
+[Ref Volinsky]
+// 
+>For a given item i, the elements of qi measure the extent to
+which the item possesses those factors, positive or negative. For a given user u,the elements of pu measure the extent of interest the user has in items that are high on the corresponding factors, again, positive or negative. The resulting dot product, qiTpu, captures the interaction between user u and item i—the user’s overall interest in the item’s characteristics. 
+//
+
+Most recommender systems have a way to select content for one user based on past behavior by a "similar" user. If John has a Nordstrom account and likes Fendi and Dior, when Mary goes first shops Nordstrom.com and searches for Fendi, she might get Dior in her list of recommended items on a product page. Gilt, for another paradigm, would show you Fendi, Dior, and similar brands together in the search results page -- even if they don't have any products from the brand that you originally searched for. To find similar customers, a site may compute inner products across a user-product matrixs of ratings across products, and look for patterns in how distinct users display an affinity for certain products. 
+
+The tricky part is determining how you know John "likes" Fendi - did he rate a Fendi product five stars, does he click on Fendi products frequently, was it added it to a favorites list, is he following the brand's updates, has he recently purchased, or do we just know that he searched for both within a short time period? And, are Mary and John similar enough to make this recommendation work (i.e. do they like the brands for the same reasons)? Products that have not been rated by many users suffer and must be incorporated. Popular products that could potentially dominate all recommendations must be weighted against. In some systems, negative preference is not measured at all.
+
+Some sites have millions of products and users, and it would be computationally expensive to check on each possible variable. There is some focus, therefore, in academic literature on how to improve the computational efficiency of the matrix decompositions underlying these recommendations. Yet, very little of the research considers performance gains in the context of users, which could be why in industry many companies tend to incorporate human recommendations to improve user experience.
+
+Apparel and fashion recommenders can be found at sites like Lyst, Gilt, Net-a-Porter, etc. [SEE: list below]. On the extreme end of computation is Gilt, and on the extreme end of human-generated recommendations is PS Dept, an iPhone app that partners with boutiques to link existing associates to an untapped market in a seamless mobile environment. 
+
+Recently, sites have opened the hood to where these recommendations are coming from, and allow for a few different paradigms to co-exist. Telling the user why they are receiving a recommendation may yield a more positive experience -- e.g. Amazon's "Items purchased together" vs "Similar Items" vs "Sponsored Content" vs "Customers who bought x also bought y" 
+
+Unlike some of the classic research in machine learning literature, starred ratings (explicit feedback) on fashion products are not always a given. On the other hand, there is a major opportunity in computer vision to classify the crisp, clean images that make up much of fashion e-commerce in a more objective manner (implicit feedback). 
 
 _How does this work in the present?_
 
-Basically everyone is doing the same thing. Create a product matrix, create a user matrix, tweak a little bit. Do some svd, compute inner products (but not all of the inner products because it is too computationally expensive to do. There are some workarounds for the computational expense of the recommenders. Weight against empty entries (1 = preference 0 = No preference (negative preference not measured))
-
-The paper I am reading now points out that probabilistic methods could be faster, more robust, more precise, more useful computational methods for computing inner products (?) restricting matrices to their low rank subspaces *by allowing for computations to a target matrix with a fixed amount of columns plus a tolerance of 5-10 extra columns, which drastically improves the probability of finding a better low-rank representation). 
+*[Etsy Suggested Probabilistic Matrix decomp paper]The paper I am reading now points out that probabilistic methods could be faster, more robust, more precise, more useful computational methods for computing inner products (?) restricting matrices to their low rank subspaces *by allowing for computations to a target matrix with a fixed amount of columns plus a tolerance of 5-10 extra columns, which drastically improves the probability of finding a better low-rank representation). *
 
 Which is great, but still says nothing about user testing. EChen has a conversation about this. 
 
