@@ -4,7 +4,7 @@ __On Fashion Recommenders__
 
 *__What is a recommender system?__*
 
-A recommender system is a computational framework for automatically matching users of e-commerce sites with personalized product suggestions, whether or not the user has a history on that site. Given a vector of _user preferences_ and another of _item characteristics_, the *inner products* of these two vectors attempt to estimate a user's _interest level_ in a product, even if it has not been seen before. But how does a recommender system try to tease out preferences from the user in the first place? 
+A recommender system is a computational framework for automatically matching users of e-commerce sites with personalized product suggestions, whether or not the user has a history on that site. Given a vector of __user preferences__ and another of __item characteristics__, the *inner products* of these two vectors attempt to estimate a user's __interest level__ in a product, even if it has not been seen before. But how does a recommender system try to tease out preferences from the user in the first place? 
 
 [Ref Volinsky]
 // 
