@@ -85,5 +85,5 @@ All topics here are responding to the prompt, "What's up with..."
   * multiworld testing
   * Bayesian nonparametrics
   * graph layout algorithms - data vis problems
-  * topic modeling
-  * deep learning 
+  * topic modeling - only with usage examples
+  * The Turing Test and newer approaches (http://upvot.es/1xFwWlJ)
