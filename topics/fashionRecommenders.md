@@ -2,20 +2,21 @@ __On Fashion Recommenders__
 
 *__What is a recommender system?__*
 
-A recommender system is a computational framework for automatically matching users of e-commerce sites with personalized product suggestions, whether or not the user has a history on that site. Given a vector of __user preferences__ and another of __item characteristics__, the *inner products* of these two vectors attempt to estimate a user's __interest level__ in a product, even if it has not been seen before. But how does a recommender system try to tease out preferences from the user in the first place? 
+A recommender system for the apparel & fashion industry can be defined as a computational framework for automatically matching users of e-commerce sites with product suggestions. Personalization done well puts the right products in front of the right users at the right time, and can have a serious impact on revenue -- notably Gilt Groupe saw double-digit revenue lists from their personalization effors. A given e-commerce site may have tens of thousands of products available for sale, and has the flexibility to create unique displays of items to match the preferences of millions of users. In the fashion industry, extensive effort also goes into manual product curation. A set of recs might link to products to complete an outfit (as on Net-a-Porter), which was expertly styled at a photoshoot long before the product was listed. An editorial team may create pages of looks to match trending themes (as on Lyst), although which editorial posts are featured can also be customized per user.  
+
+These systems can focus on a few paradigms to produce a recommendation. __Content-based approaches__ tend to focus on information extracted from products (product description, fibers, item category, sizes, colors) or the user (age group, location, preferences profile). So, if the user likes red dresses, show more things that are red or show more dresses. Or, if the user fills out a profile asking for a navy cocktail dress (e.g. Rent the Runway), be sure to pay attention to those preferences. __Collaborative filtering__ develops an estimate for a user's interest in an item by comparing many users, or by looking at similarity between items. Explicit preferences come from products that are liked, favorited, added to wishlists, or rated. Implicit preferences may be gleaned from [[ blah blah ]]. Behavior preferences can also be useful. [[TODO: Re-explain Given a vector of __user preferences__ and another of __item characteristics__, the *inner products* of these two vectors attempt to estimate a user's __interest level__ in a product, even if it has not been seen before.| To find similar customers, a system may look for patterns of affinity across a matrix of users and items.  ]]  
 
 [Ref Volinsky]
-// Do not include in final newsletter
->For a given item i, the elements of qi measure the extent to which the item possesses those factors, positive or negative. For a given user u,the elements of pu measure the extent of interest the user has in items that are high on the corresponding factors, again, positive or negative. The resulting dot product, qiTpu, captures the interaction between user u and item i — the user’s overall interest in the item’s characteristics. 
-//
 
-Most recommender systems have a way to select content for one user based on past behavior by a "similar" user. If John has a Nordstrom account and likes Fendi and Dior, when Mary goes first shops Nordstrom.com and searches for Fendi, she might get Dior in her list of recommended items on a product page. Gilt, for another paradigm, would show you Fendi, Dior, and similar brands recommendations together in the search results page -- even if they don't have any products from the brand that you originally searched for. To find similar customers, a system may look for patterns of affinity across a matrix of users and items. 
+One way this i recommender systems have a way to select content for one user based on past behavior by a "similar" user. If John has a Nordstrom account and likes Fendi and Dior, when Mary goes first shops Nordstrom.com and searches for Fendi, she might get Dior in her list of recommended items on a product page. Gilt builds in recommendations based on search -- if you look for a specific brand that they do not carry, you will automatically see similar brands that are carried. 
 
-The tricky part is determining how you know John "likes" Fendi - did he rate a Fendi product five stars, does he click on Fendi products frequently, was it added it to a favorites list, is he following the brand's updates, has he recently purchased, or do we just know that he searched for both within a short time period? And, are Mary and John similar enough to make this recommendation work (i.e. do they like these brands for the same reasons)? Choosing how to model the vast variety of feedback possible to incorporate makes different recommenders unique. 
+[[ The tricky part is determining how you know John "likes" Fendi - did he rate a Fendi product five stars, does he click on Fendi products frequently, was it added it to a favorites list, is he following the brand's updates, has he recently purchased, or do we just know that he searched for both within a short time period? And, are Mary and John similar enough to make this recommendation work (i.e. do they like these brands for the same reasons)? Choosing how to model the vast variety of feedback possible to incorporate makes different recommenders unique. ]]
 
 Products that have not been rated by many users suffer and must be incorporated. Popular products that could potentially dominate all recommendations must be weighted against. In some systems, negative preference is not measured at all.
 
-Some sites have millions of products and users, and it would be computationally expensive to check on each possible variable. There is some focus, therefore, in academic literature on how to improve the computational efficiency of the matrix decompositions underlying these recommendations. 
+What's likely to happen next -- 
+
+Some sites have millions of products and users, and it would be computationally expensive to check on each possible variable. There is some focus, therefore, in academic literature on how to improve the computational efficiency of the matrix decompositions underlying these recommendations. Probabilistic methods for matrix decomposition help (e.g. ETSY blog post cf). Because of this cost, many sites also update recommendations overnight, instead of in realtime. But the user is not going to wait until tomorrow for recommendations to get better - typically, they want to have a good experience, now. [[ Fold in below ]]
 
 [Prob Matrix Decomp Paper Notes]
 > Finding Structure with Randomness: Probabilistic Alogirthms for Const. Matrix Decomp.
@@ -36,8 +37,16 @@ Randomization = insensitive to rng quality, highly accurate result (what does ac
 classic steps -- 
 (1) construct a low d subspace
 (2) restrict matrix to subspace & compute a strd factorization (qr, svd, etc...)
-Now: Use random samplling mathods instead. 
+Now: Use random sampling mathods instead. 
+
 Yet, very little of the research considers performance gains in the context of users, which could be why in industry many companies tend to incorporate human recommendations to improve user experience.
+
+
+
+// START HERE NEXT TIME
+
+
+
 
 
 
@@ -74,27 +83,7 @@ Unlike some of the classic research in machine learning literature, starred rati
 Instead of passing through large amounts of data rather slowly, there are probabilistic methods that can be used to get around the computational heft -- 
 [Etsy-suggested Probabilistic Matrix decomp paper] points out that 
 >probabilistic methods can be faster, more robust, more precise, more useful computational methods for computing inner products, restricting matrices to their low-rank subspaces by allowing for computations to a target matrix with a fixed amount of columns plus a tolerance of 5-10 extra columns
-Apparel and fashion recommenders can be found at sites like Lyst, Gilt, Net-a-Porter, etc. On the extreme end of automated recommendations is a site like Gilt, coming directly from the tech industry, and on the extreme end of human-generated recommendations is PS Dept, an iPhone app that partners with luxury stores to link existing associates to an untapped market in a seamless mobile environment. 
 
-__Human__ -- 
-
-* PS Dept app
-* Keaton Row 
-* Saks
-* Barneys
-* Bergdorf Goodman
-* Neiman marcus 
-* Ssense
-* Farfetch
-* Net-a-Porter [both]
-* Spring
-* Stitch Fix
-* Proclivity (separate retailer add on) 
-* Nordstrom 
-* Gilt (to a disadvantage)
-* Lyst 
-* Slyce
-* Etsy
 
 -- __Computation__
 
