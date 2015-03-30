@@ -2,135 +2,66 @@ __On Fashion Recommenders__
 
 *__What is a recommender system?__*
 
-A recommender system for the apparel & fashion industry can be defined as a computational framework for automatically matching users of e-commerce sites with product suggestions. Personalization done well puts the right products in front of the right users at the right time, and can have a serious impact on revenue -- notably Gilt Groupe saw double-digit revenue lifts from their personalization efforts. A given e-commerce site may have tens of thousands of products available for sale, and has the flexibility to create unique displays of items to match the preferences of millions of users. In the fashion industry, extensive effort also goes into manual product curation. A set of recs might link to products to complete an outfit (as on Net-a-Porter), which was expertly styled at a photoshoot long before the product was listed. An editorial team may create pages of looks to match trending themes (as on Lyst), although which editorial posts are featured can also be customized per user.  
+A recommender system for the apparel & fashion industry can be defined as a computational framework for automatically matching users of e-commerce sites with product suggestions. Personalization done well puts the right products in front of the right users at the right time, and can have a serious impact on revenue -- notably Gilt Groupe saw __double-digit revenue lifts from their personalization efforts.__ A given e-commerce site may have tens of thousands of products available for sale, and has the flexibility to create unique displays of items to match the preferences of millions of users. In the fashion industry, extensive effort also goes into manual product curation. A set of recs might link to products to complete an outfit (as on Net-a-Porter), which was expertly styled at a photoshoot long before the product was listed. An editorial team may create pages of looks to match trending themes (as on Lyst, Gilt, and Net-a-Porter), although which editorial posts are featured can also be customized per user.  
 
-These systems can focus on a few paradigms to produce a recommendation. __Content-based approaches__ tend to focus on information extracted from products (product description, fibers, item category, sizes, colors) or the user (age group, location, preferences profile). Say a user fills out a profile asking for a navy cocktail dress on Rent the Runway, a rental site where users borrow high end dresses for a fraction of the price. It is relatively safe to for a recommender to focus closely on the user's specifically entered preferences, as the user may have a very specific requirements for a formal outfit to wear on a specific day for a specific event. For the most part, it is difficult to get consumers explicitly fill out preferences, and when they do it could be more aspirational than behavioural (e.g. listing a very expensive high end brand the user loves but never purchases). __Collaborative filtering__ develops an estimate for a user's interest in an item by comparing behaviors of many users, or by looking for hidden similarities between items. Explicit preferences come from products that are liked, favorited, added to wishlists, or rated. Implicit preferences may be gleaned from behaviors like browsing, purchasing, and searching on the site [[matrix fact paper]]. Given a modeled (?) vector of __user preferences__ and another of __item performance__, the *inner products* of these two vectors attempt to estimate a user's __interest level__ in a product, even if it has not been seen before. To find similar customers, a system may look for patterns of affinity across a matrix of users and items. In fashion, however, items have a fixed or seasonal shelf life and may *never* replenish if sold out. So, it's not terribly useful to gain a deep understanding of a certain product, and assume interest in the product will accumulate over time. A well-liked product may also be the lowest in stock, even more severely for sites with short-term sales like Gilt. Instead, it's important to focus on underlying attributes of an item, and generate recommendations based on clusters of brands, prices, product categories, 
+These systems can focus on a few paradigms to produce a recommendation. __Content-based approaches__ tend to focus on information extracted from products (product description, fibers, item category, sizes, colors) or the user (age group, location, preferences profile). Say a user fills out a profile asking for a navy cocktail dress on Rent the Runway, a rental site where users borrow high end dresses for a fraction of the price. It is relatively safe to for their recommender to focus closely on the user's exact preferences, as the user may have very specific requirements for a formal outfit to wear on a specific day for a specific event. Generally, it is difficult to get consumers explicitly fill out preferences, and when they do it could be more aspirational than behavioural (e.g. adding a preference for a very edgy brand when the user typically only purchases workwear).
 
-[Ref Volinsky]
+__Collaborative filtering (CF)__ develops an estimate for a user's interest in an item by comparing behaviors of many users, or by looking for similarities between items. Explicit preferences come from products that are rated. Implicit preferences may be gleaned from likes, favorites, wishlists, or behaviors like browsing, purchasing, and searching on the site. Imagine a matrix with users as rows and items as columns, whose entries indicate a user's affinity for a certain product. CF attempts to decompose this matrix into user vectors and item vectors. Given a vector of __user preferences__ and another of __item performance__, the *inner products* of these two vectors attempt to estimate a user's __interest level__ in a product, even if it has not been seen before. This assumes that products will accumulate preference data over time, so that the matrix isn't too sparse to be useful. In fashion, however, items have a fixed or seasonal shelf life and may *never* replenish if sold out. The most popular products may also be the least interesting to a specific user. Instead, as noted by Gilt, it's helpful to focus on underlying *attributes* of an item and generate recommendations based on similarities between brands, prices, product categories, colors, etc. Attention must also be paid to showing the user items that are similar in a sense that they can substitute for one another, that they belong to a matching set, and that the preferences will change over time. For example, while shopping for black pants, a user may want to see as many options as possible, then immediately lose interest in black pants and want to find a matching jacket afterward.
 
-Given sparse information about a new user, recommender systems may select content based on past behavior by a "similar" user. If John has a Nordstrom account and likes Fendi and Dior, when Mary goes first shops Nordstrom and searches for Fendi, she might get Dior in her list of recommended items on a product page. Gilt builds in recommendations based on search -- if you look for a specific brand that they do not carry, you will automatically see similar brands that are carried. 
+Given sparse information about a new user, recommender systems may solve the "cold start" problem by selecting content based on past behavior by a "similar" user. If John has a Nordstrom account and likes Fendi and Dior, when Mary goes first shops Nordstrom and searches for Fendi, she might get Dior in her list of recommended items on a product page. One concern that can be overlooked is the assumption that Mary and John are engaging with these products for the same reasons. Perhaps Mary loves expensive handbags and very cheap clothing, while John exclusively shops for luxury brands across his wardrobe. Trending content is also a common source of "default" pages for unknown users, making fashion analytics startups like Trendalytics and Editd a highly relevant source of external data processing.
 
-[[ The tricky part is determining how you know John "likes" Fendi - did he rate a Fendi product five stars, does he click on Fendi products frequently, was it added it to a favorites list, is he following the brand's updates, has he recently purchased, or do we just know that he searched for both within a short time period? And, are Mary and John similar enough to make this recommendation work (i.e. do they like these brands for the same reasons)? Does Mary have a thing for expensive handbags, yet only spends about $30 per item otherwise, while John exclusively shops luxury brands? Choosing how to model the vast variety of feedback possible to incorporate makes different recommenders unique. ]]
+A hybrid approach of content-based and collaborative filtering approaches works well in this industry, and companies seem to be taking advantage of extracting as much data as possible per item. There is a major opportunity in computer vision to classify the relatively clean images that make up much of fashion e-commerce in a more objective manner. [BOF Article]. Lyst, a company that sells products from a network of retailers, uses supervised learning to automatically classify products instead of taking existing copy and categorization at face value [link: http://developers.lyst.com/data/images/2014/02/13/background-removal/], including color parsing with support vector machines [link: http://developers.lyst.com/data/images/2014/02/13/background-removal/], and duplicate item sensing with locality sensitive hashing [link: http://www.slideshare.net/ejlbell/fashion-productdeduplication]. 
 
-Products that have not been rated by many users suffer and must be incorporated. Popular products that could potentially dominate all recommendations must be weighted against. In some systems, negative preference is not measured at all.
+This kind of personalization can be supplemented by automated pose estimation: http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=6909696 (deep learning for pose estimation)
+garment classification: http://dl.acm.org/citation.cfm?id=2283775&preflayout=flat (read fashion magazine photos to learn garments that go together)
+retrieving similar styles: http://vision.is.tohoku.ac.jp/~kyamagu/research/paperdoll/ (paperdoll)
+
+Gilt takes on 
+
+Rent the Runway also incorporates sophisticated inventory movement information into its recommendations. 
 
 What's likely to happen next -- 
 
-Some sites have millions of products and users, and it would be computationally expensive to check on each possible variable. There is some focus, therefore, in academic literature on how to improve the computational efficiency of the matrix decompositions underlying these recommendations. Probabilistic methods for matrix decomposition help (e.g. ETSY blog post cf). Because of this cost, many sites also update recommendations overnight, instead of in realtime. But the user is not going to wait until tomorrow for recommendations to get better - typically, they want to have a good experience, now. [[ Fold in below ]]
+Measuring negative preferece
+User experience
+Automated matching
+Deep learning
 
-[Prob Matrix Decomp Paper Notes]
-> Finding Structure with Randomness: Probabilistic Alogirthms for Const. Matrix Decomp.
-Use randomization for more powerful matrix decome 
-
-* random sample
-* subspace
-* implicit/explicit compressed matrix
-* reduced matrix deterministic manipulation
-* low rank factorization 
-> benefits: 
-accuracy + speed + robustness
-O(mnlog(k)) vs O(mnk), k = dominant components of svd
-k passes instead of O(k) passes
-too big matrices, missing data, too many passes over data = :( 
-MC = low/uncertain accuracy, sensitive to rng
-Randomization = insensitive to rng quality, highly accurate result (what does accurate mean here?) 
-classic steps -- 
-(1) construct a low d subspace
-(2) restrict matrix to subspace & compute a strd factorization (qr, svd, etc...)
-Now: Use random sampling mathods instead. 
-
-Yet, very little of the research considers performance gains in the context of users, which could be why in industry many companies tend to incorporate human recommendations to improve user experience. The next paper might be something like: Field studies in recommender systems. 
-
-
-_How does this work in the present?_
-
->* Content based methods
-* Collaborative Filtering
-* Hybrid Models
-
-__Problems:__ 
-> * Huge matrices take too long to process
-* Users are barely prompted for feedback
-* Success is measured by computational complexity / speed
-
-__Problems Raised in [1]__
->* Content filtering - creates a user or product profile
-* expensive to gather & merge external information
-* Collaborative filtering - identifies user-item associations, analyzes user relationships & item similarity
-* Cold start problem - What to do with a new product or new user? * Content filtering is better. 
-* Neighborhood method
-* Latent factor models - discovers its own categories which may or may not be immediately apparent
-* Matrix factorization - scale well, accurate predictions, flexible modeling options
-* Explicit feedback - difficult, most users only rate a small number of products.
-* Implicit feedback - strength of matrix factorization.
-* Computing the mapping of each item and user to factor vectors q and p. Matching items to hidden factors
-* SVD - must factor the user-item rating matrices
-* sparseness in rating matrix continuing problem
-* using only the known value causes overfitting
-* data imputation (older method) increases amt. data
-* model the observed only & avoid overfitting with regularized model. 
-
-Unlike some of the classic research in machine learning literature, starred ratings (explicit feedback) on fashion products are not always a given. 
+Some sites have millions of products and users, and it would be computationally expensive to check on each possible variable. Because of this cost, many sites also recommendations overnight instead of in realtime. But there is some disconnect with the user, as an individual may not necessarily revisit a site daily. There is some focus, therefore, in academic literature on how to improve the computational efficiency of the matrix decompositions underlying these recommendations. Probabilistic methods (e.g. ETSY blog post cf) can improve on robustness, speed, and accuracy of a recommendar, in part by reducing the computational complexity of a matrix decomposition.
 
 Instead of passing through large amounts of data rather slowly, there are probabilistic methods that can be used to get around the computational heft -- 
 [Etsy-suggested Probabilistic Matrix decomp paper] points out that 
 >probabilistic methods can be faster, more robust, more precise, more useful computational methods for computing inner products, restricting matrices to their low-rank subspaces by allowing for computations to a target matrix with a fixed amount of columns plus a tolerance of 5-10 extra columns
 
+[Prob Matrix Decomp Paper Notes]
+> Finding Structure with Randomness: Probabilistic Alogirthms for Const. Matrix Decomp.
 
--- __Computation__
+Successful recommenders seem to be measured by computational speed, with few studies exploring user experience relative to different types of recommenders. Sites can (and do) construct tests themselves by displaying or AB testing multiple sets of options generated by different recommenders. There are also different standards on how many similar products to show: about a dozen, looping (Net-A-Porter and Farfetch), a few dozen with endless scroll capabilities (Lyst), or four (Gilt) -- it would be interesting to note how these different options affect how consumers interact with their recommendations. In addition, some scrutiny can be applied to how long it takes for the consumer to "run out" of unique suggestions (something Lyst maximizes by having a "view more" button). 
 
-Mini experiment in specificity: 
-searched "Black Culotte"
-Site | # Results | # Rmds | Similar Recs | Coordinating Recs 
+In order to flesh out explicit feedback, useful for informing consumers, encouraging logins and increasing internal data sources for a RS, companies can consider asking for different types of ratings/reviews/Q&A: 
 
-Gilt | 1 | 4 | 1p culottes & 3 pairs of pants | None
-NAP | n | 13+ | All pants | Outfits given as well
-Lyst
-Ssense
-Farfetch
-Barneys()
-Saks()
+* I am a consumer who owns this product, or similar products. 
+* I am a consumer who has seen or tried on this product in person. 
+* I am the brand who designed this product 
+* I am a retailer who carries this product
 
+Totokaelo is doing a great job with getting additional review information from user-retailer interactions [link: http://totokaelo.com/maison-martin-margiela/tabi-bootie/black-combo/MH4435] Rent the Runway incorporates extensive user feedback by purposely shipping two sizes per garment, and requesting selfies, private reviews and public review options. 
 
-__New Development__ 
+Hyper-personalization is seen both in an algorithmic and human-centric approach. Zipfit Denim in Chicago collects metrics from its inventory of denim and takes in explicit user preferences to suggest styles that will fit the user. Human-validated decisions also permeate the fashion recommender space. P.S. Dept in NYC retrofits bricks & mortar retailers with an iPhone app that connects existing store associates to consumer requests anywhere, so their recommendations are all individually tailored in realtime for active users. Keaton Row partners with e-commerce sites to allow independent stylists across the US create looks for their network. Subscriptions services like Stitch Fix partner algorithms with "curators" for users, who can further tailor recommendations to the user before sending out a box of 5 items at a time. 
 
-> // [CDL for RS (Collaborative Deep Learning...)]
-Heirarchical Bayesian Model (SDAE)
-PMF (probabilistic matrix factorization)
-Inputs: 
-Text blob (bag of words from item content info)
-rating matrix (from any users) 
-Problems:
-sparse ratings ruin the performance of CF, CTR
-CTR needs help with sparse rating data 
-Solutions:
-CDL allows both matrix factorization of sparse matrix 
-& ratings provide feedback to guide the extraction of useful features
-Works with other types of deep learning
-Tested on real-world data 
-Outperforms CTR 
-//
-
-On the other hand, there is a major opportunity in computer vision to classify the crisp, clean images that make up much of fashion e-commerce in a more objective manner (implicit feedback). [BOF Article]
-Why is Lyst doing so well? [Targeted research, one at a time, CV, de-dupe, search, merge, etc]
-Is the problem tagged vs untagged data? [probably sometimes. many semantic models. few objective] How to you philosophically approach the nature of data? [how do you convert the data? are you objective (i.e. the rgbb contents of the image, the estimation of the pose) or personal (clicks, past likes, etc) 
-
-// [Lyst talks]
-> using mathematics to unders
-
-__User Experience__
-To increase accuracy, should induce customers to leave product information. What is the right classification system? (I own this product. I have seen this product in person. Allow brands to respond. Allow clerks to respond).
-sample startup in seattle is doing this really well, allowing a conversational "rating" / q&a system
+Recommender systems would benefit greatly from a field study of how various algorithms are working in industry based on user feedback. 
  
-First pages are often curated by marketing/branding/styling experts. Human-validated decisions (brought up by Birchbox or Stitch fix or one of the other box people)
-
-Looping: For example, the Gilt algo will eventually run out of products. E.g. How many clicks before you run out of products? 
-eventually cycles through the same six pairs of wide-leg pants & runs out of ideas. Doesn't remember whether you've clicked on this and vow to show something else.
-
-Wall of recommendations (overly inclusive, search engine like)first-page recommender is content curated by branding teamLack of outfit completion / overfocus on outfit completion.
-
-Recently, sites have opened the hood to where these recommendations are coming from, and allow for a few different paradigms to co-exist. Telling the user why they are receiving a recommendation may yield a more positive experience -- e.g. Amazon's "Items purchased together" vs "Similar Items" vs "Sponsored Content" vs "Customers who bought x also bought y" 
-
+__Notes: Tech Deets__
+Aster
+Hadoop
+Atwood (?) 
+Kafka
+Spark
+Scala 
+Conjecture (Etsy)
+Editd
+Trendalytics
+ 
 __WORKS CITED__
 
 * [1] Koren, Yehuda. Yahoo Research. Bell & Volinsky, AT&T Labs. - 2009 IEEE paper: Matrix Factorization Techniques for Recommender Systems. 
@@ -152,14 +83,5 @@ http://www.quora.com/How-do-you-measure-and-test-the-quality-of-recommendation-e
 * [1] Collaborative Filtering for Implicit Feedback Datasets (Etsy, Lyst)
 * Weight Alternating Least Squares 
 [ ] Probabilistic Matrix Factorization, Salakhutdinov and Mnih.
-
-__Random thoughts__
-Future Possibilities, Improvements:
-Approximate Bayesian Computation might be helpful for simulating recommendations based on a tiny number of clicks. 
-Tinder-like explicit feedback for product recommendations (why is this not happening?) 
-Bloom filters? 
-
-__TODO: Experts__
-** Must note that this came from the etsy engineering blog and should get a quote from an Etsy engineer.
-Read through the entirety of realtime and get a sense of how this might fit with a new paradigm. **
-
+[Ref Volinsky]
+http://www.fastcompany.com/3025642/getting-their-fix
