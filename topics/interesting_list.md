@@ -54,7 +54,7 @@ All topics here are responding to the prompt, "What's up with..."
   * UX for older people (AARP app)
   * robots for elder care
   * telepresence robots
-  * exoskeletons
+  * exoskeletons (http://www.theverge.com/2015/4/1/8326143/mechanical-exoskeleton-makes-walking-easier)
   * input systems/sensors for VR (nimblevr, etc.)
   * sentiment analysis
   * in-vehicle data collection
