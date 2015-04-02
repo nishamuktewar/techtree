@@ -87,3 +87,4 @@ All topics here are responding to the prompt, "What's up with..."
   * graph layout algorithms - data vis problems
   * topic modeling - only with usage examples
   * The Turing Test and newer approaches (http://upvot.es/1xFwWlJ)
+  * enhanced food storage technologies (vacuum tupperware?)
