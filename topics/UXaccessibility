@@ -1,0 +1,51 @@
+ __What's up with: Accessibility and Design.__
+
+**Intro paragraph:**
+
+Design accessibility is not standard across the web.
+Leveraging public data about the general population can be a useful for setting design standards and accessing untapped markets. The senior population is more than interested in adopting tech, yet finds much of the available products (hardware and UX) non-accommodating. 
+
+Because of frustration with the current state of the web, older users are more impatient with non-accommodative UX
+and less likely to try many different solutions to get to a point of completion. [cite] 
+
+Visual impairment affects []% of the population. Sites that simulate how your images read to a person with colorblindness can give you a quick check on whether there is enough contrast for charts with color variations. Smart phone text is simply too small to be useful for many seniors who have been comfortable with smart phones for years. 
+
+Seniors also may carry a bias against entering credit card information on the web. Does your site have the ability to pay by phone or mail? How many users would need to request these features before the option was worthwhile? 
+
+Any infographic should repeat text in case a user needs to use text to speech software. 
+
+MIT has a cool lab that works on accessibility design for those in wheelchairs and with other special considerations. 
+
+__Web needs to take into account various user biases:__
+
+* Color blindness (text distinction problems. blue green problems)
+* Difficulty seeing (stats on vision across the states)
+* Blindness
+* Hands that shake 
+* Speech to vision software - readable images, readable infographics
+* Mouse difficulty (two-handed mouse use, need big distances between)
+* Touch or stylus preference
+* Keyboard shortcuts. 
+
+__Features to incorporate: __
+
+* Adjustable text size
+* Distances between form items
+* Subtitles (check out the automatic subtitle startups) 
+* Touch is better than mice
+* Touch screen optimization (favor tablets)
+
+__Major report on UX for the elderly (65+) - NN Group:__
+http://www.nngroup.com/articles/usability-for-senior-citizens/
+http://www.nngroup.com/reports/senior-citizens-on-the-web/
+
+Works Cited: 
+
+[] where the tips came from 
+http://www.smashingmagazine.com/2015/02/05/designing-digital-technology-for-the-elderly/
+
+Bibliography: 
+
+[]
+http://www.uxmatters.com/mt/archives/2013/10/designing-user-interfaces-for-older-adults-myth-busters.php
+
