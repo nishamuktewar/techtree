@@ -89,3 +89,5 @@ All topics here are responding to the prompt, "What's up with..."
   * The Turing Test and newer approaches (http://upvot.es/1xFwWlJ)
   * enhanced food storage technologies (vacuum tupperware?)
   * DB theory meets new data structures (graphs, distributions, etc. how does ACID hold up?)
+  * algorithmically generated music
+  * algorithmic music understanding
