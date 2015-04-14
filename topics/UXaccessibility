@@ -1,18 +1,17 @@
- __What's up with: Accessibility and Design.__
+__What's up with: Accessibility and Design.__
 
 **Intro paragraph:**
 
 Design accessibility is not standard across the web.
-Leveraging public data about the general population can be a useful for setting design standards and accessing untapped markets. The senior population is more than interested in adopting tech, yet finds much of the available products (hardware and UX) non-accommodating. 
+Population health and age data can help set design standards and allow better access for untapped markets. The senior population is constantly stereotyped as uninterested in smart phones, but clearly adopt in products that work well for them, like tablets. [cite] Many find the available products (hardware and UX) non-accommodating. The problems that affect seniors transcend age group: visual impairment affects []% of the population. Smart phone text is simply too small with too little spacing between clickable links and buttons to be useful for many seniors who have been comfortable with smart phones for years. Older users are more impatient with non-accommodative UX and less likely to try many different solutions to get to a point of completion. [cite] 
 
-Because of frustration with the current state of the web, older users are more impatient with non-accommodative UX
-and less likely to try many different solutions to get to a point of completion. [cite] 
+There are beta sites that simulate how your images read to a person with different forms of colorblindness as a quick check, but with interactivity becoming standard, data visualizations that already allow the user to permute category labels could also be modified to allow the text to scale or the color palette to fit the visually impaired better. For interactive graphics built with tools like D3, it is relatively trivial to add a button to change to a colorblind-friendly palette, or allow the user to change the size of the text for ease of reading. 
 
-Visual impairment affects []% of the population. Sites that simulate how your images read to a person with colorblindness can give you a quick check on whether there is enough contrast for charts with color variations. Smart phone text is simply too small to be useful for many seniors who have been comfortable with smart phones for years. 
+Another consideration is text stored as an image. Outside of situations where a user might choose not to download images, this type of information should repeat the stored text in case a user needs compatibility with text to speech software. 
 
-Seniors also may carry a bias against entering credit card information on the web. Does your site have the ability to pay by phone or mail? How many users would need to request these features before the option was worthwhile? 
+For some products, the premise of differentiation is seamless payments. If that is not a feature to your product Seniors also may carry a bias against entering credit card information on the web. Does your site have the ability to pay by phone or mail? How many users would need to request these features before the option was worthwhile? 
 
-Any infographic should repeat text in case a user needs to use text to speech software. 
+
 
 MIT has a cool lab that works on accessibility design for those in wheelchairs and with other special considerations. 
 
