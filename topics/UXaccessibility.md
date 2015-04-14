@@ -15,6 +15,10 @@ For some products, the premise of differentiation is seamless payments. If that 
 
 MIT has a cool lab that works on accessibility design for those in wheelchairs and with other special considerations. 
 
+
+
+Lechal would allow for smart phone directions to be programmed in, then used for those who may not have hands free to continually check for directions (e.g. cane, walker). One of my favorites is the way Bengler thinks about this with Chorderoy, a tactile product concept that would allow users to type into wireless interfaces with one hand, without need for a keyboard, on-screen keyboard, or a flat surface to rest on. One project in Japan leveraged GPS and map data to create an interactive map of surfaces that might be difficult for the less mobile to transverse without 
+
 __Web needs to take into account various user biases:__
 
 * Color blindness (text distinction problems. blue green problems)
@@ -33,6 +37,21 @@ __Features to incorporate: __
 * Subtitles (check out the automatic subtitle startups) 
 * Touch is better than mice
 * Touch screen optimization (favor tablets)
+
+__Physical Space__
+
+* Maps that show users where inaccessible barriers might be located
+* Tactile input devices that open up smart phones, virtual reality, and other wireless interfaces without the difficulty of touch screens 
+* Swype is a good example here (cite)
+* Clothing that incorporate the specific needs of a modern person who may be in a wheelchair but still want to use an iPhone
+* Non-invasive, passive sensors detached from the phone that allow users to interface with larger screens or custom setups if necessary (e.g. Softspot + an iPad app, Google glass with accessibility maps)
+* Smart watches and devices that allow users to interface with phones in a handsfree manner (Ringly, Apple Watch, Pebble)
+* Ergonomic keyboards
+* Ergonomic mice
+* Ergonomic chairs 
+* Make walking around easier/faster/cheaper (Lechal. Sols)
+* 
+
 
 __Major report on UX for the elderly (65+) - NN Group:__
 http://www.nngroup.com/articles/usability-for-senior-citizens/
