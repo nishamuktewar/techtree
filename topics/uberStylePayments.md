@@ -1,11 +1,23 @@
-Apps that connect physical experiences with pre-set, digital payments
-New Models for Apps Connecting Physical Experiences with Transactions
+#Fast Forward Labs Update [Logo Header]
+#Electronic Regulars: New App Models Connecting Physical Experiences with Transactions
 
-Structure: 
+This update discusses recent mobile device apps that facilitate transactions around real-world experiences and services.
 
-__What is this model and how does it work (e.g. underlying payment technology, maybe security talks)__
+Physical experiences are increasingly being supplemented by digital payment and service methods on mobile devices.  A user enters payment and/or customer information into the app once, then does not need to think about re-authorizing in the future, much like Amazon's one-click feature, brought into the real world. This facilitates smoother, faster transactions that benefit customers and vendors.  In essence, this approach establishes a trust relationship between the customer that reassures the vendor that the customer will pay, emulating the experience of a user being a "regular" of that vendor.
 
-Physical experiences are increasingly being supplemented by digital payment methods on mobile phones, where the user enters payment information once and does not need to think about re-authorizing in the future. Uber saw explosive growth in use of its car services after moving to seamless payments with Braintree, which allowed users to pay in their own currencies. Starbucks designed an app to process payments that logistically takes longer to complete at the register, yet keeps users engaged and happily spending. [condense] PS Dept on the iPhone connects users with personal shoppers at major luxury fashion stores, with in-app payments that mean the user never has to leave the app environment to access merchandise exclusive to brick-and-mortar stores, opening up a world of options for brick-and-mortar stores and sales experts to move inventory. Even regional salad chain Sweetgreen has a mobile app that includes payment and pickup options at its locations.  
+##Examples
+
+Uber's car service is perhaps the best-known example.  Uber saw explosive growth after moving to seamless payments with Braintree, which allowed users to pay in their own currencies.
+
+Starbucks coffee shops accept in-app payments for real-world coffee.  App payments (and orders) are faster to process than cash or payment cards at the register.  As a result, Starbucks' customers save time in line, and Starbucks can sell more product with its employees focused on making beverages instead of taking payments.  
+
+Similarly, Sweetgreen, a regional salad restaurant chain, released a mobile app that includes payment and pickup options at its real-world locations.  Again, these app features reduce waiting time and ordering mistakes for customers, and help Sweetgreen get its product to consumers more efficiently.
+
+As another example, PS Dept's app connects users with personal shoppers at major luxury fashion stores.  Its in-app payments give customers in-app access to merchandise that would otherwise be available only in brick-and-mortar stores.  This provides new opportunities for the brick-and-mortar stores and sales experts to move inventory. 
+
+Vending machines have been set up to accept contactless payments by smartphone over the internet or using short-range wireless protocols like NFC or Bluetooth. "Regulars" who live or work near these machines can simply have their purchases charged to a registered payment method.
+
+##Payment Logistics
 
 Payment options like Braintree, Square, [Stripe, WePay, Circle (bitcoin)....] [when did they come out?] [what's so special about their technology?] [what kind of encryption are they using?] [why weren't mobile payments happening before?] [what does this mean for consumer behavior data?]
 
@@ -22,10 +34,20 @@ _Are there any industry examples (e.g. manufacturing? science? thinking of parts
 * Prevost (motorcoach parts)
 * Interspare (textile machinery) - submits photos of the parts/machines at issue; doesn't allow automatic payment, but these aren't coffee--they're big expensive industrial machines, and they believe it's better to have the vendor's internal experts assess the necessary parts than have the customer order them directly.
 * Siemens HVAC
- 
-[Amazon One-click analogy.]
 
-Where will this go next?
+
+##Next Applications
+
+Recent approaches have relied on mobile devices to merge the physical world with electronic transactions.  One very new direction is expanding beyond mobile devices such as a smartphone or tablet and further into the physical world.
+
+A few weeks ago, Amazon took this step with its new Dash button, a physical stick-on device that is connected to a specific product.  For example, a Dash button can be stuck to a dishwasher; the user designates the product for that button to be diswasher detergent.  When the user runs low on dishwasher detergent, they press the button, which re-orders their preferred brand and size with no further intervention.  Other examples advertised by Amazon include shaving razor blades, packaged foods, and coffee.
+
+Consumer products company Quirky has taken a similar approach with its Poppy line of products which incorporate automatic re-ordering.  This line currently includes a coffee maker, a baby formula heater-dispenser, and a pet food dispenser.
+
+Outside of these product-based approaches, it is easy to see applications for such a device to order products _and_ services.  For example, a button or built-in feature on a printer to re-order paper or toner, or send a repair request to the printer service company.  Likewise Uber might use such a device to request a pickup from a user's home or from a hotel, bar, or nightclub.  Restaurants that offer delivery could store a user's regular order and complete the transaction with a single button press.  Within a restaurant, a tabletop device or smartphone could be used to 
+
+
+
 
 Blindspots:
 * Statistics on smart phone adoption & data plans & location that drains battery 
