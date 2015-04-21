@@ -9,8 +9,8 @@ Physical experiences are increasingly being supplemented by digital payment and 
 
 Uber's car service is perhaps the best-known example.  Uber saw explosive growth after moving to seamless payments with Braintree, which allowed users to pay in their own currencies.
 
-Starbucks coffee shops accept in-app payments for real-world coffee.  App payments (and orders) are faster to process than cash or payment cards at the register.  As a result, Starbucks' customers save time in line, and Starbucks can sell more product with its employees focused on making beverages instead of taking payments.  
-NOTE: <- above is not necessarily true -- metrics showed that the checkout process was slower, but people liked using it anyway 
+Starbucks coffee shops accept in-app payments for real-world coffee.  Starbucks' research showed that even though this checkout process is slower than traditional payment, customers preferred the app payment.
+
 Similarly, Sweetgreen, a regional salad restaurant chain, released a mobile app that includes payment and pickup options at its real-world locations.  Again, these app features reduce waiting time and ordering mistakes for customers, and help Sweetgreen get its product to consumers more efficiently.
 
 As another example, PS Dept's app connects users with personal shoppers at major luxury fashion stores.  Its in-app payments give customers access to merchandise that would otherwise be available only in brick-and-mortar stores.  This provides new opportunities for the brick-and-mortar stores and sales experts to move inventory. Spring, a young shopping app that won best of 2014, similarly stores payments info once and allows the user to pick and choose from a curated list half from generated recommendations, half from curated brand stories. 
