@@ -6,6 +6,8 @@
 * detect qualities of a person (age, gender, race, income, email domain) from
   audio
 
+* detect qualities of a person from image data
+
 * attempt a recommended agenda by going through e-mails and doing some content
 
 * evaluate speech to text libraries
