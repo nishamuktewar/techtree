@@ -1,9 +1,27 @@
 #Fast Forward Labs Update [Logo Header]
-#Electronic Regulars: New App Models Connecting Physical Experiences with Transactions
+#Electronic Regulars: New App Models Connecting Physical Experiences with Mobile Transactions
 
 This update discusses recent mobile device apps that facilitate transactions around real-world experiences and services.
 
-Physical experiences are increasingly being supplemented by digital payment and service methods on mobile devices. A user enters payment and/or customer information into the app once, then does not need to think about re-authorizing in the future, much like Amazon's one-click feature, brought into the real world. This facilitates smoother, faster transactions that benefit customers and vendors.  In essence, this approach establishes a trust relationship between the customer that reassures the vendor that the customer will pay, emulating the experience of a user being a "regular" of that vendor.
+Physical experiences are increasingly being supplemented by digital payment and service methods on mobile devices. At first, entering payment information seems like a familiar ecommerce setting, where the card is not present (CNP) but can still be authorized directly 
+
+For a given app, the user enters payment information once into a digital wallet, then skips re-authorization in the future. This differs structurally from saving a payment method in an ecommerce site, then authorizing a payment for a product at a later time. User authorization is implicitly assumed, and the user is charged based on information tied directly to their mobile phone - for example, GPS location or presence at a specific retail point of sale (POS).  
+
+[are we talking just about Uber-style apps where there is no further optimization? In that case, cast a wide net about mobile payments and then real it in to focus on the individual parts...]
+
+This facilitates smoother, potentially faster transactions that give vendors better access to data surrounding transactions. 
+
+may benefit customers and vendors.  In essence, this approach establishes a trust relationship between the customer that reassures the vendor that the customer will pay, emulating the experience of a user being a "regular" of that vendor.
+
+One of the early definers of the mobile payment space is Starbucks, which retrofits existing cash registers by generating scannable barcodes (or QR codes?) that work online or offline. 
+
+
+ completion or check-in of a physical experience
+
+as in payment forms are designed specifically for phone use. 
+
+ not need to think about re-authorizing in the future,
+ much like Amazon's one-click feature, brought into the real world. 
 
 ##Examples
 
