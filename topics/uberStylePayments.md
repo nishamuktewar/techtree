@@ -2,6 +2,36 @@
 #Electronic Regulars: New App Models Connecting Physical Experiences with Mobile Transactions
 
 This update discusses recent mobile device apps that facilitate transactions around real-world experiences and services.
+**Mobile Payments for Physical Experiences: Apps.**
+
+*alternative perspective!* 
+*Mobile payments are convenient and efficient checkout options that add value to luxury apps...when they work.*
+*A first time Uber user in NYC, excited to try Uber Pool for an efficient ride to the airport, grabs his wallet and enters a card number on the Uber sign up page on his laptop. Later, running short on time, he grabs his phone and prepares to book a ride, and realizes he's entered the wrong card. That's okay. For the sake of speed, he enters the new card on the open page on his laptop, saves it to his account, and returns to his phone. No dice. The new card isn't there. He enters the card directly via the mobile app. The card is rejected as a duplicate. He deletes the original card. The cache is cleared. The app is force stopped. He returns to the menu. The new card STILL isn't there. The network is turned on and off. The phone is restarted. No dice. The only checkout option is the first card, and the new card isn't showing up. Time's running short. He doesn't have a PayPal, and it's not an Apple phone. Does he have a Google Wallet? Well, it was set up a few month ago with a few bucks for an app he bought from a friend. Now he logs into Google Wallet on the computer, enters the same card number, and switches checkout method within the Uber app to Google Wallet. For the same card. A bit behind, he finally gets hold of a driver and is off to the airport.*
+
+*Although mobile payments requiring the entry of a credit or debit card seem to mimick traditional "card not present" (CNP) transactions in ecommmerce, the underlying mechanics are subtly different. Encryption methods common for ecommerce would be clunky and slow on the phone, and were not orinally designed to work over a mobile network. Local storage would also be less than desirable. Instead, "tokens" containing nonsensical representations of the original information are stored in the cloud (explain).* 
+
+*Google wallet uses ____. Paypal uses ____. Braintrree, which runs on Uber, uses ____. Apple Pay is uses ___ and ___. Pros and cons, security, smoothness, network reurements, etc..*
+
+Jessica Graves
+Research Analyst
+
+Fast Forward Labs
+jessica@fastforwardlabs.com
+
+On Mon, May 18, 2015 at 9:37 AM, Jessica Graves <simplygraves@gmail.com> wrote:
+Writing about Machine Learning. We write about machine learning, software engineering, human-computer interaction, and user experience to help our clients put together the smartest technology possible using emerging research. 
+
+Mobile Payments for Physical Experiences: Apps. 
+
+Mobile payments are convenient and efficient checkout options that add value to luxury apps...when they work.
+
+A first time Uber user in NYC, excited to try Uber Pool for an efficient ride to the airport, grabs his wallet and enters a card number on the Uber sign up page on his laptop. Later, running short on time, he grabs his phone and prepares to book a ride, and realizes he's entered the wrong card. That's okay. For the sake of speed, he enters the new card on the open page on his laptop, saves it to his account, and returns to his phone. No dice. The new card isn't there. He enters the card directly via the mobile app. The card is rejected as a duplicate. He deletes the original card. The cache is cleared. The app is force stopped. He returns to the menu. The new card STILL isn't there. The network is turned on and off. The phone is restarted. No dice. The only checkout option is the first card, and the new card isn't showing up. Time's running short. He doesn't have a PayPal, and it's not an Apple phone. Does he have a Google Wallet? Well, it was set up a few month ago with a few bucks for an app he bought from a friend. Now he logs into Google Wallet on the computer, enters the same card number, and switches checkout method within the Uber app to Google Wallet. For the same card. A bit behind, he finally gets hold of a driver and is off to the airport. 
+
+Although mobile payments requiring the entry of a credit or debit card seem to mimick traditional "card not present" (CNP) transactions in ecommmerce, the underlying mechanics are subtly different. Encryption methods common for ecommerce would be clunky and slow on the phone, and were not orinally designed to work over a mobile network. Local storage would also be less than desirable. Instead, "tokens" containing nonsensical representations of the original information are stored in the cloud (explain). 
+
+Google wallet uses ____. Paypal uses ____. Braintrree, which runs on Uber, uses ____. Apple Pay is uses ___ and ___. Pros and cons, security, smoothness, network reurements, etc..
+
+
 
 Physical experiences are increasingly being supplemented by digital payment and service methods on mobile devices. At first, entering payment information seems a typical e-commerce transacton, where the card is not present (CNP) but can still be authorized with card number, security code, and expiration date. With a given mobile app, the user enters payment information once into a digital wallet, then skips re-authorization in the future. This differs structurally from saving card numbers a payment method in an ecommerce site, then manually authorizing a payment during the checkout process at a later time. User authorization is implicitly assumed, and the user is charged based on information tied directly to their mobile phone - for example, GPS location or presence at a specific retail point of sale (POS). 
 
