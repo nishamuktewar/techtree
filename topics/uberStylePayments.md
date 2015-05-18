@@ -45,41 +45,41 @@ Legislation is pending on a bill that would potentially make companies less liab
 
 Payment options like:
 
-*Seamless/Grubhub
-*Instagram - what's up with their in-app purchases? (like to know it)
-*Braintree, 
-*Square, 
-*[Stripe, WePay, Circle (bitcoin)....]
-*Google wallet uses ____.
-*Paypal uses ____.
-*Apple Pay is uses ___ and ___.
-*PS Dept uses []
-*Magic 
-*Cover - 
-*Starbucks [Gift cards. Paypal. Bar codes.]
-*Beautified
-*Sweetgreen
-*Lyft uses Stripe - http://www.lyft.com/terms
-*Pizza Hut, Dominoes, Papa Johns?
-*Google Wallet
-*Jukely (subscription model for partying)
-*Shyp (local shipping, paid through app)
-*Stripe
-*Square Cash (?) 
-*Venmo
-*Paypal 
-*Apple Pay?
-*RFID?
-*Beacons?
-*Snapchat
+* Seamless/Grubhub
+* Instagram - what's up with their in-app purchases? (like to know it)
+* Braintree, 
+* Square, 
+* [Stripe, WePay, Circle (bitcoin)....]
+* Google wallet uses ____.
+* Paypal uses ____.
+* Apple Pay is uses ___ and ___.
+* PS Dept uses []
+* Magic 
+* Cover - 
+* Starbucks [Gift cards. Paypal. Bar codes.]
+* Beautified
+* Sweetgreen
+* Lyft uses Stripe - http://www.lyft.com/terms
+* Pizza Hut, Dominoes, Papa Johns?
+* Google Wallet
+* Jukely (subscription model for partying)
+* Shyp (local shipping, paid through app)
+* Stripe
+* Square Cash (?) 
+* Venmo
+* Paypal 
+* Apple Pay?
+* RFID?
+* Beacons?
+* Snapchat 
 
 *Smart phone adoption*
 
-*Smart phone spread, geographically, socioeconomically -
-*Data plan diversity, network diversity & transactions - 
-*Battery life - 
-*Spotty network/GPS maps (Uber let's you physically manipulate location, but won't work if it's not turned on)
-*Upper class apps (forces data usage the entire ride). 
+* Smart phone spread, geographically, socioeconomically -
+* Data plan diversity, network diversity & transactions - 
+* Battery life - 
+* Spotty network/GPS maps (Uber let's you physically manipulate location, but won't work if it's not turned on)
+* Upper class apps (forces data usage the entire ride).  
 
 ##References 
 
