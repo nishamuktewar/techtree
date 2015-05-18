@@ -43,7 +43,8 @@ Legislation is pending on a bill that would potentially make companies less liab
 * PCI-DSS Payment Card Industry Data Security Standard - required by the major cards (and by law in some US states)
 * Stripe seems to have the best, easiest API
 
-Payment options like 
+Payment options like:
+
 *Seamless/Grubhub
 *Instagram - what's up with their in-app purchases? (like to know it)
 *Braintree, 
@@ -73,6 +74,7 @@ Payment options like
 *Snapchat
 
 *Smart phone adoption*
+
 *Smart phone spread, geographically, socioeconomically -
 *Data plan diversity, network diversity & transactions - 
 *Battery life - 
