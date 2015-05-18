@@ -94,3 +94,4 @@ All topics here are responding to the prompt, "What's up with..."
   * container shipping (major concern for e-commerce/global trade & production, and new models for small manufacturing) 
   * distributed power infrastructure
   * automation and safety
+  * retail sensor trends (visual analytics of people walking around stores, RFID rebirth,  NFC for payment..)
