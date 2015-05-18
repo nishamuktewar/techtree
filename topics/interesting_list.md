@@ -92,3 +92,5 @@ All topics here are responding to the prompt, "What's up with..."
   * algorithmically generated music
   * algorithmic music understanding
   * container shipping (major concern for e-commerce/global trade & production, and new models for small manufacturing) 
+  * distributed power infrastructure
+  * automation and safety
