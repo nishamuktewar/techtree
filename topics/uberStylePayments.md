@@ -44,45 +44,43 @@ Legislation is pending on a bill that would potentially make companies less liab
 * Stripe seems to have the best, easiest API
 
 Payment options like 
-Braintree, 
-Square, 
-[Stripe, WePay, Circle (bitcoin)....]
-Google wallet uses ____.
-Paypal uses ____.
-Braintree, which runs on Uber, uses ____.
-Apple Pay is uses ___ and ___.
-Pros and cons, security, smoothness, network reurements, etc..*
-Uber uses Braintree (acquired Card.io) https://www.braintreepayments.com/case-studies/uber
-PS Dept uses []
-Magic 
-Cover - 
-Starbucks [Gift cards. Paypal. Bar codes.]
-Beautified
-Sweetgreen
-Chop't (?)
-Lyft uses Stripe - http://www.lyft.com/terms
-Seamless/Grubhub
-Pizza Hut, Dominoes, Papa Johns?
-Google Wallet
-Jukely (subscription model for partying)
-Shyp (local shipping, paid through app)
-Stripe
-Square Cash (?) 
-Venmo
-Paypal 
-Braintree
-Apple Pay? RFID? Beacons?
-Snapchat
-Instagram - what's up with their in-app purchases? (like to know it)
+*Seamless/Grubhub
+*Instagram - what's up with their in-app purchases? (like to know it)
+*Braintree, 
+*Square, 
+*[Stripe, WePay, Circle (bitcoin)....]
+*Google wallet uses ____.
+*Paypal uses ____.
+*Apple Pay is uses ___ and ___.
+*PS Dept uses []
+*Magic 
+*Cover - 
+*Starbucks [Gift cards. Paypal. Bar codes.]
+*Beautified
+*Sweetgreen
+*Lyft uses Stripe - http://www.lyft.com/terms
+*Pizza Hut, Dominoes, Papa Johns?
+*Google Wallet
+*Jukely (subscription model for partying)
+*Shyp (local shipping, paid through app)
+*Stripe
+*Square Cash (?) 
+*Venmo
+*Paypal 
+*Apple Pay?
+*RFID?
+*Beacons?
+*Snapchat
 
-Smart phone adoption - 
-Smart phone spread, geographically, socioeconomically -
-Data plan diversity, network diversity & transactions - 
-Battery life - 
-Spotty network/GPS maps (Uber let's you physically manipulate location, but won't work if it's not turned on)
-Upper class apps (forces data usage the entire ride). 
+*Smart phone adoption*
+*Smart phone spread, geographically, socioeconomically -
+*Data plan diversity, network diversity & transactions - 
+*Battery life - 
+*Spotty network/GPS maps (Uber let's you physically manipulate location, but won't work if it's not turned on)
+*Upper class apps (forces data usage the entire ride). 
 
 ##References 
+
 Good Mobile Payments Paper:
 https://www.kansascityfed.org/publicat/econrev/pdf/12q1Hayashi.pdf
 >According to some estimates, this
@@ -91,6 +89,7 @@ a traditional card and signing the receipt or entering a PIN (Morea;
 Polasik and others). This small difference in transaction speed can be
 important in situations such as mass transit or highway toll gates where
 consumers need to move quickly through the checkout point.
+
 Good technical survey:
 http://arstechnica.com/gadgets/2014/10/29/how-mobile-payments-really-work/
 Articles:
