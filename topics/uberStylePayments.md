@@ -3,37 +3,30 @@
 
 This update discusses recent mobile device apps that facilitate transactions around real-world experiences and services.
 
-Physical experiences are increasingly being supplemented by digital payment and service methods on mobile devices. At first, entering payment information seems like a familiar ecommerce setting, where the card is not present (CNP) but can still be authorized directly 
+Physical experiences are increasingly being supplemented by digital payment and service methods on mobile devices. At first, entering payment information seems a typical e-commerce transacton, where the card is not present (CNP) but can still be authorized with card number, security code, and expiration date. With a given mobile app, the user enters payment information once into a digital wallet, then skips re-authorization in the future. This differs structurally from saving card numbers a payment method in an ecommerce site, then manually authorizing a payment during the checkout process at a later time. User authorization is implicitly assumed, and the user is charged based on information tied directly to their mobile phone - for example, GPS location or presence at a specific retail point of sale (POS). 
 
-For a given app, the user enters payment information once into a digital wallet, then skips re-authorization in the future. This differs structurally from saving a payment method in an ecommerce site, then authorizing a payment for a product at a later time. User authorization is implicitly assumed, and the user is charged based on information tied directly to their mobile phone - for example, GPS location or presence at a specific retail point of sale (POS).  
-
-[are we talking just about Uber-style apps where there is no further optimization? In that case, cast a wide net about mobile payments and then real it in to focus on the individual parts...]
+From a user perspective, it might feel like Amazon's one-click feature brought into physical space. Technically, payment forms are designed specifically for phone use. One of the early definers of the mobile payment space is Starbucks, which retrofits existing cash registers by generating QR codes that work online or offline.  Uber saw explosive growth after moving to seamless mobile payments with Braintree, which allowed users to pay in their own currencies. Braintree uses tokenization to provide enhanced security for data transfer, meaning sensitive data is obscured by a string of meaningless symbols.
 
 This facilitates smoother, potentially faster transactions that give vendors better access to data surrounding transactions. 
+In essence, this approach establishes a trust relationship between the user that reassures the vendor that the customer will pay, emulating the experience of a user being a "regular" of that vendor.
 
-may benefit customers and vendors.  In essence, this approach establishes a trust relationship between the customer that reassures the vendor that the customer will pay, emulating the experience of a user being a "regular" of that vendor.
-
-One of the early definers of the mobile payment space is Starbucks, which retrofits existing cash registers by generating scannable barcodes (or QR codes?) that work online or offline. 
-
-
- completion or check-in of a physical experience
-
-as in payment forms are designed specifically for phone use. 
 
  not need to think about re-authorizing in the future,
- much like Amazon's one-click feature, brought into the real world. 
-
-##Examples
-
-Uber's car service is perhaps the best-known example.  Uber saw explosive growth after moving to seamless payments with Braintree, which allowed users to pay in their own currencies. Starbucks coffee shops accept in-app payments for real-world coffee.  Starbucks' research showed in testing that speed of transaction increased (though that may not be true at scale, given that most inexpensive purchases don't have added receipt signing time) but more importantly customers preferred the app payment. They are scaling that idea to allow in-app orders as well. Users can change the actual payment method in the process of completing the transaction -- changing which card gets charged during an Uber ride, reloading a Starbucks mobile card using Paypal while waiting on line. 
-
-Here in NYC on a much smaller scale, regional salad chain Sweetgreen released a mobile app that includes payment option that requires pickup at it's brick & mortar locations. Again, these app features reduce waiting time and ordering mistakes for customers, and help Sweetgreen get its product to consumers more efficiently.
-
-As another example, PS Dept's app connects users with personal shoppers at major luxury fashion stores.  Its in-app payments give customers access to merchandise that would otherwise be available only in brick-and-mortar stores. Their luxury partnerships gives in-store associates access to a digital customer base to send physical, location-specific merchandise. Because the buying patterns of many major retailers are non-uniform, and the web offerings represent a tiny subset of total offered merchandise,  this provides new opportunities for the brick-and-mortar stores and sales experts to move inventory that is not resolved by ecommerce. (Spring, a young shopping app that won best of 2014, similarly stores payments info once and allows the user to pick and choose from a curated list half from generated recommendations, half from curated brand stories.) (Lyst, universal shopping cart saw 5x as many sales within a month after releasing the ability to pay all at once.)  
 
 Vending machines have been set up to accept contactless payments by smartphone over the internet or using short-range wireless protocols like NFC or Bluetooth. "Regulars" who live or work near these machines can simply have their purchases charged to a registered payment method.
 
 Some apps ask you to pay in advance (restaurant app, Jukely), then have you check in at the physical location. Probability of a person skipping out on their restaurant reservation, concert ticket, among others would be an extremely useful metric -- but could also start to get creepy like a credit score if this type of information is used to alter the types of services offered to customers. Retailers already keep tabs on the consumers who return merchandise (http://bigstory.ap.org/article/retailers-keeping-tabs-consumers-return-habits) and new legislation in the US means companies can sell consumer data to each other (
+
+
+
+##Examples
+
+Uber's car service is perhaps the best-known example.  Starbucks coffee shops accept in-app payments for real-world coffee.  Starbucks' research showed in testing that speed of transaction increased (though that may not be true at scale, given that most inexpensive purchases don't have added receipt signing time) but more importantly customers preferred the app payment. They are scaling that idea to allow in-app orders as well. Users can change the actual payment method in the process of completing the transaction -- changing which card gets charged during an Uber ride, reloading a Starbucks mobile card using Paypal while waiting on line. 
+
+Here in NYC on a much smaller scale, regional salad chain Sweetgreen released a mobile app that includes payment option that requires pickup at it's brick & mortar locations. Again, these app features reduce waiting time and ordering mistakes for customers, and help Sweetgreen get its product to consumers more efficiently. At our nearby Kenmare location, the pickup line is typically empty while customers ordering in person could easily be waiting behind 30 people. 
+
+As another example, PS Dept's app connects users with personal shoppers at major luxury fashion stores.  Its in-app payments give customers access to merchandise that would otherwise be available only in brick-and-mortar stores. Their luxury partnerships gives in-store associates access to a digital customer base to send physical, location-specific merchandise. Because the buying patterns of many major retailers are non-uniform, and the web offerings represent a tiny subset of total offered merchandise,  this provides new opportunities for the brick-and-mortar stores and sales experts to move inventory that is not resolved by ecommerce. 
+
 
 Limiting factors: Apple takes a 30% cut of apps in its store that include in-app purchases, not to mention charges its Apple Pay partners a percentage. [cite]
 
