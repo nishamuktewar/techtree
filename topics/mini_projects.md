@@ -21,6 +21,8 @@
 
 * text summarization.
 
+* corpus summarization
+
 * story generation (templates using tv trops? RNN/LSTM? language model?).. robot
   dungeon master 
 
