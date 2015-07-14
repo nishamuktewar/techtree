@@ -1,0 +1,23 @@
+Fashion + Sensors in retail.
+
+Retail stores in the fashion industry are adding new capablities to existing store technology through advances in machine learning research. Pre-existing sensors, from security cameras (CCTV) to RFID tags, are creating richer datasets from which retailers can automate some business decisions. 
+
+The same visual analytics that go into crowd data analysis from satellite imagery can be applied to CCTV feeds to get a sense of how store architecture and displays affects traffic patterns of customers. 
+
+For one, visual merchandisers create compelling displays of new arrivals on a periodic schedule, and part of what gets displayed prominently is determined by advertising and promotion dollars. Movement analytics gives further justification of where precisely to place featured items, based on how customers tend to interact the layout of a specific store. Retail architects and interior architects can reap the benefits from visual analytics to test pre-production prototypes with companies like (IrisVR) that collect data on where users spend most of their attention in an immersive simulation in the Oculus Rift or similar.
+
+Another use case is for stores to collect visual trends on their attendees. A paper from 2011 called ( ) established video-based detection of clothing for surveillance cameras in retail spaces, applying segmentation to video images of clothing (check ref for seg vs bounding box) for the first time (check SIGGRAPH for video clothing simulation). It starts with facial detection to recognize a human in the footage, (tracking), color extraction (HOF), and finishes with a profile of the person.
+
+That’s not all that happens in retail surveillance. With increasingly cheap sensors (like the XBOX Kinect) that can sense depth (name other depth sensors), CCTV feeds can be used to first find a human, estimate their pose (based on the locations of joints) and finally estimate their body size. Because clothing is often produced weeks to months in advance, this makes a huge different in the ability to select sizes or alter the garment production completely based on who walks into and out of the store. 
+
+Not limited to CCTV, this type of technology also works on static images in Smart Mirrors, which is much easier to execute since there is only one person per fitting room and they are not in motion.
+
+This starts to sound like ecommerce - stores will be able to build automated recommender systems based on this information. The missing piece, however, is automated inventory management. Most stores still manually track this kind of information. Zara, which dedicates sustained efforts to get as perfect data as possible (MIT, BOF), found a way to adapt RFID chips not to interfere with Security Tags, and get near-perfect information about inventory in minutes instead of hours (REF). With more stores adopting systems that can automate inventory notifications, rather than succumbing to manual counting or taking associates off the selling floor to search for items, sales can improve significanly. This can also trigger events like automatic replenishment of popular styles from the warehouse. 
+
+Some companies choose to anonymize personally identifyable data, while others make no such mention. There is no precedent to sign a Terms & Agreements clause for walking into a store, which may be tracking your cell phone the minute oyu walk into a shopping center if your wifi is on.  While coverage of these types of technologies briefly mention “privacy concerns”, there is little futher prodding into what is meant by privacy in this case; whether those concerns should be felt by stores or consumers; and whether consumers have any reaction once they realize what is happening.
+
+To establish a threshhold for whether stores should be concerned about privacy, we use a model developed by  Ashkan Soultani and ____ in the Yale Journal of Law. They claim,
+“In order for a blah blah to trigger the rule, it must be an order of magnitude cheaper than the equivalent surveillance method prior to the new technology.” 
+and point out “Fixed cost of hardware means that more and more people can be surveilled without additonal investment, decreasing costs to pennies”
+
+How much would it cost to manually track every customer? It’s not a striaghtforward calculation, but let’s say in luxury retail store associates make $10/hr with 20% commission, handle 100 customers per day, and have repeat business. They often have a client book or keep contact information on file, contacting specific clients for specific incoming inventory. This is analogous to saving information in a store account when shopping online, except it takes HUMAN face recognition. 
