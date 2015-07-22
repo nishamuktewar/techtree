@@ -82,6 +82,7 @@ All topics here are responding to the prompt, "What's up with..."
   * sentiment analysis
   * spectral
   * entity resolution and deduplication
+  * named entity disambiguation
   * multiworld testing
   * Bayesian nonparametrics
   * graph layout algorithms - data vis problems
