@@ -1,5 +1,5 @@
 #Public Data Sources 
-​
+
 ##Legislative
   * [United States on github](https://github.com/unitedstates)
 They have a great US module that has state abbrevs, names, etc.
@@ -15,12 +15,12 @@ They have a great US module that has state abbrevs, names, etc.
   * [Virgina Decoded](http://vacode.org/downloads/)
   * [Canadian Parliament Member Expenditures](http://www.parl.gc.ca/PublicDisclosure/MemberExpenditures.aspx?Id=MER2013FY&Language=E&FormatType=XML)
 *modify the URL for your Fiscal Year*
-​
+ 
 ## Australia
   * [Australian Institute of Marine Science](http://www.aims.gov.au)
     * [AIMS data](http://data.aims.gov.au)
   * [Australian Ocean Data Network](http://portal.aodn.org.au/aodn/)
-​
+
 ## Miscellaneous
   * [Health Indicators](http://healthindicators.gov/)
   * [CDC data sets](http://data.cdc.gov)
