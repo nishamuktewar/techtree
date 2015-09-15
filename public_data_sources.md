@@ -91,3 +91,6 @@ hmason: common crawl data for all
   * [Detailed data on pass rates, race, and gender for 2013](http://home.cc.gatech.edu/ice-gt/556)
   * [Data Download](http://voteview.com/dwnl.htm)
   * [SNAP: Web data: Amazon reviews](http://snap.stanford.edu/data/web-Amazon.html)
+  
+## New Stuff
+  * [MSDN Academic Research Graph](http://blogs.msdn.com/b/msr_er/archive/2015/06/26/announcing-the-microsoft-academic-graph-let-the-research-begin.aspx)
