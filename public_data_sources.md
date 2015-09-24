@@ -94,3 +94,6 @@ hmason: common crawl data for all
   
 ## New Stuff
   * [MSDN Academic Research Graph](http://blogs.msdn.com/b/msr_er/archive/2015/06/26/announcing-the-microsoft-academic-graph-let-the-research-begin.aspx)
+
+## English Speech Synthesis Databases
+  * [CMU FestVox Databases](http://festvox.org/dbs/index.html)
