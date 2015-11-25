@@ -2,6 +2,7 @@ __potential topics:__
 
 All topics here are responding to the prompt, "What's up with..."
 
+  * cryo-electron microscopy
   * weather prediction
   * cryogenics
   * satellite image data analysis
