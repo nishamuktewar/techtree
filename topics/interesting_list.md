@@ -2,6 +2,8 @@ __potential topics:__
 
 All topics here are responding to the prompt, "What's up with..."
 
+  * [small number statistics](http://www.johndcook.com/blog/2016/01/07/big-p-little-n/)
+  * [gaussian processes](https://www.reddit.com/r/MachineLearning/comments/3zwlpm/eli5_gaussian_processes/)
   * cryo-electron microscopy
   * weather prediction
   * cryogenics
