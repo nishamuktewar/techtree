@@ -2,7 +2,7 @@ __potential topics:__
 
 All topics here are responding to the prompt, "What's up with..."
 
-  * [small number statistics](http://www.johndcook.com/blog/2016/01/07/big-p-little-n/)
+  * [small number statistics](http://www.johndcook.com/blog/2016/01/07/big-p-little-n/) [2](http://fivethirtyeight.com/features/how-to-tell-someones-age-when-all-you-know-is-her-name/), [3](http://www.sumsar.net/blog/2014/10/tiny-data-and-the-socks-of-karl-broman/) [4](https://en.wikipedia.org/wiki/German_tank_problem)
   * [gaussian processes](https://www.reddit.com/r/MachineLearning/comments/3zwlpm/eli5_gaussian_processes/)
   * cryo-electron microscopy
   * weather prediction
