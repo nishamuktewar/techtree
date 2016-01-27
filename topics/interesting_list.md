@@ -4,6 +4,7 @@ All topics here are responding to the prompt, "What's up with..."
 
   * [small number statistics](http://www.johndcook.com/blog/2016/01/07/big-p-little-n/) [2](http://fivethirtyeight.com/features/how-to-tell-someones-age-when-all-you-know-is-her-name/), [3](http://www.sumsar.net/blog/2014/10/tiny-data-and-the-socks-of-karl-broman/) [4](https://en.wikipedia.org/wiki/German_tank_problem)
   * [gaussian processes](https://www.reddit.com/r/MachineLearning/comments/3zwlpm/eli5_gaussian_processes/)
+  * new approaches to recommendation [1](https://codeascraft.com/2015/08/31/how-etsy-uses-thermodynamics-to-help-you-search-for-geeky/) [2](http://open.blogs.nytimes.com/2015/08/11/building-the-next-new-york-times-recommendation-engine/)
   * cryo-electron microscopy
   * weather prediction
   * cryogenics
@@ -43,7 +44,6 @@ All topics here are responding to the prompt, "What's up with..."
   * data cleaning tools and techniques
   * recipe generation and optimization (Watson, choc. chip cookies)
   * 3D rendering (Ikea catalogs, ??)
-  * recommendation algorithms
   * ad targeting is BS, can we prove it?
   * the quantified workplace
   * machine learning in science (paleobiology paper)
