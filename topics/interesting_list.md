@@ -6,6 +6,7 @@ All topics here are responding to the prompt, "What's up with..."
   * [gaussian processes](https://www.reddit.com/r/MachineLearning/comments/3zwlpm/eli5_gaussian_processes/)
   * new approaches to recommendation [1](https://codeascraft.com/2015/08/31/how-etsy-uses-thermodynamics-to-help-you-search-for-geeky/) [2](http://open.blogs.nytimes.com/2015/08/11/building-the-next-new-york-times-recommendation-engine/)
   * cryo-electron microscopy
+  * [semi-supervised learning](http://rinuboney.github.io/2016/01/19/ladder-network.html)
   * weather prediction
   * cryogenics
   * satellite image data analysis
