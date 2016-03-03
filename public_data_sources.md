@@ -49,6 +49,7 @@ They have a great US module that has state abbrevs, names, etc.
   * [What is Twitter, a Social Network or a News Media? - WWW'10](http://an.kaist.ac.kr/traces/WWW2010.html)
   * [dotbot | DotNetDotCom.org](http://www.dotnetdotcom.org/#inde)
   * [arXiv.org help - arXiv Bulk Data Access - Amazon S3](http://arxiv.org/help/bulk_data_s3)
+   * at `toymaker:/dataset_archive/`, up to date to November 2015. See README.md in that directory to refresh.
   * [YouTube Dataset](http://netsg.cs.sfu.ca/youtubedata/)
   * [Face Recognition Homepage - Databases](http://www.face-rec.org/databases/)
   * [Pajek datasets](http://vlado.fmf.uni-lj.si/pub/networks/data/default.htm)
@@ -91,6 +92,8 @@ hmason: common crawl data for all
   * [Detailed data on pass rates, race, and gender for 2013](http://home.cc.gatech.edu/ice-gt/556)
   * [Data Download](http://voteview.com/dwnl.htm)
   * [SNAP: Web data: Amazon reviews](http://snap.stanford.edu/data/web-Amazon.html)
+  * [Amazon product reviews](http://jmcauley.ucsd.edu/data/amazon/links.html)
+  * [Anonymous Ratings from the Jester Online Joke Recommender System](http://eigentaste.berkeley.edu/dataset/)
   
 ## New Stuff
   * [MSDN Academic Research Graph](http://blogs.msdn.com/b/msr_er/archive/2015/06/26/announcing-the-microsoft-academic-graph-let-the-research-begin.aspx)
