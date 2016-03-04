@@ -93,8 +93,11 @@ hmason: common crawl data for all
   * [Data Download](http://voteview.com/dwnl.htm)
   * [SNAP: Web data: Amazon reviews](http://snap.stanford.edu/data/web-Amazon.html)
   * [Amazon product reviews](http://jmcauley.ucsd.edu/data/amazon/links.html)
+
+## Recommender systems/collaborative filtering
+  * [XING](http://2016.recsyschallenge.com/)
   * [Anonymous Ratings from the Jester Online Joke Recommender System](http://eigentaste.berkeley.edu/dataset/)
-  
+
 ## New Stuff
   * [MSDN Academic Research Graph](http://blogs.msdn.com/b/msr_er/archive/2015/06/26/announcing-the-microsoft-academic-graph-let-the-research-begin.aspx)
 
