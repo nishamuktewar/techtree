@@ -1,5 +1,18 @@
 #Public Data Sources 
 
+## Mike's links
+  * [Book-Crossing book ratings](http://www2.informatik.uni-freiburg.de/~cziegler/BX/)
+   * mirror of page at `/dataset_archive/recommendation/bookcrossing/`
+  * [MovieLens movie ratings](http://grouplens.org/datasets/movielens/)
+   * mirror of data at `/dataset_archive/recommendation/movielens/`
+  * [Anonymous Ratings from the Jester Online Joke Recommender System](http://eigentaste.berkeley.edu/dataset/)
+   * mirror of site incl. data at `/dataset_archive/recommendation/jokes/`
+  * [XING recommender data challenge](http://2016.recsyschallenge.com/)
+  * [arXiv.org help - arXiv Bulk Data Access - Amazon S3](http://arxiv.org/help/bulk_data_s3)
+   * at `/dataset_archive/arxiv`, up to date to November 2015. See README.md in that directory to refresh.
+  * [Amazon product reviews](http://jmcauley.ucsd.edu/data/amazon/links.html)
+   * at `/dataset_archive/amazon`. See README.md in that directory for details.
+
 ##Legislative
   * [United States on github](https://github.com/unitedstates)
 They have a great US module that has state abbrevs, names, etc.
@@ -48,8 +61,6 @@ They have a great US module that has state abbrevs, names, etc.
   * [ImageNet](http://www.image-net.org/)
   * [What is Twitter, a Social Network or a News Media? - WWW'10](http://an.kaist.ac.kr/traces/WWW2010.html)
   * [dotbot | DotNetDotCom.org](http://www.dotnetdotcom.org/#inde)
-  * [arXiv.org help - arXiv Bulk Data Access - Amazon S3](http://arxiv.org/help/bulk_data_s3)
-   * at `toymaker:/dataset_archive/`, up to date to November 2015. See README.md in that directory to refresh.
   * [YouTube Dataset](http://netsg.cs.sfu.ca/youtubedata/)
   * [Face Recognition Homepage - Databases](http://www.face-rec.org/databases/)
   * [Pajek datasets](http://vlado.fmf.uni-lj.si/pub/networks/data/default.htm)
@@ -91,12 +102,7 @@ hmason: common crawl data for all
   * [New Crawl Data Available! | CommonCrawl](http://commoncrawl.org/new-crawl-data-available/)
   * [Detailed data on pass rates, race, and gender for 2013](http://home.cc.gatech.edu/ice-gt/556)
   * [Data Download](http://voteview.com/dwnl.htm)
-  * [SNAP: Web data: Amazon reviews](http://snap.stanford.edu/data/web-Amazon.html)
-  * [Amazon product reviews](http://jmcauley.ucsd.edu/data/amazon/links.html)
-
-## Recommender systems/collaborative filtering
-  * [XING](http://2016.recsyschallenge.com/)
-  * [Anonymous Ratings from the Jester Online Joke Recommender System](http://eigentaste.berkeley.edu/dataset/)
+  * ~~[SNAP: Web data: Amazon reviews](http://snap.stanford.edu/data/web-Amazon.html)~~
 
 ## New Stuff
   * [MSDN Academic Research Graph](http://blogs.msdn.com/b/msr_er/archive/2015/06/26/announcing-the-microsoft-academic-graph-let-the-research-begin.aspx)
