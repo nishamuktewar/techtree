@@ -1,6 +1,8 @@
 #Public Data Sources 
 
 ## Mike's links
+  * [Netflix Prize](https://archive.org/details/nf_prize_dataset.tar)
+   * `/dataset_archive/recommendation/netflix/`
   * [Book-Crossing book ratings](http://www2.informatik.uni-freiburg.de/~cziegler/BX/)
    * mirror of page at `/dataset_archive/recommendation/bookcrossing/`
   * [MovieLens movie ratings](http://grouplens.org/datasets/movielens/)
