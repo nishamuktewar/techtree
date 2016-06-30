@@ -1,6 +1,8 @@
 #Public Data Sources 
 
 ## Mike's links
+  * [Github](https://github.com/blog/2201-making-open-source-data-more-available)
+    * on BigQuery. Maybe for recommendation or graph databases?
   * [Netflix Prize](https://archive.org/details/nf_prize_dataset.tar)
    * `/dataset_archive/recommendation/netflix/`
   * [Book-Crossing book ratings](http://www2.informatik.uni-freiburg.de/~cziegler/BX/)
