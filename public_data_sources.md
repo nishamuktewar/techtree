@@ -1,6 +1,8 @@
 #Public Data Sources 
 
 ## Mike's links
+  * [Stanford QA](https://stanford-qa.com/)
+    * `/dataset_archive/stanford-qa`
   * [Github](https://github.com/blog/2201-making-open-source-data-more-available)
     * on BigQuery. Maybe for recommendation or graph databases?
   * [Netflix Prize](https://archive.org/details/nf_prize_dataset.tar)
