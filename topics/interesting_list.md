@@ -2,6 +2,7 @@ __potential topics:__
 
 All topics here are responding to the prompt, "What's up with..."
 
+  * self-flying planes [1](http://www0.cs.ucl.ac.uk/staff/H.Baomar/files/0086.pdf) [2](http://www.economist.com/news/science-and-technology/21707187-artificially-intelligent-autopilot-learns-example-flight-response)
   * speech synthesis [1](https://deepmind.com/blog/wavenet-generative-model-raw-audio/)
   * generating images from text (similar to NLG, but for images) [1](http://www.wordseye.com/)
   * interpretable models with near random forest/deep learning accuracy, e.g. [1](http://people.dbmi.columbia.edu/noemie/papers/15kdd.pdf), [2](http://people.dbmi.columbia.edu/noemie/papers/15kdd.pdf), [3](http://videolectures.net/kdd2014_rudin_machine_learning/)
