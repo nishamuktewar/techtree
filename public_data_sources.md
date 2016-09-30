@@ -18,6 +18,8 @@
    * at `/dataset_archive/arxiv`, up to date to November 2015. See README.md in that directory to refresh.
   * [Amazon product reviews](http://jmcauley.ucsd.edu/data/amazon/links.html)
    * at `/dataset_archive/amazon`. See README.md in that directory for details.
+  * [Open Images Dataset](https://research.googleblog.com/2016/09/introducing-open-images-dataset.html)
+  * [Youtube-8M video](https://research.googleblog.com/2016/09/announcing-youtube-8m-large-and-diverse.html)
 
 ##Legislative
   * [United States on github](https://github.com/unitedstates)
