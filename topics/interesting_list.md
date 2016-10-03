@@ -2,6 +2,7 @@ __potential topics:__
 
 All topics here are responding to the prompt, "What's up with..."
 
+  * Reinforcement learning [1](http://www.wildml.com/2016/10/learning-reinforcement-learning/)
   * Human activity recognition [1](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) [2](https://github.com/guillaume-chevalier/LSTM-Human-Activity-Recognition/)
   * self-flying planes [1](http://www0.cs.ucl.ac.uk/staff/H.Baomar/files/0086.pdf) [2](http://www.economist.com/news/science-and-technology/21707187-artificially-intelligent-autopilot-learns-example-flight-response)
   * speech synthesis [1](https://deepmind.com/blog/wavenet-generative-model-raw-audio/)
