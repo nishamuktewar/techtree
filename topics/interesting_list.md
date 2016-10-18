@@ -2,6 +2,7 @@ __potential topics:__
 
 All topics here are responding to the prompt, "What's up with..."
 
+  * Speech recognition [1](http://languagelog.ldc.upenn.edu/nll/?p=28894)
   * Neural machine translation [1](https://ufal.mff.cuni.cz/mtm16/files/12-recent-advances-and-future-of-neural-mt-orhat-firat.pdf)
   * Reinforcement learning [1](http://www.wildml.com/2016/10/learning-reinforcement-learning/)
   * Human activity recognition [1](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) [2](https://github.com/guillaume-chevalier/LSTM-Human-Activity-Recognition/)
