@@ -1,0 +1,103 @@
+# Links from slack/#research
+
+From channel creation (May 2016) to 2016-11-11
+
+ - recommendation engine (any changes since last time?)
+   - https://medium.com/@amit_sharma/how-much-traffic-do-recommender-systems-actually-cause-2e0c6708801f#.egqhjaqu9 [hilary]
+   - dataset? https://github.com/blog/2201-making-open-source-data-more-available [mike]
+ - imputation on graphs
+ - active learning
+   - http://burrsettles.com/pub/settles.activelearning.pdf [mike]
+   - https://codeascraft.com/2016/03/22/building-a-translation-memory-to-improve-machine-translation-coverage-and-quality/ [mike]
+   - http://www.cs.iit.edu/~ml/pdfs/ramirez-dmkd16.pdf [hilary]
+   - https://medium.com/@atduskgreg/power-to-the-people-how-one-unknown-group-of-researchers-holds-the-key-to-using-ai-to-solve-real-cc9e75b1f334#.f81uztqmb [kathryn]
+   - https://www.scaleapi.com/ [hilary]
+ - machine translation
+   - https://codeascraft.com/2016/03/22/building-a-translation-memory-to-improve-machine-translation-coverage-and-quality/ [mike]
+   - https://ufal.mff.cuni.cz/mtm16/files/12-recent-advances-and-future-of-neural-mt-orhat-firat.pdf [mike]
+ - interpretable models (LIME, BRLs)
+   - http://mike.place/2016/interpretability/ [mike]
+   - http://www.nextgov.com/emerging-tech/2016/08/darpa-wants-artificial-intelligence-explain-itself/130680/ [hilary]
+   - http://economics.mit.edu/files/11874 [julius]
+   - http://conferences.oreilly.com/strata/hadoop-big-data-ny/public/schedule/detail/51777 [mike]
+ - conversational interfaces/bots
+   - http://www.wildml.com/2016/04/deep-learning-for-chatbots-part-1-introduction/ [mike]
+   - https://arxiv.org/abs/1606.01541 [hilary] see also reinforcement learning
+ - anomaly detection (Mike G, NAB)
+   - https://github.com/numenta/NAB/
+ - reinforcement learning (Open AI gym, Starcraft)
+   - https://openai.com/blog/openai-gym-beta/ [hilary]
+   - https://arxiv.org/abs/1604.00289# [mike]
+   - http://karpathy.github.io/2016/05/31/rl/ [kathryn]
+   - https://arxiv.org/abs/1606.01541 [hilary]
+ - robotics
+   - https://plus.google.com/+VincentVanhoucke/posts/8T7DSJhGY3u [micha]
+   - https://sites.google.com/site/brainrobotdata/home [hilary]
+ - CNNs/RNNs
+   - https://arxiv.org/abs/1602.03001 [micha]
+   - https://arxiv.org/abs/1603.00930 [hilary]
+   - http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Liu_Deep_Convolutional_Neural_2015_CVPR_paper.pdf [micha]
+ - streaming projects
+   - https://databaseline.wordpress.com/2016/03/12/an-overview-of-apache-streaming-technologies/ [hilary]
+ - syntaxnet/parsing/language models
+   - https://explosion.ai/blog/syntaxnet-in-context [mike]
+   - https://arxiv.org/abs/1602.02410 [mike]
+ - databases
+   - http://quasar-analytics.org/ [hilary]
+   - http://people.csail.mit.edu/ebakke/sieuferd/ [mike]
+ - hardware
+   - https://www.disneyresearch.com/publication/em-id/ [mike]
+ - texture generation
+   - https://github.com/mxgmn/SynTex [hilary]
+ - genetic algorithms, don't call it a comeback
+   - http://blog.otoro.net/2016/05/07/backprop-neat/ [hilary]
+ - variational autoencoders
+   - Miriam's work
+ - adversarial networks
+   - http://multithreaded.stitchfix.com/blog/2016/02/02/a-fontastic-voyage/ [miriam]
+ - Managing models
+   - PMML
+   - http://istc-bigdata.org/index.php/modeldb-a-system-for-managing-machine-learning-models/ [mike]
+ - Visualization
+   - t-SNE
+     - https://gist.github.com/mikelove/74bbf5c41010ae1dc94281cface90d32 [mike]
+     - https://github.com/DmitryUlyanov/Multicore-TSNE [micha]
+   - geo https://github.com/andrea-cuttone/geoplotlib [micha]
+   - geopandas [micha]
+ - CSV
+   - http://www.wise.io/tech/paratext [micha]
+   - https://github.com/BurntSushi/xsv [mike]
+ - Survival analysis
+   - with deep learning https://arxiv.org/abs/1606.00931 [micha]
+ - Differential privacy
+   - https://www.wired.com/2016/06/apples-differential-privacy-collecting-data/ [mike]
+ - Text classification
+   - http://arxiv.org/abs/1607.01759 [mike]
+   - https://explosion.ai/blog/deep-learning-formula-nlp [mike] 
+   - http://open.blogs.nytimes.com/2016/04/27/structured-ingredients-data-tagging/ [micha]
+   - http://textacy.readthedocs.io/en/latest/ [mike]
+ - Model selection/automatic machine learning
+   - http://www.randalolson.com/2016/05/08/tpot-a-python-tool-for-automating-data-science/ [hilary]
+   - https://www.youtube.com/watch?v=Wy6EKjJT79M&list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6&index=10 [mike]
+   - automatic statistician by Ghahramani [micha]
+   - http://roamanalytics.com/2016/09/15/optimizing-the-hyperparameter-of-which-hyperparameter-optimizer-to-use/ [mike]
+ - Question answering
+   - https://arxiv.org/abs/1607.06275 [micha]
+   - https://rajpurkar.github.io/SQuAD-explorer/ [mike]
+ - Time series
+   - http://machinelearningmastery.com/time-series-prediction-with-deep-learning-in-python-with-keras/keras
+   - http://gregharris.info/a-survey-of-deep-learning-techniques-applied-to-trading/
+ - stealing machine learning models
+   - https://arxiv.org/abs/1609.02943 [mike]
+ - human activity recognition
+   - https://github.com/guillaume-chevalier/LSTM-Human-Activity-Recognition/ [mike]
+ - semi-supervised learning
+   - https://research.googleblog.com/2016/10/graph-powered-machine-learning-at-google.html [mike]
+ - speech recognition
+   - http://languagelog.ldc.upenn.edu/nll/?p=28894 [mike]
+ - speech emotion detection
+ - speech generation
+   - https://deepmind.com/blog/wavenet-generative-model-raw-audio/ [mike]
+   - https://www.youtube.com/watch?v=I3l4XLZ59iw [micha]
+ - speech transcription from video, i.e. lip-reading
+   - https://devblogs.nvidia.com/parallelforall/deep-speech-accurate-speech-recognition-gpu-accelerated-deep-learning/ [hilary]
