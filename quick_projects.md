@@ -8,7 +8,10 @@ criteria below:
    report
  - They would give FFL expertise in useful skills/tools to share with/help our
    clients
+ - They allow us to write about things that probably wouldn't work as reports
+   because they don't lend themselves to prototypes/products, or they are a
+   cool but very specialized use case
 
-Please add to this list!
+Please add to this list! Please research and write about things on this list!
 
  - t-SNE for CEOs
