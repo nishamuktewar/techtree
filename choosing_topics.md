@@ -11,8 +11,8 @@
         - There is excitement (ideally including concrete breakthroughs) in the
           research community
         - Economic constraints (e.g. hardware) have lessened/disappeared
-        - There has there been a commoditization of tooling Data is available
-          (especially to FFL!)
+        - There has there been a commoditization of tooling
+        - Data is available (especially to FFL!)
     2. Is it useful to our existing clients
     3. It is appealing to potential clients
     4. It it possible to build a prototype
