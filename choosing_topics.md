@@ -2,9 +2,10 @@
 
 1. Collect lots of ideas. Avoid self-censorship. Bad ideas are good ideas.
 
-2. Meet to triage this list according to 4 criteria. Select ~1-2 topics per
+2. Meet to triage this list according to 5 criteria. Select ~1-2 topics per
    person for further investigation.
 
+    0. Is it exciting to the team?
     1. Is it a subject that is more possible now than in two years, and likely
        to be more possible/transformative still in a couple of years. That
        usually means some or all of the following things are true:
