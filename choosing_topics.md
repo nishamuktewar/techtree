@@ -25,11 +25,10 @@
 5. Spend ~1 week doing detailed technical feasibility studies and brainstorming
    concrete prototype possibilities
 
-6. Meet settle on one topic. Profit.
+6. Meet to settle on one topic. Profit.
 
 At every stage, interesting subjects will not make the cut. Some should be put
 back on the list for consideration next time! But many would make great [quick
 projects](quick_projects.md) (e.g. they're not cutting edge but we should know
 more to help our clients; or we need to spend more time on them before we
-commit to a report). lients; or we need to spend more time on them before we
 commit to a report).
