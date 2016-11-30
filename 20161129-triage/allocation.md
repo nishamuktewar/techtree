@@ -29,6 +29,7 @@
 
 - Recommendation
 - Data clearning tools --- working with missing corrupted data
+- Stylometry
 
 ## Julius
 
@@ -50,11 +51,11 @@
 
 ## Unclaimed
 
-- Machine tranlation
+- Machine translation
 - Active learning
 - ML on knowledge graphs
 - Smart hypothesis testing and selection
 - Learning to learn (or does this connect with NN introspection/automatic ML?)
 - Anomaly detection
 - Source code repository analysis/sparse pointer models
-- Stylometry
+
