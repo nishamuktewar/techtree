@@ -35,6 +35,8 @@
 
 - NN introspection to autmatic network structure --- Automatic ML/parameter optimization
 - Provenance/reproducibility of data analysis --- ML pipeline diagnostics
+- Learning to learn (or does this connect with NN introspection/automatic ML?)
+- Active learning
 
 ## Ryan
 
@@ -52,10 +54,8 @@
 ## Unclaimed
 
 - Machine translation
-- Active learning
 - ML on knowledge graphs
 - Smart hypothesis testing and selection
-- Learning to learn (or does this connect with NN introspection/automatic ML?)
 - Anomaly detection
 - Source code repository analysis/sparse pointer models
 
