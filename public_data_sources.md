@@ -3,6 +3,8 @@
 ## Mike's links
   * [Stanford QA](https://stanford-qa.com/)
     * `/dataset_archive/stanford-qa`
+  * [Guess What (computer vision + dialog systems)](https://arxiv.org/abs/1611.08481)
+    * To be released Jan 28 2017
   * [Github](https://github.com/blog/2201-making-open-source-data-more-available)
     * on BigQuery. Maybe for recommendation or graph databases?
   * [Netflix Prize](https://archive.org/details/nf_prize_dataset.tar)
