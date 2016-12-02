@@ -26,10 +26,13 @@ FPGA's: https://www.wired.com/2016/09/microsoft-bets-future-chip-reprogram-fly/
 FPGA's for dummies:
 https://www.altera.com/en_US/pdfs/literature/misc/FPGAs_For_Dummies_eBook.pdf
 
-CMOL (not CMOS) FPGA-like architecture (fusing FPGA and neuromorphic computing):
-https://www.ece.ucsb.edu/~strukov/papers/2005/LectureNotes2005.pdf
+CMOL (not CMOS) FPGA-like architecture (fusing FPGA and neuromorphic
+computing): https://www.ece.ucsb.edu/~strukov/papers/2005/LectureNotes2005.pdf
 
 PCA with memristors: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4650685/
 
 IBM's take on things: http://www.research.ibm.com/cognitive-
 computing/brainpower/
+
+AWS's new FPGA product offering: https://aws.amazon.com/blogs/aws/developer-
+preview-ec2-instances-f1-with-programmable-hardware/
