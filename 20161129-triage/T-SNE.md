@@ -5,3 +5,9 @@ T-SNE is an algorithm for reducing high-dimensional data to a low (2 or 3D, usua
 It seems like doing a report on T-SNE would be a bit of a departure for us – usually we would do a report on the algorithm powering the cluster and T-SNE would be a part of the visualization. I think it's worth thinking about doing something more focused on visualization, but in the near future it seems like it makes more sense for that to be in the form of something other than a report.
 
 I would love to use it to reduce to 3D and then put that in VR so you could walk around the clusters.
+
+Links:
+https://www.oreilly.com/learning/an-illustrated-introduction-to-the-t-sne-algorithm
+https://indico.io/blog/visualizing-with-t-sne/
+http://distill.pub/2016/misread-tsne/
+https://aiexperiments.withgoogle.com/drum-machine
