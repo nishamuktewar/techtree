@@ -18,15 +18,17 @@ sourcing efforts)
 
 ## Maybe
 
-Too early
+Slightly too early
 - One shot learning
-- FPGAs
 - Causal models and reasoning
 
 Too specific
 - Differential privacy/overfitting and private data --- synthetic data generation
 - Source code repository analysis/sparse pointer models
 - Provenance/reproducibility of data analysis
+
+Not quite the right focus for FFL
+- FPGAs
 
 Not the most excited about it:
 - Recommendation
