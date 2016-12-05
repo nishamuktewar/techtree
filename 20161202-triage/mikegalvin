@@ -1,0 +1,31 @@
+## Yes
+
+8 months
+
+- Dynamic vocabs in NLP (fasttext)
+- Semi-supervised/adversarial learning --- embedding and autoencoders
+- Recommendation
+
+4 months
+
+- Interpretability (LIME, BRLs) and trust
+- Automatic ML/parameter optimization
+- Provenance/reproducibility of data analysis
+
+## Maybe
+
+- One shot learning
+- Reinforcement learning
+- Time series/forecasting --- Gaussian processes
+- Serverless products
+- Anomaly detection
+- Source/fact credibility ranking --- fact-checking plugin
+- Conversational AI/bots --- question answering
+
+## No
+
+- Causal models and reasoning
+- Differential privacy/overfitting and private data --- synthetic data generation
+- Intuitive psychology/theory of mind (RL for coffee)
+- Automatic theorem proving/program correctness --- property-based code testing
+- Neuromorphic computing --- FPGAs
