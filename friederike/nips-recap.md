@@ -28,8 +28,8 @@ flows - https://arxiv.org/abs/1606.04934
 Book covering variational inference in depth for background reading and/or
 technical clients: https://people.eecs.berkeley.edu/~jordan/papers/variational-intro.pdf
 
-## Applications
-### Bayesian method for large-scale forcasting (Amazon)
+### Applications
+ - Bayesian method for large-scale forcasting (Amazon)
 https://papers.nips.cc/paper/6313-bayesian-intermittent-demand-forecasting-for-large-inventories.pdf
 Nice example how Bayesian methods can be applied to time series data.
 
@@ -68,6 +68,9 @@ Cool. Micha played with them. https://arxiv.org/abs/1610.09513 Kind of funny how
 the brain employs the same mechanism e.g.
 http://www.sciencedirect.com/science/article/pii/S1364661316301474
 
+## Interpretability
+Not a big topic at NIPS, the talks that were presented were nice but not great.
+
 # Relevant for short projects
 
 ## Supervised word mover's distance
@@ -78,6 +81,9 @@ the word embedding space. Still neat.
 ## Beyond Exchangability: the Chinese voting process
 Neat paper on how to estimate quality of posts on community boards like
 Stackoverflow partialling out bias like one on top more often viewed. http://papers.nips.cc/paper/6362-beyond-exchangeability-the-chinese-voting-process.pdf
+
+## Examples are not enough: learn to criticize
+http://people.csail.mit.edu/beenkim/papers/KIM2016NIPS_MMD.pdf
 
 # Other
 
