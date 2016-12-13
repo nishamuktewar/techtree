@@ -10,6 +10,7 @@
 
 - Interpretability (LIME, BRLs) and trust
 - Serverless products
+- Recommendation
 
 ## Maybe
 
@@ -19,7 +20,6 @@ Exciting but less sure about the report
 - FPGAs
 - Time series/forecasting --- Gaussian processes
 - One shot learning
-- Recommendation
 - Source/fact credibility ranking --- fact-checking plugin
 
 Not exciting to me but would probably be an OK report
