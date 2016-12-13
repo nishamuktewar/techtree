@@ -17,4 +17,4 @@ Please add to this list! Please research and write about things on this list!
  - t-SNE for CEOs
  - Visualizing decision trees (see this [cry for
    help](https://twitter.com/amuellerml/status/801146947713306629))
-- distance supervision (e.g. http://deepdive.stanford.edu/distant_supervision)
+ - distance supervision (e.g. http://deepdive.stanford.edu/distant_supervision)
