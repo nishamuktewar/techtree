@@ -10,11 +10,10 @@ Field" is relevant. It presents a number of approaches to approximate more
 complex posterior distributions than we cover in our report. Here is a summary
 of the proposed approaches:
 
-
-! [summary beyond the mean field assumption]
+! [Visual summary of work beyond the Mean Field]
 (https://github.com/fastforwardlabs/techtree/blob/master/friederike/VarInference-overview.png)
 
-And the most important references are here:
+### Important References
  - Gregor et al. 2016: DRAW - https://arxiv.org/abs/1502.04623
  - Rezende et al. 2015: Variational Inference with Normalizing Flows -
  http://jmlr.org/proceedings/papers/v37/rezende15.pdf
@@ -23,6 +22,30 @@ flows - https://arxiv.org/abs/1606.04934
  - Dinh et al. 2016: Density estimation using Real NVP - https://arxiv.org/abs/1605.08803
  - Ranganath et al. 2016: Hierarchical Variational Models - https://arxiv.org/abs/1511.02386
 
+### Books
+Book covering variational inference in depth for background reading and/or
+technical clients: https://people.eecs.berkeley.edu/~jordan/papers/variational-intro.pdf
+
+# Andrew Ng on Applied AI (excellent talk)
+Nuts and Bolts of Applying Deep Learning:
+https://www.youtube.com/watch?v=eyovmAtoUx0&feature=youtu.be starting at 9:10.
+He gives practical suggestions for how to best design and measure AI projects.
+Excellent (and featured in Dec 2016 client newsletter).
+
+# General Adversarial Networks (Ian Goodfellow)
+The slides for the tutorial are here
+(http://www.iangoodfellow.com/slides/2016-12-04-NIPS.pdf). There was also a
+workshop on Adversarial Training later in the week (see here for description
+including a list of references -
+https://sites.google.com/site/nips2016adversarial/) but I was at another
+workshop. My assessment is - GANs are super cool and will find applications in
+image to image translation, high resolution image generation, and next frame
+video prediction but currently, there is no good evaluation metric for the
+performance on GANs and the results are not production ready (please do look at
+the mutilated dog pictures later in the slides)
+
+! [Visual overview of GANs]
+(https://github.com/fastforwardlabs/techtree/blob/master/friederike/GANs.png)
 
 
 - Causal models and reasoning
