@@ -1,7 +1,8 @@
 Here are the things we didn't rule out on 2016-12-02.
 
-Please rank them wrt. [the criteria](../choosing_topics.md) and give your best
-guess of whether they are a ~4 or ~8 month report.
+Please sort these into YES, NO, and MAYBE by considering the extent to which they fulfil [the criteria](../choosing_topics.md).
+
+For the YES projects, please also give your best guess/preference for whether they are a ~4 or ~8 month report.
 
 - Causal models and reasoning
 - Differential privacy/overfitting and private data --- synthetic data
