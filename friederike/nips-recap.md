@@ -109,10 +109,10 @@ More references https://github.com/fastforwardlabs/techtree/blob/master/friederi
 Multi-agent coordination requires a model of the other. Papers on learning
 communication protocols from scratch.
 
- ## Compositionality & Deep Learning
- https://arxiv.org/pdf/1511.06279v3.pdf complex modular NN structure to learn at
- higher levels of abstraction to allow flexible behavior in (unfamiliar)
- environments with capability to learn compositional programs (cool).
+## Compositionality & Deep Learning
+https://arxiv.org/pdf/1511.06279v3.pdf complex modular NN structure to learn at
+higher levels of abstraction to allow flexible behavior in (unfamiliar)
+environments with capability to learn compositional programs (cool).
 
 # Relevant for short projects
 
@@ -174,7 +174,7 @@ oder discrimination in the fly and locality sensitive hashing. Beautiful work!
 See also: http://www.algorithmsinnature.org/
 ***good for blog post***
 
- ## Differentiable Neural Computers
+## Differentiable Neural Computers
  - http://www.nature.com/nature/journal/v538/n7626/full/nature20101.html
  - http://www.nature.com/nature/journal/v538/n7626/full/nature19477.html?cookies=accepted
  - https://arxiv.org/abs/1410.5401
@@ -191,7 +191,7 @@ economy" on people's lifes and their spontaneous reaction to it.
 ## Royal Society Machine Learning Working Group
  - https://royalsociety.org/about-us/committees/machine-learning-working-group/
  Have a paper coming out soon on society and ML. Interesting.
-***good for blog post (once working paper is out***
+***good for blog post (once working paper is out)***
 
 ## Z. Ghahramani - 7 Challenges AI/ML
 (1) interpretability
