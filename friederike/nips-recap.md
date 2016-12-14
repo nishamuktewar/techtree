@@ -201,6 +201,8 @@ of traditional jobs. Interesting case study on the impact of "the new job
 economy" on people's lifes and their spontaneous reaction to it. ***good for
 blog post***
 
+(Mike adds: http://wiki.wearedynamo.org/index.php/Guidelines_for_Academic_Requesters is an interesting attempt to unionize/organize turkers to advocate for better conditions)
+
 ## Royal Society Machine Learning Working Group
  - https://royalsociety.org/about-us/committees/machine-learning-working-group/
    Have a paper coming out soon on society and ML. Interesting. ***good for
