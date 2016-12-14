@@ -4,3 +4,5 @@ Over the last year there's been significant work in combining deep learning appr
 
 Paper links:
 
+https://github.com/amznlabs/amazon-dsstne
+https://aws.amazon.com/blogs/big-data/generating-recommendations-at-amazon-scale-with-apache-spark-and-amazon-dsstne/
