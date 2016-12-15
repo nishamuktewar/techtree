@@ -3,7 +3,7 @@ All posters with links to spotlight talks:
 https://nips.cc/Conferences/2016/Schedule?type=Poster
 
 Reddit link with compilation of various implementations
-of these papers. 
+of these papers.
 https://www.reddit.com/r/MachineLearning/comments/5hwqeb/project_all_code_implementations_for_nips_2016/
 
 # Relevant work for past reports
