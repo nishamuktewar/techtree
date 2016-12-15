@@ -59,6 +59,8 @@ video prediction but currently, there is no good evaluation metric for the
 performance on GANs and the results are not production ready (please do look at
 the mutilated dog pictures later in the slides)
 
+(See also http://www.inference.vc/my-summary-of-adversarial-training-nips-workshop/ --mike)
+
 ! [Visual overview of GANs]
 (https://github.com/fastforwardlabs/techtree/blob/master/friederike/GANs.png)
 
