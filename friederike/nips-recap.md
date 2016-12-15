@@ -124,6 +124,7 @@ ips2016pictures/IMG_1462.JPG
  - https://arxiv.org/abs/1602.02672
  - https://arxiv.org/abs/1605.06676 Multi-agent coordination requires a model
    of the other. Papers on learning communication protocols from scratch.
+ - http://learning.mpi-sws.org/mlss2016/slides/2016-MLSS-RL.pdf
 
 ## Compositionality & Deep Learning
 https://arxiv.org/pdf/1511.06279v3.pdf complex modular NN structure to learn at
