@@ -3,9 +3,13 @@
 8 months
 - Semi-supervised/adversarial learning --- embedding and autoencoders
 - Reinforcement learning
-- Conversational AI/bots w. a focus on either question answering (preferred) or
-text generation (+ UX/character development)
-- Automatic ML/parameter optimization
+- Conversational AI/bots w. a focus on:
+ - "classic" modular approach vs. end-to-end
+ - question answering
+ - text generation
+ - + UX/character development
+- transfer learning
+
 
 4 months
 - Dynamic vocabs in NLP (fasttext)
@@ -21,6 +25,8 @@ sourcing efforts)
 Slightly too early
 - One shot learning
 - Causal models and reasoning
+- Automatic ML/parameter optimization
+- ML for NN architecture optimization
 
 Too specific
 - Differential privacy/overfitting and private data --- synthetic data generation
