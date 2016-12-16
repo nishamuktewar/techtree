@@ -194,7 +194,8 @@ Beautiful work!
 also: http://www.algorithmsinnature.org/ ***good for blog post***
 
 ## Differentiable Neural Computers
- - http://www.nature.com/nature/journal/v538/n7626/full/nature20101.html
+ - http://www.nature.com/nature/journal/v538/n7626/full/nature20101.html (see
+ here for accessible full paper https://www.dropbox.com/s/0a40xi702grx3dq/2016-graves.pdf)
  - http://www.nature.com/nature/journal/v538/n7626/full/nature19477.html?cookie
    s=accepted
  - https://arxiv.org/abs/1410.5401
