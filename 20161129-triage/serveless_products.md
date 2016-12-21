@@ -35,11 +35,26 @@ being easier than traditional development
    deployment simpler than the manual process, which looks like this
    http://joelgrus.com/2015/12/30/polyglot-twitter-bot-part-3-python-27-aws-lambda/
 
-We should watch this 30 min PyCon 2016 talk:
-https://www.youtube.com/watch?v=EpCHD9AIHAM
-
 I think this is extremely cool stuff and I would love to do it FWIW.
 
 Possible prototypes:
  - serverless slack bot, perhaps ingesting lots of small pieces of data, e.g. tweets?
  - parameter optimization of sklearn models?
+
+## 2016-12-21 update
+
+[Zappa](https://tryolabs.com/blog/2016/12/20/top-10-python-libraries-of-2016/) (Chalice alternative) is one of this person's top 10 python libraries of 2016.
+
+## Talks
+
+We should watch this 30 min PyCon 2016 talk:
+https://www.youtube.com/watch?v=EpCHD9AIHAM [2016-12-21: I watched it. It wasn't very good! --Mike]
+
+Interactive intro to Chalice
+https://www.youtube.com/watch?v=gZK3u2q5K5E
+
+Deep Dive (45 mins)
+https://www.youtube.com/watch?v=fXZzVzptkeo
+
+Bots and serverless
+https://www.youtube.com/watch?v=rvi2Jm4eQdM
