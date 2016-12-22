@@ -19,3 +19,4 @@ Please add to this list! Please research and write about things on this list!
    help](https://twitter.com/amuellerml/status/801146947713306629))
  - distance supervision (e.g. http://deepdive.stanford.edu/distant_supervision)
  - (randomized) weighted majority algorithms
+ - GloVe http://nlp.stanford.edu/projects/glove/ and http://nlp.stanford.edu/pubs/glove.pdf
