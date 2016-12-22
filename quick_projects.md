@@ -32,7 +32,7 @@ Please add to this list! Please research and write about things on this list!
    problem)
  - Sparse pointer models
  - GloVe [site](http://nlp.stanford.edu/projects/glove/),
-   [http://nlp.stanford.edu/pubs/glove.pdf](paper)
+   [paper](http://nlp.stanford.edu/pubs/glove.pdf)
  - Recommendation and personalization --- what's new?
    [e.g.](https://aws.amazon.com/blogs/big-data/generating-recommendations-at-amazon-scale-with-apache-spark-and-amazon-dsstne/)
  - ML for authentication [notes](/20161129-triage/authentication_with_ml.md)
@@ -66,8 +66,7 @@ Please add to this list! Please research and write about things on this list!
  - Containers: Docker, rkt, kubernetes, etc.
  - Streaming projects (see
    [Insight](http://xyz.insightdataengineering.com/blog/pipeline_map.html) and
-   [https://databaseline.wordpress.com/2016/03/12/an-overview-of-apache-streaming-technologies/](Apache
-   overview))
+   [Apache overview](https://databaseline.wordpress.com/2016/03/12/an-overview-of-apache-streaming-technologies/)
  - Time series databases: influxdb, kdb+, iobeam, arctic, kerf, kairosdb,
    opentsdb, etc.)
  - Serverless, Lambda vs. AppEngine for data products and map reduce
