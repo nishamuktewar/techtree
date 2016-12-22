@@ -14,9 +14,58 @@ criteria below:
 
 Please add to this list! Please research and write about things on this list!
 
+## Big topics and the future
+
+ - FPGAs
+ - Automatic theorem proving
+ - Neuromorphic computing
+ - Causal reasoning
+ - Learning to learn
+
+## Reporting on research, new machine intelligence products or our quick proofs of concept
+
+ - distant supervision (e.g. http://deepdive.stanford.edu/distant_supervision)
+ - New database paradigms, e.g. SIEUFERD, BayesDB
+ - Speech recognition/generation/from video
+ - Gaussian processes (subset of bigger time series forecasting problem)
+ - Change point detection (subset/special case of bigger anomaly detection
+   problem)
+ - Sparse pointer models
+ - GloVe [site](http://nlp.stanford.edu/projects/glove/),
+   [http://nlp.stanford.edu/pubs/glove.pdf](paper)
+ - Recommendation and personalization --- what's new?
+   [e.g.](https://aws.amazon.com/blogs/big-data/generating-recommendations-at-amazon-scale-with-apache-spark-and-amazon-dsstne/)
+ - ML for authentication [notes](/20161129-triage/authentication_with_ml.md)
+ - Automatic portfolio management
+ - Stylometry
+ - Transfer learning
+ - Differential privacy
+ - Autoforge: forge someone's voice using small example
+ - Synthetic data generation
+ - Fact checking
+
+## Data science/ML best practices and fundamentals
+
+ - Property-based testing (Hypothesis, Quickcheck, etc.)
+ - Tools for data cleaning and working with missing/corrupted data --- what's
+   new?
+ - Data provenance and reproducibility
+ - Survival analysis
+ - (randomized) weighted majority algorithms
+
+## Visualization
+
  - t-SNE for CEOs
  - Visualizing decision trees (see this [cry for
    help](https://twitter.com/amuellerml/status/801146947713306629))
- - distance supervision (e.g. http://deepdive.stanford.edu/distant_supervision)
- - (randomized) weighted majority algorithms
- - GloVe http://nlp.stanford.edu/projects/glove/ and http://nlp.stanford.edu/pubs/glove.pdf
+
+## Ecosystems, infrastructure
+
+ - Deep learning: Keras, tensorflow, MXnet/AWS etc.
+ - Containers: Docker, rkt, kubernetes, etc.
+ - Streaming projects
+   [e.g.](http://xyz.insightdataengineering.com/blog/pipeline_map.html)
+ - Time series databases: influxdb, kdb+, iobeam, arctic, kerf, kairosdb,
+   opentsdb, etc.)
+ - Serverless, Lambda vs. AppEngine for data products and map reduce
+   [notes](/20161129-triage/serveless_products.md)
