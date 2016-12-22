@@ -59,12 +59,15 @@ Please add to this list! Please research and write about things on this list!
  - Visualizing decision trees (see this [cry for
    help](https://twitter.com/amuellerml/status/801146947713306629))
 
-## Ecosystems, infrastructure
+## Ecosystems, infrastructure, tools
 
  - Deep learning: Keras, tensorflow, MXnet/AWS etc.
+ - OpenAI Gym and Universe
  - Containers: Docker, rkt, kubernetes, etc.
- - Streaming projects
-   [e.g.](http://xyz.insightdataengineering.com/blog/pipeline_map.html)
+ - Streaming projects (see
+   [Insight](http://xyz.insightdataengineering.com/blog/pipeline_map.html) and
+   [https://databaseline.wordpress.com/2016/03/12/an-overview-of-apache-streaming-technologies/](Apache
+   overview))
  - Time series databases: influxdb, kdb+, iobeam, arctic, kerf, kairosdb,
    opentsdb, etc.)
  - Serverless, Lambda vs. AppEngine for data products and map reduce
