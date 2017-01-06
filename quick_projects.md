@@ -21,6 +21,8 @@ Please add to this list! Please research and write about things on this list!
  - Neuromorphic computing
  - Causal reasoning
  - Learning to learn
+ - "Augmented" Neural Networks especially with long-term memory [site](https://deepmind.com/blog/differentiable-neural-computers/)
+ (differentiable neural computers) [paper](http://www.nature.com/nature/journal/v538/n7626/full/nature20101.html)
 
 ## Reporting on research, new machine intelligence products or our quick proofs of concept
 
