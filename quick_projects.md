@@ -26,7 +26,7 @@ Please add to this list! Please research and write about things on this list!
 
 ## Reporting on research, new machine intelligence products or our quick proofs of concept
 
- - distant supervision (e.g. http://deepdive.stanford.edu/distant_supervision)
+ - distant supervision (e.g. http://deepdive.stanford.edu/distant_supervision) [paper](https://web.stanford.edu/~jurafsky/mintz.pdf)
  - New database paradigms, e.g. SIEUFERD, BayesDB
  - Speech recognition/generation/from video
  - Gaussian processes (subset of bigger time series forecasting problem)
