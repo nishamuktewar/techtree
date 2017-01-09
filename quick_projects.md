@@ -45,6 +45,7 @@ Please add to this list! Please research and write about things on this list!
  - Autoforge: forge someone's voice using small example
  - Synthetic data generation
  - Fact checking
+ - Review new SpaCy trained language models
 
 ## Data science/ML best practices and fundamentals
 
