@@ -58,7 +58,6 @@ Please add to this list! Please research and write about things on this list!
 
 ## Visualization
 
- - t-SNE for CEOs
  - Visualizing decision trees (see this [cry for
    help](https://twitter.com/amuellerml/status/801146947713306629))
 
