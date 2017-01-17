@@ -68,8 +68,8 @@ Please add to this list! Please research and write about things on this list!
  - Containers: Docker, rkt, kubernetes, etc.
  - Streaming projects (see
    [Insight](http://xyz.insightdataengineering.com/blog/pipeline_map.html) and
-   [Apache overview](https://databaseline.wordpress.com/2016/03/12/an-overview-of-apache-streaming-technologies/)
- - Time series databases: influxdb, kdb+, iobeam, arctic, kerf, kairosdb,
+   [Apache overview](https://databaseline.wordpress.com/2016/03/12/an-overview-of-apache-streaming-technologies/))
+ - Time series databases: (influxdb, kdb+, iobeam, arctic, kerf, kairosdb,
    opentsdb, etc.)
  - Serverless, Lambda vs. AppEngine for data products and map reduce
    [notes](/20161129-triage/serveless_products.md)
