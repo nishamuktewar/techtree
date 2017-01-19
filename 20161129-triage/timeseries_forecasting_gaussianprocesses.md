@@ -39,3 +39,7 @@ extremely technical though, and I was not able to critically assess it.
 
 Some of our clients would find it interesting/relevant (Point 72, Celmatix?),
 but the applications might not be obvious to others.
+
+## Note added 2017-01-19
+
+[GPs in (R)Stan tutorial from NIPS 2016](https://github.com/rtrangucci/gps_in_stan/)
