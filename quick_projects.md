@@ -63,7 +63,7 @@ Please add to this list! Please research and write about things on this list!
 
 ## Ecosystems, infrastructure, tools
 
- - Deep learning: Keras, tensorflow, MXnet/AWS etc.
+ - Deep learning: Keras, tensorflow, MXnet/AWS etc. [tweet](https://twitter.com/fchollet/status/765212287531495424)
  - OpenAI Gym and Universe
  - Containers: Docker, rkt, kubernetes, etc.
  - Streaming projects (see
