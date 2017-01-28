@@ -27,3 +27,6 @@ Products:
 - Full Fact
 
 http://www.poynter.org/2016/report-automated-fact-checking-is-coming-and-soon/426370/
+
+Tangentially related paper added mike 2017-01-27
+https://arxiv.org/abs/1701.03017
