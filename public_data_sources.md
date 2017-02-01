@@ -1,6 +1,7 @@
 #Public Data Sources 
 
-## Mike's links
+  * [Big high-quality sorted list of data from academia, web, etc.](https://github.com/caesar0301/awesome-public-datasets)
+  * [Stylometry](http://www.clips.uantwerpen.be/datasets/csi-corpus)
   * [Stanford QA](https://stanford-qa.com/)
     * `/dataset_archive/stanford-qa`
   * [Guess What (computer vision + dialog systems)](https://arxiv.org/abs/1611.08481)
