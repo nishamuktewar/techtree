@@ -30,3 +30,6 @@ http://www.poynter.org/2016/report-automated-fact-checking-is-coming-and-soon/42
 
 Tangentially related paper added mike 2017-01-27
 https://arxiv.org/abs/1701.03017
+
+Kaggle-like competition added mike 2017-02-01
+https://medium.com/@deanpomerleau_24908/time-to-challenge-fake-news-with-ai-7036a1f22c0d#.wb08p0kst
