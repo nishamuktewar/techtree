@@ -2,6 +2,8 @@
 
   * [Big high-quality sorted list of data from academia, web, etc.](https://github.com/caesar0301/awesome-public-datasets)
   * [Stylometry](http://www.clips.uantwerpen.be/datasets/csi-corpus)
+  * [Headline/Body Consistency for Fake News](https://github.com/FakeNewsChallenge/fnc-1)
+    * `/dataset_archive/fakenews`
   * [Stanford QA](https://stanford-qa.com/)
     * `/dataset_archive/stanford-qa`
   * [Guess What (computer vision + dialog systems)](https://arxiv.org/abs/1611.08481)
