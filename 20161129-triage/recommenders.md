@@ -5,4 +5,7 @@ Over the last year there's been significant work in combining deep learning appr
 Paper links:
 
 https://github.com/amznlabs/amazon-dsstne
+
 https://aws.amazon.com/blogs/big-data/generating-recommendations-at-amazon-scale-with-apache-spark-and-amazon-dsstne/
+
+Link added mike 2017-02-02 http://blog.getstream.io/factorization-machines-recommendation-systems/
