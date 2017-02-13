@@ -1,6 +1,14 @@
 #Public Data Sources 
 
+## A List of Lists
+
   * [Big high-quality sorted list of data from academia, web, etc.](https://github.com/caesar0301/awesome-public-datasets)
+  * [Canonical benchmark/research/industrial datasets with remarks on quality](https://medium.com/startup-grind/fueling-the-ai-gold-rush-7ae438505bc2#.5msid0z1d)
+
+## Recent (2016/7) finds
+
+  * [Stack Overflow question metadata](https://www.kaggle.com/stackoverflow/stacklite) (tags, etc. No question text. See also [this example analysis](http://stackoverflow.blog/2017/02/What-Programming-Languages-Weekends/))
+  * [Wikipedia harrasment](https://figshare.com/projects/Wikipedia_Talk/16731) (see also [blog post](https://medium.com/jigsaw/algorithms-and-insults-scaling-up-our-understanding-of-harassment-on-wikipedia-6cc417b9f7ff#.npcdu91rt)
   * [Stylometry](http://www.clips.uantwerpen.be/datasets/csi-corpus)
   * [Headline/Body Consistency for Fake News](https://github.com/FakeNewsChallenge/fnc-1)
     * `/dataset_archive/fakenews`
