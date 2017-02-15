@@ -46,6 +46,7 @@ Please add to this list! Please research and write about things on this list!
  - Synthetic data generation
  - Fact checking
  - Review new SpaCy trained language models
+ - Convex optimization, e.g. [cvxpy](http://www.cvxpy.org/en/latest/)
 
 ## Data science/ML best practices and fundamentals
 
