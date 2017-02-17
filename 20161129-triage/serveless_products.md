@@ -45,6 +45,10 @@ Possible prototypes:
 
 [Zappa](https://tryolabs.com/blog/2016/12/20/top-10-python-libraries-of-2016/) (Chalice alternative) is one of this person's top 10 python libraries of 2016.
 
+## 2017-02-17 update
+
+[s3-lambda](https://github.com/littlstar/s3-lambda) is a node/js mapreduce implementation using lamdas as the mappers and reducers and s3 as storage
+
 ## Talks
 
 We should watch this 30 min PyCon 2016 talk:
