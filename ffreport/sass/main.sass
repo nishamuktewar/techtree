@@ -1,0 +1,384 @@
+@import compass/css3/transform
+@import compass/css3/user-interface
+
+*
+  box-sizing: border-box
+
+$accent-light-hover: #5bde93
+$accent-light: #a0f5bf
+$accent-lighter: #00c370
+$accent: #00c370
+$accent-text: #00c370
+$accent-big-text: #00c370
+
+html
+  font-size: 18px
+  line-height: 1.5
+  @media(min-width: 416px)
+    html
+      font-size: 20px
+  @media(min-width: 648px)
+    html
+      font-size: 20px
+
+body
+  font-family: "ff-tisa-web-pro", serif
+  color: #222
+
+#toc
+  display: none
+
+$sidebar-width: 16rem
+
+@media(min-width: 820px)
+  body
+    padding-left: $sidebar-width
+  #toc
+    display: block
+
+body.large-hide-sidebar
+  padding-left: 0
+  #app-header
+    padding-left: 0
+  #toc
+    display: none
+
+body.small-show-sidebar
+  overflow: hidden
+  #toc
+    display: block
+    width: 100%
+    height: 100vh
+    overflow-y: auto
+    z-index: 8
+
+#toctitle
+  display: none
+
+#toc .download_box
+  background: #fafafa
+  width: 100%
+  a
+    color: $accent
+    font-weight: 700
+    display: inline
+    padding: 0
+
+@media(min-width: 820px)
+  #toc .download_box
+    width: $sidebar-width
+
+#toc
+  background: #fafafa
+  font-family: "ff-chambers-sans-web", sans-serif
+  width: $sidebar-width
+  position: fixed
+  left: 0
+  top: 0
+  height: 100vh
+  border-right: solid 1px #efefef
+  padding-top: 2rem
+  padding-bottom: 1rem
+  overflow-y: auto
+  font-size: 0.75rem
+  line-height: 1.25
+  font-feature-settings: 'tnum'
+  a
+    color: #444
+    padding-top: 0.25rem
+    padding-bottom: 0.2rem
+    padding-left: 1rem
+    padding-right: 1rem
+    display: block
+  a.active
+    // background: #eff0fd
+    position: relative
+    cursor: default
+    color: $accent-text
+    // .toc-text
+    //   background: $accent-light
+    //   box-shadow: -3px -3px 0 $accent-light, 3px 2px 0 $accent-light, 3px -3px 0 $accent-light, -3px 2px 0 $accent-light
+    &:hover
+      text-decoration: none
+    // &:after
+    //   content: ""
+    //   background: $accent
+    //   width: 0.4rem
+    //   height: 100%
+    //   position: absolute
+    //   left: 0
+    //   top: 0
+    // &:hover
+    //   text-decoration: none
+  .toclevel1
+    font-weight: 900
+    margin-top: 1em
+    font-size: 0.75rem
+    color: #666
+  .toclevel3
+    a
+      padding-left: 1.5rem
+  .toc-num
+    // display: block
+    // font-size: 0.75rem
+    font-weight: 700
+    // display: none
+    font-feature-settings: 'c2sc'
+    // &:before
+      // content: 'CHAPTER '
+
+#header, #content, .middler
+  max-width: 36rem
+  padding: 0 1rem
+  margin: 0 auto 2rem
+
+#content
+  a
+    color: $accent
+    &:hover
+      text-decoration: none
+  p a
+    color: #222
+    background-image: linear-gradient(transparent 50%, $accent-light 50%)
+    background-size: 4px 16px
+    background-position: 0 0.775rem
+    padding-bottom: 0.2rem
+    background-repeat: repeat-x
+    &:hover
+      background-image: linear-gradient(transparent 50%, $accent-light-hover 50%)
+  p .footnote > a
+    background-image: none
+    // background: $accent-light
+    color: $accent
+    padding: 0
+    vertical-align: super
+    height: 1.5rem
+    line-height: 1rem
+    display: inline-block
+    font-size: 0.8rem
+    padding: 0 0.1rem
+    &:hover
+      background: $accent
+      color: #fff
+  p .footnote.active > a
+    background: #ddd
+    color: #222
+    padding: 0 0.1rem
+    &:hover
+      background: #ccc
+  .footnote a
+    word-break: break-all
+  .footnote-text
+    background: #efefef
+    display: none
+    font-family: "ff-chambers-sans-web"
+    padding: 0.5rem 0.2rem 0.2rem
+    font-size: 0.8em
+    top: -0.05rem
+    position: relative
+    a
+      background-size: 4px 10px
+      background-position: 0 0.4rem
+  .footnote.active .footnote-text
+    display: inline
+  li > p
+    margin-bottom: 0
+  .sect-num
+    font-feature-settings: "c2sc"
+    font-weight: 700
+  h2
+    background: $accent
+    position: relative
+    margin-top: 3rem
+    .sect-num
+      // display: inline
+      display: block
+      color: #222
+      font-size: 0.75rem
+      font-weight: 900
+      &:before
+        content: 'CHAPTER '
+    a
+      display: block
+      padding: 6rem 1rem 1rem
+      color: #fff
+      -webkit-font-smoothing: antialiased
+
+.fig-link
+  font-feature-settings: "c2sc"
+
+.fig-num
+  font-feature-settings: "c2sc"
+
+h1, h2, h3, h4, h5
+  font-family: "ff-chambers-sans-web", sans-serif
+  font-weight: 900
+
+.title
+  font-weight: 700
+  font-style: italic
+  color: $accent
+  margin-top: 1rem
+  margin-bottom: 1.5rem
+  .fig-num
+    font-feature-settings: "c2sc"
+    font-style: normal
+
+h4
+  font-size: 1.05rem
+
+.sect-num
+  display: inline
+  &:after
+    content: ' '
+
+pre
+  background: #efefef
+  margin-top: 1rem
+  padding: 1rem
+  font-size: 0.875rem
+
+.monospaced
+  font-family: 'Source Code Pro',Consolas,monospace
+  background: #efefef
+  padding: 0 0.3em
+  color: #444
+
+.p2
+  padding: 0
+
+$header_height: 2rem
+#app-header
+  font-family: "ff-chambers-sans-web", sans-serif
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background: #fff
+  z-index: 999
+  border-bottom: solid 1px #ddd
+  height: $header_height
+  line-height: $header_height
+  font-size: 14px
+  color: $accent-text
+  padding-left: 1.5rem
+  .toc-toggle
+    width: $header_height
+    display: block
+    text-align: center
+    font-size: 14px
+    color: #111
+    padding-top: 0.08rem
+    height: $header_height
+    .fa-times
+      display: none
+    &:hover
+      background: #efefef
+      cursor: pointer
+  img
+    width: 1rem
+    height: 1rem
+    margin-top: ($header-height - 1rem)/2
+  #header-section
+    color: $accent-text
+    font-weight: 700
+    font-style: italic
+    line-height: $header_height
+    &.sectioned
+      font-weight: 900
+      font-style: normal
+      // text-transform: uppercase
+      // letter-spacing: 0.075em
+      // font-feature-settings: "c2sc"
+      font-size: 0.65rem
+      .sect-num
+        &:after
+          content: ' '
+
+@media(min-width: 820px)
+  #app-header
+    padding-left: $sidebar-width
+
+#header
+  padding-top: 2rem
+
+.imageblock .content
+  max-width: 26rem
+  margin: 0 auto
+
+.imageblock.left, .imageblock.right
+  float: none
+  .content
+    max-width: 17rem
+    margin: 0 auto
+
+.imageblock.full
+  .content
+    max-width: 100%
+
+@media(min-width: 1120px)
+  .imageblock.left, .imageblock.right
+    max-width: 17rem
+    margin-top: 0.5rem
+    margin-left: 0
+    margin-right: 0
+    // .title
+      // margin-bottom: 1rem
+  .imageblock.left
+    float: left
+    margin-left: -3rem
+    margin-right: 2rem
+  .imageblock.right
+    float: right
+    margin-right: -3rem
+    margin-left: 2rem
+
+
+.sidebarblock
+  background: #fafafa
+  padding: 1px 1.5rem 0.5rem
+  margin-top: 1rem
+  .title
+    font-style: normal
+    font-size: 1rem
+    color: #111
+    padding-bottom: 0
+    margin-bottom: 1rem
+  .imageblock .title
+    font-size: 0.85rem
+    line-height: 1.4em
+    font-style: italic
+    margin-top: 0.5rem
+    margin-bottom: 1.5rem
+    color: $accent
+
+.listingblock .title
+  font-weight: 700
+  font-style: italic
+  color: $accent
+  margin-top: 1rem
+  margin-bottom: 1rem
+  font-family: "ff-chambers-sans-web"
+
+.sidebarblock.scifi
+  border: solid 2px #ddd
+  background: transparent
+  padding-top: 1rem
+  font-family: "ff-chambers-sans-web"
+
+.sidebarblock.scifi .imageblock .content
+  max-width: 100%
+
+#footnotes, #footer
+  display: none
+
+h1
+  margin-top: 4rem
+  margin-bottom: 2rem
+
+.cover_image
+  line-height: 0
+  margin-bottom: 6rem
+
+.mb05
+  margin-bottom: 0.25rem

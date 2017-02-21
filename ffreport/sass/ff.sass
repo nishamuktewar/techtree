@@ -1,0 +1,410 @@
+$blue: #0076BD
+$blue-sat: #0076BD
+
+@import compass/css3/transform
+@import compass/css3/user-interface
+
+@mixin coverer
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+@mixin centerer
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+@mixin centerer-h
+  position: absolute
+  left: 50%
+  transform: translate(-50%, 0)
+
+@mixin breakpoint($point)
+  @if $point == mid
+    @media (max-width: 60rem)
+      @content
+  @else if $point == mobile
+    @media (max-width: 40rem)
+      @content
+
+body
+  font-family: "ff-tisa-web-pro", serif
+  padding-left: 18rem
+
+body.collapsed
+  padding-left: 0
+  #toc
+    display: none
+body
+  +breakpoint(mid)
+    overflow-x: hidden
+    padding-left: 0
+    #toc
+      display: none
+    &.mobile_expanded
+      #toc
+        display: block
+  +breakpoint(mobile)
+    &.mobile_expanded
+      overflow-y: hidden
+      #toc
+        +coverer
+        position: fixed
+
+
+#header, #content
+  max-width: 40rem
+  padding: 0 1rem
+  margin: 0 auto
+
+#toctitle
+  text-transform: uppercase
+
+#toc_toggle
+  position: fixed
+  width: 32px
+  height: 32px
+  line-height: 29px
+  top: 9px
+  left: 240px
+  text-align: center
+  color: #333
+  cursor: pointer
+  background: #fff
+  font-size: 14px
+  background: #fff
+  z-index: 99
+  @include user-select(none)
+  .toc_collapsed, .toc_expanded
+    @include coverer
+    &:hover
+      color: #000
+      background: #efefef
+  .toc_collapsed
+    display: none
+  &.collapsed
+    left: 0
+    top: 7px
+    height: 36px
+    width: 34px
+    line-height: 34px
+    border: solid 2px #ddd
+    border-left: none
+    .toc_collapsed
+      display: block
+    .toc_expanded
+      display: none
+
+#toc_toggle, #toc_toggle.collapsed
+  @include breakpoint(mid)
+    left: 0
+    height: 36px
+    width: 34px
+    top: 0
+    left: 0
+    line-height: 34px
+    border: solid 2px #ddd
+    border-top: none
+    border-left: none
+    .toc_collapsed
+      display: block
+    .toc_expanded
+      display: none
+    &.mobile_expanded
+      height: 32px
+      width: 32px
+      left: 240px
+      border: none
+      line-height: 29px
+      top: 9px
+      .toc_collapsed
+        display: none
+      .toc_expanded
+        display: block
+  @include breakpoint(mobile)
+    &.mobile_expanded
+      left: auto
+      right: 14px
+      border-left: solid 2px #ddd
+      border-bottom: solid 2px #ddd
+
+h1,h2,h3,h4,h5
+  font-family: "ff-chambers-sans-web", sans-serif
+
+h1
+  margin-top: 7rem
+
+h2
+  margin-top: 0
+  padding-top: 3rem
+  border-top: solid 2px #ddd
+  font-size: 1.5rem
+h3
+  font-size: 1.4rem
+h4
+  font-size: 1.3rem
+h5
+  font-size: 1.3rem
+  font-style: italic
+
+#content
+  font-size: 1.2rem
+  line-height: 1.5
+  word-break: break-word
+  p
+    line-height: 1.6
+    margin-bottom: 1.2rem
+
+#content a
+  color: $blue-sat
+  text-decoration: underline
+
+h3
+  color: $blue-sat
+
+#toc
+  position: fixed
+  left: 0
+  top: 0
+  width: 18rem
+  background: #fff
+  line-height: 1.2
+  font-family: "ff-chambers-sans-web", sans-serif
+  padding: 1rem
+  border-right: solid 1px rgba(0,0,0,.125)
+  overflow-y: auto
+  z-index: 99
+  height: 100%
+  padding-bottom: 164px
+  a.active
+    &:before
+      content: ""
+      position: absolute
+      width: 0.4rem
+      height: 100%
+      background: #b47ae6
+      left: -1rem
+.toclevel1, .toclevel2, .toclevel3
+  margin-bottom: 0.3rem
+  position: relative
+.toclevel1
+  margin-top: 1rem
+  a
+    font-weight: 700
+    color: #000
+.toclevel2
+  font-size: 0.9rem
+  a
+    font-weight: 700
+    color: $blue-sat
+.toclevel3
+  font-size: 0.85rem
+  &:before
+    content: "- "
+  a
+    color: #000
+
+.title
+  color: $blue-sat
+  font-size: 1rem
+  line-height: 1.3
+  margin-bottom: 1rem
+  margin-top: 0.5rem
+
+.left
+  float: left
+  margin-right: 1rem
+.right
+  float: right
+  margin-left: 1rem
+
+.imageblock
+  width: 100%
+  .content
+    max-width: 32rem
+    margin-left: auto
+    margin-right: auto
+.imageblock.left, .imageblock.right
+  margin-top: 1rem
+  margin-bottom: 1rem
+  width: 50%
+.imageblock
+  +breakpoint(mobile)
+    &.right, &.left
+      float: none
+      width: 100%
+      margin: 0 auto
+
+.sidebarblock
+  background: #fafafa
+  padding: 1rem 1.5rem 0.5rem
+  margin-bottom: 1rem
+  .title
+    font-size: 1.2rem
+  .imageblock
+    .title
+      font-size: 1rem
+
+#footnotes, #footer-text
+  display: none
+
+.latex
+  margin-bottom: 1em
+
+.ulist
+  li p
+    margin-bottom: 0.25rem
+
+.sect1
+  padding-bottom: 2rem
+
+pre
+  font-style: normal
+  font-family: monospace
+  font-size: 1.1rem
+  line-height: 1.2
+  padding: 1rem
+  background: #efefef
+  word-break: normal
+  white-space: pre
+  overflow-x: auto
+  width: 100%
+  color: #333
+  box-sizing: border-box
+table
+  width: 100%
+  font-family: "ff-chambers-sans-web", sans-serif
+  font-size: 14px
+  line-height: 14px
+  margin-bottom: 1rem
+  td, th
+    border: solid 1px #ccc
+    padding: 8px 8px 6px
+    p
+      margin-bottom: 0
+  th
+    background: #eee
+    font-weight: 700
+    font-style: italic
+  tbody tr:nth-child(odd)
+    background-color: #fafafa
+
+.footnote
+  a
+    font-size: 0.85rem
+    font-weight: 700
+    cursor: default
+    position: relative
+    top: -4px
+    margin-left: 0
+    font-family: "ff-chambers-sans-web", sans-serif
+
+#footnote_pop
+  position: absolute
+  font-family: "ff-chambers-sans-web", sans-serif
+  background: #fff
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3)
+  padding: 10px 12px
+  font-size: 0.9rem
+  line-height: 1.5
+  display: none
+  width: 500px
+  z-index: 99
+  border-radius: 4px
+  border: solid 1px #efefef
+  overflow: hidden
+  .pointer
+    position: absolute
+    width: 40px
+    top: -40px
+    height: 40px
+    overflow: hidden
+    .visible_pointer
+      width: 20px
+      height: 20px
+      position: absolute
+      left: 10px
+      top: 37px
+      background: white
+      border: solid 1px #ccc
+      @include transform(rotate(45deg))
+      @include transform-origin(center)
+  &.active
+    display: block
+
+.download_box
+  width: 18rem
+  left: 0
+  bottom: 0
+  +breakpoint(mobile)
+    width: 100%
+  .prototype_holder
+    border-bottom: solid 1px rgba(0,0,0,0.125)
+    a
+      padding: 0.55rem 1rem 0.4rem
+      .fa
+        margin-left: 4px
+  .download_title
+    font-size: 0.85rem
+    font-weight: 700
+    text-transform: uppercase
+    padding: 1rem 1rem 0.2rem
+  a
+    color: $blue-sat
+    display: block
+    font-weight: 700
+    font-size: 0.7rem
+    line-height: 1.5
+    padding: 0 1rem
+
+h5, #preamble p
+  font-family: "ff-chambers-sans-web", sans-serif
+  font-style: italic
+  font-size: 16px
+  line-height: 24px
+  color: $blue
+  padding-bottom: 6px
+  font-weight: 700
+#preamble
+  .exampleblock
+    position: absolute
+    top: 3rem
+    left: 0
+    width: 100%
+    padding-left: 18rem
+    box-sizing: border-box
+    +breakpoint(mid)
+      padding-left: 0
+    .content
+      padding: 0 1rem
+      max-width: 40rem
+      margin: 0 auto
+      position: relative
+      .content
+        padding: 0
+        margin: 0
+    p
+      margin-top: 0
+      font-size: 1.2rem
+      line-height: 2.2
+    .logo
+      position: absolute
+      right: 1rem
+      top: 0
+      height: 2.5rem
+      width: 2.5rem
+  p
+    margin-bottom: 0
+    margin-top: 1rem
+    padding-bottom: 0
+  .cover_image
+    margin-top: 2rem
+    .content
+      max-width: 100%
+    img
+      max-width: 100%
+      width: 100%
+      margin-bottom: 1rem

@@ -1,0 +1,5 @@
+autocmd FileType asciidoc :set tw=80
+autocmd FileType asciidoc :set spell
+autocmd FileType asciidoc :set noautoindent
+autocmd FileType asciidoc :set nosmartindent
+autocmd FileType asciidoc :set nocindent

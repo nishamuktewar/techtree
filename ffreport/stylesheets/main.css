@@ -1,0 +1,513 @@
+/* line 4, ../sass/main.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 14, ../sass/main.sass */
+html {
+  font-size: 18px;
+  line-height: 1.5;
+  @media(min-width: 416px) {
+    /* line 18, ../sass/main.sass */
+    html {
+      font-size: 20px;
+    }
+}
+
+  @media(min-width: 648px) {
+    /* line 21, ../sass/main.sass */
+    html {
+      font-size: 20px;
+    }
+}
+
+}
+
+/* line 24, ../sass/main.sass */
+body {
+  font-family: "ff-tisa-web-pro", serif;
+  color: #222222;
+}
+
+/* line 28, ../sass/main.sass */
+#toc {
+  display: none;
+}
+
+@media(min-width: 820px) {
+  /* line 34, ../sass/main.sass */
+  body {
+    padding-left: 16rem;
+  }
+
+  /* line 36, ../sass/main.sass */
+  #toc {
+    display: block;
+  }
+}
+
+/* line 39, ../sass/main.sass */
+body.large-hide-sidebar {
+  padding-left: 0;
+}
+/* line 41, ../sass/main.sass */
+body.large-hide-sidebar #app-header {
+  padding-left: 0;
+}
+/* line 43, ../sass/main.sass */
+body.large-hide-sidebar #toc {
+  display: none;
+}
+
+/* line 46, ../sass/main.sass */
+body.small-show-sidebar {
+  overflow: hidden;
+}
+/* line 48, ../sass/main.sass */
+body.small-show-sidebar #toc {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 8;
+}
+
+/* line 55, ../sass/main.sass */
+#toctitle {
+  display: none;
+}
+
+/* line 58, ../sass/main.sass */
+#toc .download_box {
+  background: #fafafa;
+  width: 100%;
+}
+/* line 61, ../sass/main.sass */
+#toc .download_box a {
+  color: #00c370;
+  font-weight: 700;
+  display: inline;
+  padding: 0;
+}
+
+@media(min-width: 820px) {
+  /* line 68, ../sass/main.sass */
+  #toc .download_box {
+    width: 16rem;
+  }
+}
+
+/* line 71, ../sass/main.sass */
+#toc {
+  background: #fafafa;
+  font-family: "ff-chambers-sans-web", sans-serif;
+  width: 16rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  border-right: solid 1px #efefef;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  overflow-y: auto;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  font-feature-settings: "tnum";
+}
+/* line 86, ../sass/main.sass */
+#toc a {
+  color: #444444;
+  padding-top: 0.25rem;
+  padding-bottom: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: block;
+}
+/* line 93, ../sass/main.sass */
+#toc a.active {
+  position: relative;
+  cursor: default;
+  color: #00c370;
+}
+/* line 101, ../sass/main.sass */
+#toc a.active:hover {
+  text-decoration: none;
+}
+/* line 113, ../sass/main.sass */
+#toc .toclevel1 {
+  font-weight: 900;
+  margin-top: 1em;
+  font-size: 0.75rem;
+  color: #666666;
+}
+/* line 119, ../sass/main.sass */
+#toc .toclevel3 a {
+  padding-left: 1.5rem;
+}
+/* line 121, ../sass/main.sass */
+#toc .toc-num {
+  font-weight: 700;
+  font-feature-settings: "c2sc";
+}
+
+/* line 130, ../sass/main.sass */
+#header, #content, .middler {
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: 0 auto 2rem;
+}
+
+/* line 136, ../sass/main.sass */
+#content a {
+  color: #00c370;
+}
+/* line 138, ../sass/main.sass */
+#content a:hover {
+  text-decoration: none;
+}
+/* line 140, ../sass/main.sass */
+#content p a {
+  color: #222222;
+  background-image: linear-gradient(transparent 50%, #a0f5bf 50%);
+  background-size: 4px 16px;
+  background-position: 0 0.775rem;
+  padding-bottom: 0.2rem;
+  background-repeat: repeat-x;
+}
+/* line 147, ../sass/main.sass */
+#content p a:hover {
+  background-image: linear-gradient(transparent 50%, #5bde93 50%);
+}
+/* line 149, ../sass/main.sass */
+#content p .footnote > a {
+  background-image: none;
+  color: #00c370;
+  padding: 0;
+  vertical-align: super;
+  height: 1.5rem;
+  line-height: 1rem;
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0 0.1rem;
+}
+/* line 160, ../sass/main.sass */
+#content p .footnote > a:hover {
+  background: #00c370;
+  color: white;
+}
+/* line 163, ../sass/main.sass */
+#content p .footnote.active > a {
+  background: #dddddd;
+  color: #222222;
+  padding: 0 0.1rem;
+}
+/* line 167, ../sass/main.sass */
+#content p .footnote.active > a:hover {
+  background: #cccccc;
+}
+/* line 169, ../sass/main.sass */
+#content .footnote a {
+  word-break: break-all;
+}
+/* line 171, ../sass/main.sass */
+#content .footnote-text {
+  background: #efefef;
+  display: none;
+  font-family: "ff-chambers-sans-web";
+  padding: 0.5rem 0.2rem 0.2rem;
+  font-size: 0.8em;
+  top: -0.05rem;
+  position: relative;
+}
+/* line 179, ../sass/main.sass */
+#content .footnote-text a {
+  background-size: 4px 10px;
+  background-position: 0 0.4rem;
+}
+/* line 182, ../sass/main.sass */
+#content .footnote.active .footnote-text {
+  display: inline;
+}
+/* line 184, ../sass/main.sass */
+#content li > p {
+  margin-bottom: 0;
+}
+/* line 186, ../sass/main.sass */
+#content .sect-num {
+  font-feature-settings: "c2sc";
+  font-weight: 700;
+}
+/* line 189, ../sass/main.sass */
+#content h2 {
+  background: #00c370;
+  position: relative;
+  margin-top: 3rem;
+}
+/* line 193, ../sass/main.sass */
+#content h2 .sect-num {
+  display: block;
+  color: #222222;
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+/* line 199, ../sass/main.sass */
+#content h2 .sect-num:before {
+  content: "CHAPTER ";
+}
+/* line 201, ../sass/main.sass */
+#content h2 a {
+  display: block;
+  padding: 6rem 1rem 1rem;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 207, ../sass/main.sass */
+.fig-link {
+  font-feature-settings: "c2sc";
+}
+
+/* line 210, ../sass/main.sass */
+.fig-num {
+  font-feature-settings: "c2sc";
+}
+
+/* line 213, ../sass/main.sass */
+h1, h2, h3, h4, h5 {
+  font-family: "ff-chambers-sans-web", sans-serif;
+  font-weight: 900;
+}
+
+/* line 217, ../sass/main.sass */
+.title {
+  font-weight: 700;
+  font-style: italic;
+  color: #00c370;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+/* line 223, ../sass/main.sass */
+.title .fig-num {
+  font-feature-settings: "c2sc";
+  font-style: normal;
+}
+
+/* line 227, ../sass/main.sass */
+h4 {
+  font-size: 1.05rem;
+}
+
+/* line 230, ../sass/main.sass */
+.sect-num {
+  display: inline;
+}
+/* line 232, ../sass/main.sass */
+.sect-num:after {
+  content: " ";
+}
+
+/* line 235, ../sass/main.sass */
+pre {
+  background: #efefef;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+/* line 241, ../sass/main.sass */
+.monospaced {
+  font-family: "Source Code Pro", Consolas, monospace;
+  background: #efefef;
+  padding: 0 0.3em;
+  color: #444444;
+}
+
+/* line 247, ../sass/main.sass */
+.p2 {
+  padding: 0;
+}
+
+/* line 251, ../sass/main.sass */
+#app-header {
+  font-family: "ff-chambers-sans-web", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 999;
+  border-bottom: solid 1px #dddddd;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 14px;
+  color: #00c370;
+  padding-left: 1.5rem;
+}
+/* line 265, ../sass/main.sass */
+#app-header .toc-toggle {
+  width: 2rem;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #111111;
+  padding-top: 0.08rem;
+  height: 2rem;
+}
+/* line 273, ../sass/main.sass */
+#app-header .toc-toggle .fa-times {
+  display: none;
+}
+/* line 275, ../sass/main.sass */
+#app-header .toc-toggle:hover {
+  background: #efefef;
+  cursor: pointer;
+}
+/* line 278, ../sass/main.sass */
+#app-header img {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.5rem;
+}
+/* line 282, ../sass/main.sass */
+#app-header #header-section {
+  color: #00c370;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 2rem;
+}
+/* line 287, ../sass/main.sass */
+#app-header #header-section.sectioned {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 0.65rem;
+}
+/* line 295, ../sass/main.sass */
+#app-header #header-section.sectioned .sect-num:after {
+  content: " ";
+}
+
+@media(min-width: 820px) {
+  /* line 299, ../sass/main.sass */
+  #app-header {
+    padding-left: 16rem;
+  }
+}
+
+/* line 302, ../sass/main.sass */
+#header {
+  padding-top: 2rem;
+}
+
+/* line 305, ../sass/main.sass */
+.imageblock .content {
+  max-width: 26rem;
+  margin: 0 auto;
+}
+
+/* line 309, ../sass/main.sass */
+.imageblock.left, .imageblock.right {
+  float: none;
+}
+/* line 311, ../sass/main.sass */
+.imageblock.left .content, .imageblock.right .content {
+  max-width: 17rem;
+  margin: 0 auto;
+}
+
+/* line 316, ../sass/main.sass */
+.imageblock.full .content {
+  max-width: 100%;
+}
+
+@media(min-width: 1120px) {
+  /* line 320, ../sass/main.sass */
+  .imageblock.left, .imageblock.right {
+    max-width: 17rem;
+    margin-top: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 327, ../sass/main.sass */
+  .imageblock.left {
+    float: left;
+    margin-left: -3rem;
+    margin-right: 2rem;
+  }
+
+  /* line 331, ../sass/main.sass */
+  .imageblock.right {
+    float: right;
+    margin-right: -3rem;
+    margin-left: 2rem;
+  }
+}
+
+/* line 337, ../sass/main.sass */
+.sidebarblock {
+  background: #fafafa;
+  padding: 1px 1.5rem 0.5rem;
+  margin-top: 1rem;
+}
+/* line 341, ../sass/main.sass */
+.sidebarblock .title {
+  font-style: normal;
+  font-size: 1rem;
+  color: #111111;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+}
+/* line 347, ../sass/main.sass */
+.sidebarblock .imageblock .title {
+  font-size: 0.85rem;
+  line-height: 1.4em;
+  font-style: italic;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: #00c370;
+}
+
+/* line 355, ../sass/main.sass */
+.listingblock .title {
+  font-weight: 700;
+  font-style: italic;
+  color: #00c370;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "ff-chambers-sans-web";
+}
+
+/* line 363, ../sass/main.sass */
+.sidebarblock.scifi {
+  border: solid 2px #dddddd;
+  background: transparent;
+  padding-top: 1rem;
+  font-family: "ff-chambers-sans-web";
+}
+
+/* line 369, ../sass/main.sass */
+.sidebarblock.scifi .imageblock .content {
+  max-width: 100%;
+}
+
+/* line 372, ../sass/main.sass */
+#footnotes, #footer {
+  display: none;
+}
+
+/* line 375, ../sass/main.sass */
+h1 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+/* line 379, ../sass/main.sass */
+.cover_image {
+  line-height: 0;
+  margin-bottom: 6rem;
+}
+
+/* line 383, ../sass/main.sass */
+.mb05 {
+  margin-bottom: 0.25rem;
+}
