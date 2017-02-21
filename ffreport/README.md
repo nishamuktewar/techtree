@@ -1,6 +1,15 @@
-# ffreport05
+# ffreport00
 
 Fast Forward Labs' Skeleton Report
+
+## Begin new report
+
+- `cp -R techtree/ffreport /other/directory/ffreportXX`
+- `cd /other/directory/ffreportXX`
+- Edit title in `README.md` and `book.asciidoc`
+- `git init && git add . && git commit -m "Initial commit"`
+- Create new github repo and push
+- TODO: set up autobuild
 
 ## Install
 
