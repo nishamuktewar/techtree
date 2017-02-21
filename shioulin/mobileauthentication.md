@@ -8,22 +8,9 @@ author: Shioulin
 author_link: 
 ---
 
-[//]: # (I reached for my phone as I was rushing home one day only to realize,
-with horror, that I had left it on the subway. Paranoia thoughts of someone
-gaining unfettered access washed over me. After being somewhat comforted that
-the phone is secured via fingerprint and passcode, I started to wonder if it is
-possible to have a system which recognizes the user via biometrics only without
-explicitly requiring a passcode; continuously monitors in the background even
-after access is granted, and asks for a recertification when suspicious
-activity is detected. Given the plethora of sensors available on mobile
-devices, it would seem that machine learning could work its magic. Research
-online led to one approach explored in academia - touch dynamics. Such a system
-would perform a gating authentication using touch and continuously monitor for
-intruders using a combination of touch and gestures in the background.)
-
 Research into the use of behaviour for authentication on mobile devices is
 picking up. In this post, we take a look at the current state of the art in
-academia. We'll focus in particular on touch dynamics. Is is possible to grant
+academia. We'll focus in particular on touch dynamics. Is it possible to grant
 access based on the way a user interacts with a phone? This is gating
 authentication. And can a system go further, and continuously monitor in the
 background, once access is granted, requesting reauthentication through a
@@ -34,7 +21,7 @@ authentication.
 
 To use touch dynamics for authentication, you first have to establish a
 benchmark of normal behaviour for a user. Current research does this by having
-subjects type a fixed text on a smartphone. This is repeated a few times to
+subjects type a fixed text or read via swiping on a smartphone. This is repeated a few times to
 capture variation in behaviour. Some researchers run controlled experiments
 while others try to mirror real life usage scenarios. 
 
@@ -47,8 +34,8 @@ are then used to authenticate a user.
 
 When a touch event occurs on virtual keyboard, the OS makes digital interrupts
 accessible through its API. The API also reports timestamps, which can be
-manipulated to provide information on dwell time (length of time the finger
-stays on a virtual key) and flight time (time between presses).
+manipulated to provide information on [dwell time (length of time the finger
+stays on a virtual key) and flight time (time between presses)](http://dl.acm.org/citation.cfm?id=2933015).
 
 The API also reports spatial features including touch size, pressure and
 position. Touch size and pressure are normalized values and usually used
@@ -64,13 +51,8 @@ some combine timing with spatial and motion information. [Mario Frank and
 collaborators](https://arxiv.org/abs/1207.6231) propose 30 features based on
 strokes for continuous authentication. A stroke is a trajectory encoded as a
 sequence of vectors with location, timestamp, pressure, area occluded by the
-finger, orientation of the finger, and orientation of the phone. [Feng et
-al.](http://ieeexplore.ieee.org/document/6459891/) complements strokes with
+finger, orientation of the finger, and orientation of the phone. [Tao Feng and collaborators](http://ieeexplore.ieee.org/document/6459891/) complements strokes with
 zooming motions and finger motion sensor data from a digital glove. 
-
-    TODO: No links in headings. Where does this link go? [A little more on
-    timing, spatial and motion
-    features](http://dl.acm.org/citation.cfm?id=2933015)
 
 ## Machine Learning
 
@@ -98,7 +80,7 @@ very insecure while one with high FRR is overly sensitive. In a continuous
 authentication system, high FRR means that valid users need to reauthenticate
 too often. 
 
-When tuned so that FAR and FRR are equal, the error rate is known as the Equal
+The point where FAR and FRR are equal is known as the Equal
 Error Rate (ERR). Ideally both FAR and FRR should be low but when that's not
 possible, you can tune the classifier to prioritise one or the other, depending
 on the application. 
