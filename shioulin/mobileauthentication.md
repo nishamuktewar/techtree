@@ -9,21 +9,27 @@ author_link:
 ---
 
 Research into the use of behaviour for authentication on mobile devices is
-picking up. In this post, we take a look at the current state of the art in
-academia. We'll focus in particular on touch dynamics. Is it possible to grant
-access based on the way a user interacts with a phone? This is gating
-authentication. And can a system go further, and continuously monitor in the
-background, once access is granted, requesting reauthentication through a
-gating system when suspicious activity is detected? This is continuous
-authentication.
+picking up. 
+
+NOTE FROM KH: Add one or two more sentences to this paragraph to say why we care. Ok, it's picking up - why is that interesting? What does this mean for the security community or what does it mean for machine learning research? From what you say later on, it seems like the thesis here is that researchers are applying ML to the authentication problem. How was this solved in the past? Do you think user behavior is the best form of IAM? Why?
+
+In this post, we survey the current state of the art in
+academia, focusing on touch dynamics. Research in this field addresses two problems. Gating authenatication asks: is it possible to grant access based on the way a user interacts with a phone? Continuous authentication goes furhter and asks: once access is granted, can a system continuously monitor use in the background, requesting reauthentication through a
+gating system when suspicious activity is detected? 
+
+NOTE FROM KH: Add a transition sentence to go from intro to the blog post. Maybe something about the security and privacy concerns affiliated with this problem? 
+
+
 
 ## Data Acquisition
 
 To use touch dynamics for authentication, you first have to establish a
-benchmark of normal behaviour for a user. Current research does this by having
+benchmark of normal user behavior. Current research does this by having
 subjects type a fixed text or read via swiping on a smartphone. This is repeated a few times to
-capture variation in behaviour. Some researchers run controlled experiments
+capture variation in behavior. Some researchers run controlled experiments
 while others try to mirror real life usage scenarios. 
+
+NOTE FROM KH: Do you have a reference here? Can you expand by citing an experiment? Are any companies including these in their products to collect data - don't have to go into depth, but would be nice to have one sentence. 
 
 The raw data obtained from the touch display can then be used directly or
 massaged to obtain timing, spatial and motion features. The extracted features
@@ -37,10 +43,12 @@ accessible through its API. The API also reports timestamps, which can be
 manipulated to provide information on [dwell time (length of time the finger
 stays on a virtual key) and flight time (time between presses)](http://dl.acm.org/citation.cfm?id=2933015).
 
-The API also reports spatial features including touch size, pressure and
+NOTE FROM KH: define "digital interrupts"
+
+The API also reports spatial features including touch size, pressure, and
 position. Touch size and pressure are normalized values and usually used
 without manipulation. On the other hand, position can be used raw or
-manipulated to provide information on speed, angle and distance. 
+manipulated to provide information on speed, angle, and distance. 
 
 The phone's accelerometer and gyroscope provide yet more user-specific
 information. The accelerometer measures movement in three dimensions, while the
@@ -56,11 +64,11 @@ zooming motions and finger motion sensor data from a digital glove.
 
 ## Machine Learning
 
-Once the features have been collected, they can be used to train a machine
+Collected features can then be used to train a machine
 learning system and classify future users. [Gating authentication
 research](http://dl.acm.org/citation.cfm?id=2933015) and [continuous
 authentication research](http://ieeexplore.ieee.org/document/7503170/) use
-algorithms such as cluster analysis, decision trees, Support Vector Machines
+algorithms like cluster analysis, decision trees, Support Vector Machines
 (SVMs), and neural networks. For example, [Mario Frank and
 collaborators](https://arxiv.org/abs/1207.6231) used SVMs and cluster analysis,
 specifically k nearest neighbor (kNN), as classifiers. During training, the
@@ -69,6 +77,8 @@ hyperparameters of its radial basis function are tuned using standard
 crossvalidation techniques. The kNN classifier looks at each new observation,
 finds the k nearest training examples, and determines the label of the majority
 of those k neighbors. The new observation is then assigned that label.
+
+NOTE FROM KH: Define "radial basis function" for our readers. Do some interpretation of the different ML approaches: which one works the best? Why? Expand this paragraph not only to say what classifiers they use, but how performance varies. 
 
 ## Metrics
 
@@ -97,8 +107,10 @@ authentication.
 We think the most useful next step would be the release of large, public
 datasets. Current datasets are small and proprietary, which makes progress slow
 and difficult to measure. And it's time to start thinking about performance not
-just in terms of accuracy but computational expense. If you thought your
-phone's battery drained quickly, wait until you've got a neural network running
-in the background all the time. Finally — and perhaps most interestingly — the
+just in terms of accuracy but also computational expense. If you think your
+phone's battery drains quickly today, wait until you've got a neural network running
+in the background all the time! Finally — and perhaps most interestingly — the
 trade off between usability and security needs to be better understood from a
 product and user point of view.
+
+NOTE FROM KH: Where would those data sets come from? Device companies? Do you think people will be slow to adopt IAM systems because they do not want biometric monitoring? Should companies be obliged to educate users? Can you mention one or two security techniques (maybe functional encryption) that will be helpful in solving the balance?
