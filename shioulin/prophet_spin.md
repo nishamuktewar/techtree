@@ -24,7 +24,7 @@ The dependent variable is assumed to follow a normal distribution and, along wit
 
 We run Prophet on two types of datasets - one that should be easy, one more challenging. The first is monthly data on Mauna Loa carbon dioxide levels; the second is daily close price for an S&P sector exchange traded fund (ETF).
 
-### Mauna Loa CO2 levels
+### Mauna Loa CO<sub>2</sub> levels
 
 ```python
 m = Prophet()
@@ -32,10 +32,10 @@ m.fit(df)
 future = m.make_future_dataframe(periods=120, freq = 'm')
 forecast = m.predict(future)
 ```
-The monthly historical CO2 data is highly seasonal with a strong trend; we expect Prophet to easily pick up both components. Running Prophet and setting the frequency argument for monthly data gives the following forecast. 
+The monthly historical CO<sub>2</sub> data is highly seasonal with a strong trend; we expect Prophet to easily pick up both components. Running Prophet and setting the frequency argument for monthly data gives the following forecast. 
 ![](maunaforecast.png)
 
-As expected, both periodicity and trend are captured. When we look at the plot for the trend component only, we see a strong linear trend. Notice the weekly component is mostly noise - this makes sense because we do not expect to see any weekly seasonality in CO2 admissions. On the other hand, the plot of yearly component shows the impact of northern hemisphere vegetation levels on carbon dioxide levels; the levels are higher in the summer and lower in the fall.
+As expected, both periodicity and trend are captured. When we look at the plot for the trend component only, we see a strong linear trend. Notice the weekly component is mostly noise - this makes sense because we do not expect to see any weekly seasonality in CO<sub>2</sub> admissions. On the other hand, the plot of yearly component shows the impact of northern hemisphere vegetation levels on carbon dioxide levels; the levels are higher in the summer and lower in the fall.
 ![](maunacomponent.png)
 
 
