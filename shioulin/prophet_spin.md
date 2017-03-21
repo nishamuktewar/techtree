@@ -65,7 +65,7 @@ that gets compiled behind the scenes when the user install the library. The
 user need never touch the Stan code, and works with Prophet entirely through
 its Python or R interfaces.
 
-To these interfaces, let's run Prophet on an infamous dataset with extremely
+To test these interfaces, let's run Prophet on an infamous dataset with extremely
 strong seasonality: [atmospheric carbon dioxide as measured on the Hawaiian
 volcano of Mauna Loa continuously since the
 1950s](https://www.esrl.noaa.gov/gmd/ccgg/trends/full.html).
@@ -88,11 +88,33 @@ long-term upwards trend easily. Note that the forecast comes with data-driven
 confidence intervals for free --- a crucial advantage of probabilistic
 programming systems.
 
-Prohpet also yields simple, interpretable results for the components (date, day
+Prophet also yields simple, interpretable results for the components (date, day
 of week, day of year) of the time series decomposition.
 
-TODO: show code to get these components.
-
+```python
+# Plot trend component
+ax.plot(forecast['ds'], forecast['trend'], ls='-', c=forecast_color)
+ax.fill_between(forecast['ds'].values,
+                forecast['trend_lower'],
+                forecast['trend_upper'],
+                facecolor=forecast_color, alpha=0.2)
+```
+```python
+# Plot Day of Week component
+df_s = forecast.copy()
+df_s['dow'] = df_s['ds'].dt.weekday_name
+df_s = df_s.groupby('dow').first()
+days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+y_weekly = [df_s.loc[d]['weekly'] for d in days]
+ax.plot(range(len(days)), y_weekly, ls='-', c = forecast_color)
+```
+```python
+# Plot Yearly component
+df_s = forecast.copy()
+df_s['doy'] = df_s['ds'].map(lambda x: x.strftime('2000-%m-%d'))
+df_s = df_s.groupby('doy').first().sort_index()
+ax.plot(pd.to_datetime(df_s.index), df_s['yearly'], ls='-', c = forecast_color)
+```
 ![](maunacomponent.png)
 
 Notice the weekly component is much smaller than the other two, and likely
@@ -104,15 +126,13 @@ levels are higher after summer and lower after winter.
 ### Economic data
 
 Let's now run Prophet on a more challenging dataset, the XLY Exchange-Traded
-Fund, which measures [Consumer Discretionary
-Spending](https://www.google.com/finance?chdnp=1&chdd=1&chds=1&chdv=1&chvs=maximized&chdeh=0&chfdeh=0&chdet=1490040000000&chddm=502044&chls=IntervalBasedLine&q=NYSEARCA:XLY&ntsp=0&ei=mxrQWLHDDpTAmgGSzKHgBw),
+Fund, which tracks a market-cap weighted index of [Consumer Discretionary
+stocks drawn from the S&P 500](https://www.google.com/finance?chdnp=1&chdd=1&chds=1&chdv=1&chvs=maximized&chdeh=0&chfdeh=0&chdet=1490040000000&chddm=502044&chls=IntervalBasedLine&q=NYSEARCA:XLY&ntsp=0&ei=mxrQWLHDDpTAmgGSzKHgBw),
 a dataset with seasonality, lots of apparently random fluctuation, and even
-anomalous behaviour. We take a daily closing prices back to 2015.
-
-TODO: let's go back further!
+anomalous behaviour. We take a daily closing prices back to 2007.
 
 ```python
-m = Prophet(changepoint_prior_scale=0.02)
+m = Prophet(changepoint_prior_scale=0.2)
 m.fit(xly);
 future = m.make_future_dataframe(periods=180)
 forecast = m.predict(future)
@@ -120,23 +140,16 @@ forecast = m.predict(future)
 
 Here we experiment with Prophet's ability to automatically detect changepoints
 by adjusting the changepoint smoothing parameter. Instead of the default value
-of 0.05, we set the changepoint smoothing parameter to be 0.02. This makes the
-resulting forecast a bit smoother and less flexible, but also less sucesptible
+of 0.05, we set the changepoint smoothing parameter to be 0.2. This makes the
+resulting forecast more flexible and less smooth, but also more sucesptible
 for chasing noise. If we're doing this for real we would of course conduct a
 formal cross-validation or backtest to empirically determine the proper value
 of this hyperparameter.
 
-NOTE: let's just show one of these. We're making a point about the Prophet
-interface rather than this dataset.
-
 ![](XLYforecast.png)
 
-The trend component plot captures the large trends since 2015 nicely - XLY has
-generally been trending up except for the beginning of 2016 when markets were
-hit by worries about China's slowdown and a slumping oil price. The weekly
-component plot is mostly noise again. The plot of yearly component shows the
-shifted effect of consumer discretionary spending -- higher in February through
-July and lower elsewhere.  
+The trend component plot captures the large trends since 2007 nicely - XLY, with the rest of the market, nose dived in 2009 and has generally been trending up since. The weekly component plot is mostly noise again. The plot of yearly component shows the shifted effect of consumer discretionary spending on stock prices -- higher in May through
+August and lower elsewhere.  
 
 ![](XLYcomponent.png)
 
