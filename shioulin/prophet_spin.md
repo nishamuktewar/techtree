@@ -12,26 +12,23 @@ Facebook recently released
 [Prophet](https://facebookincubator.github.io/prophet/), a general purpose time
 series forecasting package with both Python and R interfaces.
 
-Python and R already have plenty of time series forecasting options, so what's
-the big deal about Prophet? The reason it caught our eye is that the backend is
-implemented in Stan, a probablistic programming language we spent some time
-working with in our most recent report.
+As Python and R already have plenty of time series forecasting options, why is Prophet interesting? It caught our eye because the backend is
+implemented in [Stan](http://mc-stan.org/), a probablistic programming language we researched in our most recent report. (If you're curious about this topic, check out our [educational webinar](https://www.youtube.com/watch?v=7BjqGEl6mRs&feature=youtu.be).
 
-This choice means that Prophet offers many of the advantages of the Bayesian
-approach that we discuss in depth in our recent report. In particular, the
+This choice means that Prophet offers many of the advantages of the Bayesian inference. In particular, the
 models have a simple, interpretable structure (seasonality) on which prior
 analyst knowledge can be imposed, and forecasts include confidence intervals
 derived from the full posterior distribution, which means they offer a
 data-driven estimate of risk.
 
-In this post, we take Prophet for a spin, looking at its user interface and
-performance with a couple of datasets.
+In this post, we take Prophet for a spin, exploring its user interface and
+performance on a couple of datasets.
 
 ## The model
 
-Prophet implements a general purpose time series model that is suitable for the
+Prophet implements a general purpose time series model suitable for the
 kind of data seen at Facebook. It offers piecewise trends, multiple seasonality
-(day of week, day of year, etc.) and floating holidays.
+(day of week, day of year, etc.), and floating holidays.
 
 Prophet frames the time series forecasting problem as a curve-fitting exercise.
 The dependent variable is a sum of three components: growth, periodic
@@ -47,7 +44,7 @@ changepoints by providing specific dates or by adjusting the scale parameter
 associated with the Laplace distribution. 
 
 Prophet models **periodic seasonality** using a standard Fourier series. For
-yearly and weekly seasonality the number of approximation terms is 20 and 6
+yearly and weekly seasonality, the number of approximation terms is 20 and 6
 respectively. The seasonal component is smoothed with a normal prior. 
 
 Finally, **holidays** are modeled using an indicator function. The indicator
@@ -61,7 +58,7 @@ future.
 
 The model is specified in [a short Stan
 listing](https://github.com/facebookincubator/prophet/blob/master/python/stan/unix/prophet_linear_growth.stan)
-that gets compiled behind the scenes when the user install the library. The
+that gets compiled behind the scenes when the user installs the library. The
 user need never touch the Stan code, and works with Prophet entirely through
 its Python or R interfaces.
 
@@ -83,9 +80,9 @@ This code takes a couple of seconds to run and yields the following forecast:
 
 ![](maunaforecast.png)
 
-Prophet's simple model is able to detect the strong annual periodicity and
-long-term upwards trend easily. Note that the forecast comes with data-driven
-confidence intervals for free --- a crucial advantage of probabilistic
+Prophet's simple model is able to easily detect the strong annual periodicity and
+long-term upwards trend. Note that the forecast comes with data-driven
+confidence intervals for free--a crucial advantage of probabilistic
 programming systems.
 
 Prophet also yields simple, interpretable results for the components (date, day
@@ -130,14 +127,16 @@ The Gaussian Processes analysis shows spikes on the number of births on specific
 
 ## Advantages of Prophet
 
-In our report on Probabilistic Programming we emphasized that the Bayesian
-approach, made simpler by probabilistic languages like Stan and pymc3, allows
+In our probabilistic programming report, we emphasized that the Bayesian
+approach, made simpler by probabilistic languages like Stan and Pymc3, allows
 developers and statisticians to quantify the probability of all outcomes and
-not just determine the most likely. The prior and interpretability make the
+not just determine the most likely prediction. The prior and interpretability make the
 models more practical.
 
-Prophet makes these advantages concrete for a specific use case, forecasting.
+Prophet makes these advantages concrete for a specific use case: forecasting.
 It makes sensible choices for a general purpose time series modeling function,
 and abstracts away the complexity of working with Stan behind idiomatic Python
 and R user interfaces that makes the approach even easier and quicker for data
 scientists and analysts.
+
+If you're keen to learn more about probabilistic programming, please contact us at contact@fastforwardlabs.com to learn about our research program. 
