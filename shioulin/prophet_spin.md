@@ -14,15 +14,17 @@ series forecasting package with both Python and R interfaces.
 
 Python and R already have plenty of time series forecasting options, so what's
 the big deal about Prophet? The reason it caught our eye is that the backend is
-implemented in Stan, a probablistic programming language we spent some time
-working with in our most recent report.
+implemented in Stan, a probablistic programming language [we spent some time
+working
+with](http://blog.fastforwardlabs.com/2017/03/15/predicting-nyc-real-estate-prices-with-probabilistic-programming.html).
 
 This choice means that Prophet offers many of the advantages of the Bayesian
-approach that we discuss in depth in our recent report. In particular, the
-models have a simple, interpretable structure (seasonality) on which prior
-analyst knowledge can be imposed, and forecasts include confidence intervals
-derived from the full posterior distribution, which means they offer a
-data-driven estimate of risk.
+approach that we [discuss in depth in our recent
+report](http://blog.fastforwardlabs.com/2017/01/18/new-research-on-probabilistic-programming.html).
+In particular, the models have a simple, interpretable structure (seasonality)
+on which prior analyst knowledge can be imposed, and forecasts include
+confidence intervals derived from the full posterior distribution, which means
+they offer a data-driven estimate of risk.
 
 In this post, we take Prophet for a spin, looking at its user interface and
 performance with a couple of datasets.
@@ -61,14 +63,14 @@ future.
 
 The model is specified in [a short Stan
 listing](https://github.com/facebookincubator/prophet/blob/master/python/stan/unix/prophet_linear_growth.stan)
-that gets compiled behind the scenes when the user install the library. The
+that gets compiled behind the scenes when the Prophet is first installed. The
 user need never touch the Stan code, and works with Prophet entirely through
 its Python or R interfaces.
 
-To test these interfaces, let's run Prophet on an infamous dataset with extremely
-strong seasonality: [atmospheric carbon dioxide as measured on the Hawaiian
-volcano of Mauna Loa continuously since the
-1950s](https://www.esrl.noaa.gov/gmd/ccgg/trends/full.html).
+To demonstrate these interfaces, let's run Prophet on an infamous dataset with
+extremely strong seasonality: [atmospheric carbon dioxide as measured on the
+Hawaiian volcano of Mauna
+Loa](https://www.esrl.noaa.gov/gmd/ccgg/trends/full.html).
 
 Having prepared a pandas DataFrame, running Prophet is just a couple of lines:
 
@@ -85,8 +87,8 @@ This code takes a couple of seconds to run and yields the following forecast:
 
 Prophet's simple model is able to detect the strong annual periodicity and
 long-term upwards trend easily. Note that the forecast comes with data-driven
-confidence intervals for free --- a crucial advantage of probabilistic
-programming systems.
+confidence intervals for free, a crucial advantage of probabilistic programming
+systems.
 
 Prophet also yields simple, interpretable results for the components (date, day
 of week, day of year) of the time series decomposition.
@@ -94,14 +96,22 @@ of week, day of year) of the time series decomposition.
 ![](maunacomponent.png)
 
 Notice the weekly component is much smaller than the other two, and likely
-mostly noise. This makes sense; global atmospheric chemisty doesn't vary by
-day of the week! On the other hand, the yearly component shows the seasonal
-impact of northern hemisphere vegetation levels on carbon dioxide levels; the
-levels are higher lower after the summer and higher after winter.
+mostly noise. This makes sense; global atmospheric chemisty doesn't vary by day
+of the week! On the other hand, the yearly component shows the seasonal impact
+of northern hemisphere vegetation levels on carbon dioxide levels; the levels
+are higher lower after the summer and higher after winter.
 
 ### Birth data
 
-Let's now run Prophet on a more challenging dataset, the [number of births by day of the year](http://www.mechanicalkern.com/static/birthdates-1968-1988.csv). This dataset was analyzed using Gaussian Processes and the resulting plots were used for the cover of Bayesian Data Analysis, Third Edition. This is a dataset with seasonality (both yearly and weekly) and in Prophet parlance, holiday effects.
+Let's now run Prophet on a more challenging dataset, the [number of births in
+the United States by day of the
+year](http://www.mechanicalkern.com/static/birthdates-1968-1988.csv). This
+dataset was [analyzed using Gaussian
+Processes](http://andrewgelman.com/2012/06/19/slick-time-series-decomposition-of-the-birthdays-data/)
+and made famous through its appearance on the cover of [Bayesian Data
+Analysis](http://www.stat.columbia.edu/~gelman/book/), Andrew Gelman's
+textbook. It's a dataset with seasonality (both yearly and weekly) and in
+Prophet parlance, holiday effects.
 
 ```python
 m = Prophet(changepoint_prior_scale=0.1)
@@ -115,18 +125,30 @@ adjusting the changepoint smoothing parameter. Instead of the default value of
 0.05, we set the changepoint smoothing parameter to be 0.1. This makes the
 resulting forecast more flexible and less smooth, but also more susceptible for
 chasing noise. If we were doing this for real we would of course conduct a
-formal cross-validation or backtest to empirically determine the proper value
-of this hyperparameter. 
+formal cross-validation to empirically determine the proper value of this
+hyperparameter. 
 
-Prophet takes about a minute to run and gives the following forecast. We show a truncated time series from 1987 to 1990.
+Prophet takes about a minute to run on this dataset (black points) and gives
+the following forecast (blue line). We show here a truncated time series from 1987
+to 1990.
 
 ![](birthforecast.png)
 
-The component plots generated by Prophet are identical to the [ones generated using Gaussian Processes](http://andrewgelman.com/2012/06/19/slick-time-series-decomposition-of-the-birthdays-data/). We see the day of week effects - more births during the week and less during the weekend. We also see the yearly seasonality effects - more births around August to October. 
+We can see the origin of the almost bimodal distribution of the data in the
+component plots. Prophet finds the strong weekday/weekend variation.
+We also see the yearly seasonality effects: more births around
+August to October. 
 
 ![](birthcomponent.png)
 
-The Gaussian Processes analysis shows spikes on the number of births on specific days during the year. For example, the number of birth spikes down on New Year's day and up on Valentine's Day. These can be modeled using Prophet as "holidays" by defining a dataframe to include all the special dates both in the past and future (out as far as the forecast is being made). 
+These are very similar to the [ones found using Gaussian
+Processes](http://andrewgelman.com/2012/06/19/slick-time-series-decomposition-of-the-birthdays-data/).
+The Gaussian Processes analysis finds spikes in the number of births on
+specific days during the year. For example, the number of birth is anomalously
+low on New Year's day and high on Valentine's Day. We stopped short of doing
+this, but these special days could in Prophet as "holidays" by defining a
+indicator variable series that says whether each date covered by the dataset
+and forecast was/will be a holiday.
 
 ## Advantages of Prophet
 
@@ -140,4 +162,5 @@ Prophet makes these advantages concrete for a specific use case, forecasting.
 It makes sensible choices for a general purpose time series modeling function,
 and abstracts away the complexity of working with Stan behind idiomatic Python
 and R user interfaces that makes the approach even easier and quicker for data
-scientists and analysts.
+scientists and analysts. It's a great example or a robust, user-friendly
+probabilistic programming product.
