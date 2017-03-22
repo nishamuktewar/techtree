@@ -12,33 +12,32 @@ Facebook recently released
 [Prophet](https://facebookincubator.github.io/prophet/), a general purpose time
 series forecasting package with both Python and R interfaces.
 
-Python and R already have plenty of time series forecasting options, so what's
-the big deal about Prophet? The reason it caught our eye is that the backend is
-implemented in Stan, a probablistic programming language [we spent some time
-working
-with](http://blog.fastforwardlabs.com/2017/03/15/predicting-nyc-real-estate-prices-with-probabilistic-programming.html).
+Python and R already have plenty of time series forecasting options, so why is
+Prophet interesting? It caught our eye because the backend is implemented in
+[Stan](http://mc-stan.org/), a probablistic programming language we researched
+in our most recent report. (If you're curious about this topic, check out our
+[educational
+webinar](https://www.youtube.com/watch?v=7BjqGEl6mRs&feature=youtu.be).
 
 This choice means that Prophet offers many of the advantages of the Bayesian
-approach that we [discuss in depth in our recent
-report](http://blog.fastforwardlabs.com/2017/01/18/new-research-on-probabilistic-programming.html).
-In particular, the models have a simple, interpretable structure (seasonality)
-on which prior analyst knowledge can be imposed, and forecasts include
-confidence intervals derived from the full posterior distribution, which means
-they offer a data-driven estimate of risk.
+approach. In particular, the models have a simple, interpretable structure
+(seasonality) on which prior analyst knowledge can be imposed, and forecasts
+include confidence intervals derived from the full posterior distribution,
+which means they offer a data-driven estimate of risk.
 
 But by keeping the probabilistic programming language in the backend, the
 choice of Stan becomes an implementation detail to the likely Prophet end user,
 a data analyst scientist with a time series modeling problem. This user can
 continue to work entirely in a general purpose language they already know.
 
-In this post, we take Prophet for a spin, looking at its user interface and
+In this post, we take Prophet for a spin, exploring its user interface and
 performance with a couple of datasets.
 
 ## The model
 
 Prophet implements a general purpose time series model that is suitable for the
 kind of data seen at Facebook. It offers piecewise trends, multiple seasonality
-(day of week, day of year, etc.) and floating holidays.
+(day of week, day of year, etc.), and floating holidays.
 
 Prophet frames the time series forecasting problem as a curve-fitting exercise.
 The dependent variable is a sum of three components: growth, periodic
@@ -54,7 +53,7 @@ changepoints by providing specific dates or by adjusting the scale parameter
 associated with the Laplace distribution. 
 
 Prophet models **periodic seasonality** using a standard Fourier series. For
-yearly and weekly seasonality the number of approximation terms is 20 and 6
+yearly and weekly seasonality, the number of approximation terms is 20 and 6
 respectively. The seasonal component is smoothed with a normal prior. 
 
 Finally, **holidays** are modeled using an indicator function. The indicator
@@ -90,8 +89,8 @@ This code takes a couple of seconds to run and yields the following forecast:
 
 ![](maunaforecast.png)
 
-Prophet's simple model is able to detect the strong annual periodicity and
-long-term upwards trend easily. Note that the forecast comes with data-driven
+Prophet's simple model is easily able to detect the strong annual periodicity
+and long-term upwards trend. Note that the forecast comes with data-driven
 confidence intervals for free, a crucial advantage of probabilistic programming
 systems.
 
@@ -157,13 +156,13 @@ and forecast was/will be a holiday.
 
 ## Advantages of Prophet
 
-In our report on Probabilistic Programming we emphasized that the Bayesian
+In our probabilistic programming report we emphasized that the Bayesian
 approach, made simpler by probabilistic languages like Stan and pymc3, allows
 developers and statisticians to quantify the probability of all outcomes and
 not just determine the most likely. The prior and interpretability make the
 models more practical.
 
-Prophet makes these advantages concrete for a specific use case, forecasting.
+Prophet makes these advantages concrete for a specific use case: forecasting.
 It makes sensible choices for a general purpose time series modeling function.
 Some flexibility is sacrified in the modeling choices, but the trade-off is a
 great one from the point of view of the intended typical Prophet user. It
@@ -171,3 +170,7 @@ abstracts away the complexity of working with Stan's powerful but somewhat
 eccentric interfaces behind idiomatic Python and R APIs, which makes the system
 even easier and quicker for data scientists and analysts to use. Prophet is a
 great example or a robust, user-friendly probabilistic programming product.
+
+If you're keen to learn more about probabilistic programming, please <a
+href="mailto:contact@fastforwardlabs.com">get in touch</a> to learn about our
+research program.
