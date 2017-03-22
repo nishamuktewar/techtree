@@ -76,7 +76,8 @@ extremely strong seasonality: [atmospheric carbon dioxide as measured on the
 Hawaiian volcano of Mauna
 Loa](https://www.esrl.noaa.gov/gmd/ccgg/trends/full.html).
 
-Having prepared a pandas DataFrame, running Prophet is just a couple of lines:
+Having prepared a pandas DataFrame `maunaloa`, running Prophet is just a couple
+of lines:
 
 ```python
 m = Prophet()
@@ -114,8 +115,8 @@ dataset was [analyzed using Gaussian
 Processes](http://andrewgelman.com/2012/06/19/slick-time-series-decomposition-of-the-birthdays-data/)
 and made famous through its appearance on the cover of [Bayesian Data
 Analysis](http://www.stat.columbia.edu/~gelman/book/), Andrew Gelman's
-textbook. It's a dataset with seasonality (both yearly and weekly) and in
-Prophet parlance, holiday effects.
+textbook. It's a dataset with seasonality (both yearly and weekly) and holiday
+effects.
 
 ```python
 m = Prophet(changepoint_prior_scale=0.1)
