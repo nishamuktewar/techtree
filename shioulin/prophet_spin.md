@@ -35,7 +35,7 @@ performance with a couple of datasets.
 
 ## The model
 
-Prophet implements a general purpose time series model that is suitable for the
+Prophet implements a general purpose time series model suitable for the
 kind of data seen at Facebook. It offers piecewise trends, multiple seasonality
 (day of week, day of year, etc.), and floating holidays.
 
@@ -159,7 +159,7 @@ and forecast was/will be a holiday.
 In our probabilistic programming report we emphasized that the Bayesian
 approach, made simpler by probabilistic languages like Stan and pymc3, allows
 developers and statisticians to quantify the probability of all outcomes and
-not just determine the most likely. The prior and interpretability make the
+not just determine the most likely prediction. The prior and interpretability make the
 models more practical.
 
 Prophet makes these advantages concrete for a specific use case: forecasting.
