@@ -26,6 +26,11 @@ on which prior analyst knowledge can be imposed, and forecasts include
 confidence intervals derived from the full posterior distribution, which means
 they offer a data-driven estimate of risk.
 
+But by keeping the probabilistic programming language in the backend, the
+choice of Stan becomes an implementation detail to the likely Prophet end user,
+a data analyst scientist with a time series modeling problem. This user can
+continue to work entirely in a general purpose language they already know.
+
 In this post, we take Prophet for a spin, looking at its user interface and
 performance with a couple of datasets.
 
@@ -159,8 +164,10 @@ not just determine the most likely. The prior and interpretability make the
 models more practical.
 
 Prophet makes these advantages concrete for a specific use case, forecasting.
-It makes sensible choices for a general purpose time series modeling function,
-and abstracts away the complexity of working with Stan behind idiomatic Python
-and R user interfaces that makes the approach even easier and quicker for data
-scientists and analysts. It's a great example or a robust, user-friendly
-probabilistic programming product.
+It makes sensible choices for a general purpose time series modeling function.
+Some flexibility is sacrified in the modeling choices, but the trade-off is a
+great one from the point of view of the intended typical Prophet user. It
+abstracts away the complexity of working with Stan's powerful but somewhat
+eccentric interfaces behind idiomatic Python and R APIs, which makes the system
+even easier and quicker for data scientists and analysts to use. Prophet is a
+great example or a robust, user-friendly probabilistic programming product.
