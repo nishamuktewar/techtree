@@ -17,7 +17,7 @@ Prophet interesting? It caught our eye because the backend is implemented in
 [Stan](http://mc-stan.org/), a probablistic programming language we researched
 in our most recent report. (If you're curious about this topic, check out our
 [educational
-webinar](https://www.youtube.com/watch?v=7BjqGEl6mRs&feature=youtu.be).
+webinar](https://www.youtube.com/watch?v=7BjqGEl6mRs&feature=youtu.be).)
 
 This choice means that Prophet offers many of the advantages of the Bayesian
 approach. In particular, the models have a simple, interpretable structure
@@ -145,14 +145,14 @@ August to October.
 
 ![](birthcomponent.png)
 
-These are very similar to the [ones found using Gaussian
+These components are very similar to the [those found using Gaussian
 Processes](http://andrewgelman.com/2012/06/19/slick-time-series-decomposition-of-the-birthdays-data/).
-The Gaussian Processes analysis finds spikes in the number of births on
-specific days during the year. For example, the number of birth is anomalously
-low on New Year's day and high on Valentine's Day. We stopped short of doing
-this, but these special days could in Prophet as "holidays" by defining a
-indicator variable series that says whether each date covered by the dataset
-and forecast was/will be a holiday.
+That analysis finds spikes in the number of births on specific days during the
+year. For example, the number of birth is anomalously low on New Year's day and
+high on Valentine's Day. We stopped short of doing this, but these special days
+could be captured in Prophet as "holidays" by defining a indicator variable
+series that says whether each date covered by the dataset and forecast was/will
+be a holiday.
 
 ## Advantages of Prophet
 
