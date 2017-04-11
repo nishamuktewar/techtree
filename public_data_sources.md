@@ -1,4 +1,4 @@
-#Public Data Sources 
+# Public Data Sources 
 
 ## A List of Lists
 
@@ -6,6 +6,7 @@
   * [Canonical benchmark/research/industrial datasets with remarks on quality](https://medium.com/startup-grind/fueling-the-ai-gold-rush-7ae438505bc2#.5msid0z1d)
 
 ## Recent (2016/7) finds
+  * [RepEval](https://repeval2017.github.io/shared/), evaluate natural language understanding models based on sentence encoders
   * [VQA: Visual Question Answering](http://visualqa.org/download.html)
   * [LOST dataset - videos from streaming outdoor webcams](http://lost.cse.wustl.edu/)
   * [Stack Overflow full text](https://archive.org/details/stackexchange) and [metadata](https://www.kaggle.com/stackoverflow/stacklite) (tags, etc. No question text. See also [this example analysis](http://stackoverflow.blog/2017/02/What-Programming-Languages-Weekends/))
