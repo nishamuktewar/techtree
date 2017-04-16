@@ -111,3 +111,4 @@ All topics here are responding to the prompt, "What's up with..."
   * adaptive data visualizations (visualizations that identify and expose correlations automatically)
   * probabilistic programming languages (baysean model in mathematical terms and then auto-solve using a batch or online algorithm by doing some smart variational inference - via micha via max)
   * genetic algorithms (applications beyond antenna design?)
+  * new processors architectures (for example: http://rexcomputing.com/)
