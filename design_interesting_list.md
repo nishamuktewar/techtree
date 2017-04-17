@@ -8,6 +8,9 @@ Our design and visualization work is generally less modular then our engineering
 
 ## Ideas
 
+* Some kind of interface foor pix2pix https://github.com/phillipi/pix2pix. Possibly where you draw on the whiteboard and have the result projected on top of it.
+* Collaborative filtering explainer
+* Recommendation interface? See what Micha is working on.
 * Multi-Dimensional Visualization - Exploring/explaining t-SNE.
 * t-SNE within a Product - we talked about having a recommendation model (think Netflix or Spotify recommendations) and then visualizing that recommendation model within the product itself – as an interface to influence their own recommendations. The interaction could take the form of drawing shapes to enclose or exclude certain movies or groups of movies. This could also be explored in relation to the cold start problem, with the t-SNE visualization being the interface to select your initial interests.
 * 'What is Machine Learning?' explainer with interactive examples. Good example in (http://www.r2d3.us/visual-intro-to-machine-learning-part-1/). Could mine material from many of our talks (Hilary's, Kathryn's).
