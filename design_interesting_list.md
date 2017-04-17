@@ -27,7 +27,8 @@ Our design and visualization work is generally less modular then our engineering
 * Word embeddings interactive explainer
 * Entity resolution explainer
 * Adaptive data visualizations (visualizations that identify and expose correlations automatically)
- - Visualizing decision trees (see this [cry for help](https://twitter.com/amuellerml/status/801146947713306629))
+* Visualizing decision trees (see this [cry for help](https://twitter.com/amuellerml/status/801146947713306629))
+* this might be a fun model to explain with LIME for a post-report blog post or talk https://github.com/kootenpv/whereami – i wouldn't like to couple the intern's initial project to to the interpretability report. they would not have a good experience imo. but there are a couple of ways it could work: 1) the model is simple enough that it might be possible to "explain" it in an ad hoc way kind of like r2d3.us. it uses random forests, which are explainable (in the "r2d3.us explains decision trees" sense), if not interpretable in the ("i know how this model works" sense. or 2) if the intern can wait, we can run LIME on it once the prototype/report is finished and have some fun visualizing its explanations over a 3d environment.
 
 
 
