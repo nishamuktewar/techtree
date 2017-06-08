@@ -76,3 +76,7 @@ Please add to this list! Please research and write about things on this list!
    [notes](/20161129-triage/serveless_products.md)
  - DataHub: An application for data processing, including ingestion, discovery, query, analytics, visualization, and machine learning
    [link](https://datahub.csail.mit.edu/www/)
+   
+## Internal projects
+
+ - Use client portal log data to see which reports get the most attention, whether we can cluster clients by the reports they like, or anything else useful.
