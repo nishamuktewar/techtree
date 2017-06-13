@@ -49,6 +49,10 @@ Possible prototypes:
 
 [s3-lambda](https://github.com/littlstar/s3-lambda) is a node/js mapreduce implementation using lamdas as the mappers and reducers and s3 as storage
 
+## 2017-06-13 update
+
+[Understanding Serverless Arch](https://speakerdeck.com/dawny33/understanding-serverless-architectures). A talk on the architecture of serverless products, includings lessons learned and pitfalls.
+
 ## Talks
 
 We should watch this 30 min PyCon 2016 talk:
