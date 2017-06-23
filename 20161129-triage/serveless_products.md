@@ -53,6 +53,10 @@ Possible prototypes:
 
 [Understanding Serverless Arch](https://speakerdeck.com/dawny33/understanding-serverless-architectures). A talk on the architecture of serverless products, includings lessons learned and pitfalls.
 
+## 2017-06-22 update
+
+[Serverless success story at Postlight](https://trackchanges.postlight.com/serving-39-million-requests-for-370-month-or-how-we-reduced-our-hosting-costs-by-two-orders-of-edc30a9a88cd) (they'd like to talk if we work on this)
+
 ## Talks
 
 We should watch this 30 min PyCon 2016 talk:
