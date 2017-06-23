@@ -37,7 +37,7 @@ Please add to this list! Please research and write about things on this list!
    [paper](http://nlp.stanford.edu/pubs/glove.pdf)
  - Recommendation and personalization --- what's new?
    [e.g.](https://aws.amazon.com/blogs/big-data/generating-recommendations-at-amazon-scale-with-apache-spark-and-amazon-dsstne/)
- - ML for authentication [notes](/20161129-triage/authentication_with_ml.md)
+ - ~~ML for authentication [notes](/20161129-triage/authentication_with_ml.md)~~ [post](http://blog.fastforwardlabs.com/2017/02/27/mobile-authentication.html)
  - Automatic portfolio management
  - Stylometry
  - Transfer learning
