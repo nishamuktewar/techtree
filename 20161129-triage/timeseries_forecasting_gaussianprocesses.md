@@ -43,3 +43,9 @@ but the applications might not be obvious to others.
 ## Note added 2017-01-19
 
 [GPs in (R)Stan tutorial from NIPS 2016](https://github.com/rtrangucci/gps_in_stan/)
+
+## Note added 2017-06-22
+
+[Celerite](http://celerite.readthedocs.io/en/latest/), [paper](https://arxiv.org/abs/1703.09710): Ω(n) GP algorithm in 1D
+
+[GP worksheet from Dan Foreman-Mackey](https://github.com/dfm/gp/blob/master/worksheet.ipynb)
