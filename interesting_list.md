@@ -2,6 +2,7 @@ __potential topics:__
 
 All topics here are responding to the prompt, "What's up with..."
 
+  * Analytics on encrypted data [1](https://people.eecs.berkeley.edu/~wzheng/opaque.pdf)
   * Speech recognition [1](http://languagelog.ldc.upenn.edu/nll/?p=28894)
   * Neural machine translation [1](https://ufal.mff.cuni.cz/mtm16/files/12-recent-advances-and-future-of-neural-mt-orhat-firat.pdf)
   * Reinforcement learning [1](http://www.wildml.com/2016/10/learning-reinforcement-learning/)
@@ -110,5 +111,5 @@ All topics here are responding to the prompt, "What's up with..."
   * retail sensor trends (visual analytics of people walking around stores, RFID rebirth,  NFC for payment..)
   * adaptive data visualizations (visualizations that identify and expose correlations automatically)
   * probabilistic programming languages (baysean model in mathematical terms and then auto-solve using a batch or online algorithm by doing some smart variational inference - via micha via max)
-  * genetic algorithms (applications beyond antenna design?)
+  * genetic algorithms e.g. [Open AI's work](https://blog.openai.com/evolution-strategies/)
   * new processors architectures (for example: http://rexcomputing.com/)
