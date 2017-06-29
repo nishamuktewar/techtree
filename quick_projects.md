@@ -47,6 +47,7 @@ Please add to this list! Please research and write about things on this list!
  - Fact checking
  - Review new SpaCy trained language models
  - Convex optimization, e.g. [cvxpy](http://www.cvxpy.org/en/latest/)
+ - Object tracking (see [benchmarks](https://github.com/HakaseH/CF_benchmark_results), [paper](https://arxiv.org/abs/1604.01802))
 
 ## Data science/ML best practices and fundamentals
 
