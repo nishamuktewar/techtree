@@ -113,3 +113,4 @@ All topics here are responding to the prompt, "What's up with..."
   * probabilistic programming languages (baysean model in mathematical terms and then auto-solve using a batch or online algorithm by doing some smart variational inference - via micha via max)
   * genetic algorithms e.g. [Open AI's work](https://blog.openai.com/evolution-strategies/)
   * new processors architectures (for example: http://rexcomputing.com/)
+  * 3d model generation from cheap cameras
