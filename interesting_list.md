@@ -114,3 +114,4 @@ All topics here are responding to the prompt, "What's up with..."
   * genetic algorithms e.g. [Open AI's work](https://blog.openai.com/evolution-strategies/)
   * new processors architectures (for example: http://rexcomputing.com/)
   * 3d model generation from cheap cameras
+  * Adversarial Machine Learning / GAN - Generative Adversarial Networks (for example: in [human interaction](https://techcrunch.com/2017/06/14/facebook-teaches-machines-to-negotiate-with-humans/), [Creation of News events](https://www.economist.com/news/science-and-technology/21724370-generating-convincing-audio-and-video-fake-events-fake-news-you-aint-seen), [Art](https://techcrunch.com/2017/06/20/gangogh/), and [Malware](http://sdtimes.com/artificial-intelligence-will-invoke-new-hack-attacks/))
