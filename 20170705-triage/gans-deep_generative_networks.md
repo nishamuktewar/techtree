@@ -15,9 +15,10 @@ Attend, Infer, Repeat - scene understanding - https://arxiv.org/abs/1603.08575
 InfoGAN - extension of GANs to maximize disentangled feature learning - https://arxiv.org/abs/1606.03657 (super interesting)
 GANs with Laplacian Pyramid - better results on image generation than GANs - https://arxiv.org/abs/1506.05751
 DCGAN - GANs with Convolutions (inverting the pooling operation requires assumptions) - https://arxiv.org/abs/1511.06434
+WaveNet - https://deepmind.com/blog/wavenet-generative-model-raw-audio/
 
 It would be easy to get good data (since we don't need labels) and there are many applications. As a report topic, worry is that the field is still too immature for commercialized solution. My verdics, take more time to explore the topic to assess maturity and prototype ideas. 
 
 Also https://medium.com/@ageitgey/abusing-generative-adversarial-networks-to-make-8-bit-pixel-art-e45d9b96cee7 and 
 
-https://arxiv.org/abs/1610.06918 neural networks can learn encryption. Coverage in the blog: https://blog.acolyer.org/2017/02/10/learning-to-protect-communications-with-adversarial-neural-cryptography/ adversarial training to allow to nets (with with access to secret key) to learn how to secretly communicate with one another while a third net (w/o access to key) fails. Input texts are condensed and encrypted by passing them through a series of convolutions, parameters are learning in adversarial fashion (cooperative, really, between "Alice" and "Bob"). 
+https://arxiv.org/abs/1610.06918 neural networks can learn encryption. Coverage in the blog: https://blog.acolyer.org/2017/02/10/learning-to-protect-communications-with-adversarial-neural-cryptography/ adversarial training to allow to nets (with with access to secret key) to learn how to secretly communicate with one another while a third net (w/o access to key) fails. Input texts are condensed and encrypted by passing them through a series of convolutions, parameters are learning in adversarial fashion (cooperative, really, between "Alice" and "Bob"). Theano code https://nlml.github.io/neural-networks/adversarial-neural-cryptography/
