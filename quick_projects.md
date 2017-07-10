@@ -48,6 +48,7 @@ Please add to this list! Please research and write about things on this list!
  - Review new SpaCy trained language models
  - Convex optimization, e.g. [cvxpy](http://www.cvxpy.org/en/latest/)
  - Object tracking (see [benchmarks](https://github.com/HakaseH/CF_benchmark_results), [paper](https://arxiv.org/abs/1604.01802))
+ - Image segmentation (see [benchmarks](https://github.com/davidstutz/superpixel-benchmark), [paper](http://www.cs.toronto.edu/~yaojian/cvpr15.pdf), [topic selection notes](https://github.com/fastforwardlabs/techtree/blob/master/20170705-triage/image_segmentation.md))
 
 ## Data science/ML best practices and fundamentals
 
