@@ -10,7 +10,6 @@
 
 [Automated Curriculum Learning for Neural Networks](https://arxiv.org/pdf/1704.03003.pdf)
 
-[Automatic Goal Generation for Reinforcement Learning Agents](https://arxiv.org/abs/1705.06366)
 
 [Learning to Multi-Task by Active Sampling](https://arxiv.org/abs/1702.06053)
 
