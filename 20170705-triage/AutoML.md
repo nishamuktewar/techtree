@@ -12,7 +12,7 @@ The field could be mature in terms of technology, tools, and interest, but there
  
 [A topological insight into restricted Boltzmann machines](https://link.springer.com/article/10.1007/s10994-016-5570-z)
 
-[Learning to learn by gradient descent by gradient descent](https://arxiv.org/abs/1606.04474)
+[Learning to learn by gradient descent](https://arxiv.org/abs/1606.04474)
 
 *Recent blogposts:
 
