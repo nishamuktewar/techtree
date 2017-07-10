@@ -8,6 +8,12 @@ _Brief Bibliography_
 - Palatucci, Mark, Geoffrey Hinton, Dean Pomerleau, and Tom M Mitchell. "Zero-Shot Learning with Semantic Output Codes". NIPS. 2009. http://papers.nips.cc/paper/3650-zero-shot-learning-with-semantic-output-codes.pdf
 - Fei-fei, Li, Rob Fergus, Pietro Perona. "One-Shot Learning of Object Categories". IEEE transactions on pattern analysis and machine intelligence 28(4). 2006. http://authors.library.caltech.edu/5407/1/LIFieeetpam06.pdf
 
+_Recent Blog/Video Posts_
+- [One-Shot Learning and Siamese Networks in Keras](https://sorenbouma.github.io/blog/oneshot/)
+- [Zero-Shot Learning - Dr. Timothy Hopesdales](https://www.youtube.com/watch?v=jBnCcr-3bXc)
+- [Zero-Shot Translation with Google’s Multilingual Neural Machine Translation System](https://research.googleblog.com/2016/11/zero-shot-translation-with-googles.html)
+
+
 ## Multimodal Learning
 Multimodal learning generally refers to models that can extract unified representations from inputs of diverse modalities. This is to say that voice, video, image, and text could all be used together to train a classifier. Approaches to multimodal learning include the use of Deep Boltzmann Machines, Google's recent Tensor2Tensor, and [find one more]. Multimodal learning has demonstrated gains in accuracy and is effective with incomplete training data, which is one reason why it has been used for zero- and single-shot learning as well. In a recent newsletter, FFL has described the tensor2tensor approach to multimodal learning as "essentially a creative re-use of established deep learning model components. There are four "modality nets", the "sensory organs" of MultiModel, one for language (text data), one for images, one for audio, and one for categorical data. These modality nets learn abstract representations of the inputs (i.e., representation learning, at the heart of neural network success) and feed into a task- and domain-agnostic encoder for even more abstract, modality independent representation learning."
 
