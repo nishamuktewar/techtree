@@ -4,7 +4,17 @@ The latest version of the package ‘lifelines’ (python implementation of clas
 
 This is a mature area of research with various open source tools implementing the different approaches. As a group of algorithms it is of particular interest as it is solving a unique type of problems that involve longitudinal data with a variety of applications. Survival analysis algorithms could be tested against longitudinal datasets such as: clinical patient data, fertility data, customer conversion data, churn data, A/B testing data, stock price data (with “events” log), insurance claim history etc. 
 
-*Recent blogposts:
+*Recent papers
+
+[Restaurant Survival Analysis with Heterogeneous
+Information](http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/companion/p993.pdf)
+
+[A censored quantile regression approach for the analysis of time to event data.](http://journals.sagepub.com/doi/pdf/10.1177/0962280216648724) (paywall)
+
+[Modeling time-to-event (survival) data using classification tree analysis](http://onlinelibrary.wiley.com/doi/10.1111/jep.12779/abstract)(paywall)
+
+
+Recent blogposts:
 
 [lifelines](http://savvastjortjoglou.com/nfl-survival-analysis-kaplan-meier.html)
 
@@ -12,7 +22,7 @@ This is a mature area of research with various open source tools implementing th
 
 [wtte-rnn, keras](http://daynebatten.com/2017/02/recurrent-neural-networks-churn)
 
-*Recent open source tools :
+Recent open source tools :
 
 https://lifelines.readthedocs.io/en/latest/Quickstart.html
 
@@ -22,4 +32,4 @@ https://github.com/daynebatten/keras-wtte-rnn
 
 https://github.com/hammerlab/survivalstan.
 
-*Recent: less than a year old
+*Recent: (about) a year old or less
