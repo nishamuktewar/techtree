@@ -13,6 +13,9 @@ Information](http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.co
 
 [Modeling time-to-event (survival) data using classification tree analysis](http://onlinelibrary.wiley.com/doi/10.1111/jep.12779/abstract)(paywall)
 
+[WTTE-RNN : Weibull Time To Event
+Recurrent Neural Network](https://ragulpr.github.io/assets/draft_master_thesis_martinsson_egil_wtte_rnn_2016.pdf) (Master thesis:WTTE-RNN)
+
 
 Recent blogposts:
 
