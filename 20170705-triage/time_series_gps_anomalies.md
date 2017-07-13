@@ -35,3 +35,9 @@ terms of citations.
 
 (Interestingly, most of the papers that cite it that have done well are about
 GPs, so perhaps there _is_ a connection there? Will look into this more.)
+
+### Added 2017-07-12
+
+[This](http://rsta.royalsocietypublishing.org/content/371/1984/20110550.short)
+is a good-looking review of GPs that mentions the Mackay online anomaly
+detection paper.
