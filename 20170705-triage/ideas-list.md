@@ -1,32 +1,28 @@
 # Ideas List from 2017-07 Topic Selection
 
 ## To be discussed from 1st round
-Topics we did not manage to cover during the last meting (assigned).
- - automated product design | Grant (+) 
+Topics we did not manage to cover during the last meeting.
+ - automated product design | Grant (+)
  - assisted drawing / writing | Grant (+)
- - automatic query reformulation / NLQW (?) | Ryan, Sepand (+) | 
+ - automatic query reformulation / NLQW (?) | Ryan, Sepand (+) |
  - learning to learn / automated ML / Boltzman machines / genetic algorithms / evolutionary strategies | Niki (+) |
 
  - removing / adding to images | *unevaluated*
  - (Homomorphically) Encrypted A.I. (on the Blockchain) | *unassigned* (?)
 
----
-
-Please sign up for any of these topics, especially the ones that received thumps up during the last meeting.
-
-## To be looked into
-Topics that got a + in 2nd round evaluation (please sign up).
+## To be looked into in more depth
+I.e., survivors of the 2nd round. If any one particlar topic interests you, feel free to claim it and do some research.
  - Multi-modal models / image to text | Manny (+) | *unassigned* (+)
  - GANs / deep generative networks / image generation / video generation / adversarial neural cryptography | Friede (+) | *unassigned* (+)
  - Survivial analysis | Niki (+) | *unassigned* (+) 
  - Zero or one-short learning / transfer learning | Manny (+) | *unassigned* (+)
 
 ### New additions
-Please add and sign up, if interested.
+It's still time to propose new ideas, please put them here, and feel free to look into them.
  - *more ideas*
 
 ### Maybes 1st round 
-Topics to briefly review, anything to look into? (sign up if interested)
+Topics to briefly review during next meeting, anything we should bump up? If a particular topic interests you, claim it, research it, and/or make a case for it.
  - Attention Mechanisms / expert layers | *maybe/unassigned* (0)
  - Pre-training strategies / semi-supervised learning | *maybe/unassigned* (0)
  - NLU / better chat bots / intent detection / realtime NLG | *maybe/unassigned* (-)
@@ -37,7 +33,7 @@ Topics to briefly review, anything to look into? (sign up if interested)
  - text to metric | *maybe/unassiged* (0)
 
 ### Maybes 2nd round
-2nd look in next meeting (sign up if interested).
+Topics to briefly review during next meeting, anything we should bump up to yes? If a particular topic interests you, claim it, research it, and/or make a case for it. Make sure you look at the notes in this folder as you do this.
  - Curriculum Learning | Niki (+) | *maybe/unassigned* (0)
  - memory-augmented NNs / question answering | Hilary (+) | *maybe/ unassigned* (0)
  - time series forcasting / gaussian processes / anomaly detection | Mike (+) | *maybe/unassigned* (0)
