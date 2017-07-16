@@ -6,11 +6,15 @@ Automated ML has been the focus of the [ChaLearn autoML Kaggle competition](http
 
 Despite this being a field that has attracted interest as it can offer meaningful solutions to a variety of industries, the various package implementations tend to focus on difscrete aspects of automation, eg algorithm selection, hyperparameter selection etc. and a few (eg auto-sklearn, MLbox) deal with the entire workflow.   The field could be mature in terms of technology, tools, and interest, but there is still a plethora of moving parts and incremental algorithmic improvements affect different steps in the pipeline (ie Data preprocessing, model and hyperparameter selection, insights).  If the different implementations can be meaningfully and systematically explored, this is an interesting topic with a wide variety of datasets that can be tested against.
 
-*Recent papers:
- 
-[A topological insight into restricted Boltzmann machines](https://link.springer.com/article/10.1007/s10994-016-5570-z)
+Papers:
 
-[Learning to learn by gradient descent](https://arxiv.org/abs/1606.04474)
+(2016)[TPOT: A Tree-based Pipeline Optimization Tool for Automating Machine Learning](http://proceedings.mlr.press/v64/olson_tpot_2016.pdf) 
+
+(2015, Auto-sklearn)[Efficient and Robust Automated Machine Learning](https://papers.nips.cc/paper/5872-efficient-and-robust-automated-machine-learning)
+
+(2016)[A topological insight into restricted Boltzmann machines](https://link.springer.com/article/10.1007/s10994-016-5570-z)
+
+(2016) [Learning to learn by gradient descent](https://arxiv.org/abs/1606.04474)
 
 *Recent blogposts:
 
