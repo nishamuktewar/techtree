@@ -1,14 +1,11 @@
 # Ideas List from 2017-07 Topic Selection
 
-## To be discussed from 1st round
-Topics we did not manage to cover during the last meeting.
- - automated product design | Grant (+)
- - assisted drawing / writing | Grant (+)
- - automatic query reformulation / NLQW (?) | Ryan, Sepand (+) |
- - learning to learn / automated ML / Boltzman machines / genetic algorithms / evolutionary strategies | Niki (+) |
-
- - removing / adding to images | *unevaluated*
- - (Homomorphically) Encrypted A.I. (on the Blockchain) | *unassigned* (?)
+## New additions
+It's still time to propose new ideas, please put them here, and feel free to look into them.
+ - federated learning / distributed learning / mobile/edge processing | Shioulin (+)
+ - Pre-training strategies / semi-supervised learning | Friede (+)
+ - text classification | Manny (+)
+ - NICE algorithm (genetic algorithm) | Niki (+) | Friede (+)
 
 ## To be looked into in more depth
 I.e., survivors of the 2nd round. If any one particlar topic interests you, feel free to claim it and do some research.
@@ -16,27 +13,9 @@ I.e., survivors of the 2nd round. If any one particlar topic interests you, feel
  - GANs / deep generative networks / image generation / video generation / adversarial neural cryptography | Friede (+) | *unassigned* (+)
  - Survivial analysis | Niki (+) | *unassigned* (+) 
  - Zero or one-short learning / transfer learning | Manny (+) | *unassigned* (+)
-
-### New additions
-It's still time to propose new ideas, please put them here, and feel free to look into them.
- - federated learning (https://research.googleblog.com/2017/04/federated-learning-collaborative.html)
-
-### Maybes 1st round 
-Topics to briefly review during next meeting, anything we should bump up? If a particular topic interests you, claim it, research it, and/or make a case for it.
- - Attention Mechanisms / expert layers | *maybe/unassigned* (0)
- - Pre-training strategies / semi-supervised learning | *maybe/unassigned* (0)
- - NLU / better chat bots / intent detection / realtime NLG | *maybe/unassigned* (-)
- - mobile/edge processing / distributed learning | *maybe/unassigned* (0)
- - verifyability / property-based testing | *maybe/unassigned* (0)
- - human-activity recognition | *maybe/unassigned* (0)
- - pose / gesture detection | *maybe/unassigned* (0)
- - text to metric | *maybe/unassiged* (0)
-
-### Maybes 2nd round
-Topics to briefly review during next meeting, anything we should bump up to yes? If a particular topic interests you, claim it, research it, and/or make a case for it. Make sure you look at the notes in this folder as you do this.
- - Curriculum Learning | Niki (+) | *maybe/unassigned* (0)
- - memory-augmented NNs / question answering | Hilary (+) | *maybe/ unassigned* (0)
- - time series forcasting / gaussian processes / anomaly detection | Mike (+) | *maybe/unassigned* (0)
+ - Assisted writing | Grant (+) | *unassigned* (+)
+ - automatic query reformulation / NLQW (natural language query writing) | Ryan, Sepand (+) | *unassigned* (+)
+ - learning to learn | Niki (+) | *unassigned* (+)
 
 ---
 
@@ -48,6 +27,20 @@ Topics to briefly review during next meeting, anything we should bump up to yes?
  - Differential privacy | Mike, Ryan (+) | ruled out second round (-)
  - active learning / annotation workflow | Mike (+) | ruled out second round (-)
  - Bayesian program learning | Friede (+) | ruled out 2nd round (-)
+ - automated product design | Grant (+) | ruled out 2nd round (-)
+ - asssisted drawing | Grant (+) | ruled out 2nd round (-)
+ - automated ML / Boltzman machines | Niki (+) | ruled out 2nd round (-)
+ - removing / adding to images | *unevaluated* | ruled out 2nd round (-)
+ - (Homomorphically) Encrypted A.I. (on the Blockchain) | *unassigned* (?) | ruled out 2nd round (-)
+ - Attention Mechanisms / expert layers | *maybe/unassigned* (0)
+ - NLU / better chat bots / intent detection / realtime NLG | *maybe/unassigned* (-)
+ - verifyability / property-based testing | *maybe/unassigned* (0)
+ - human-activity recognition | *maybe/unassigned* (0)
+ - pose / gesture detection | *maybe/unassigned* (0)
+ - text to metric | *maybe/unassiged* (0)
+ - Curriculum Learning | Niki (+) | *maybe/unassigned* (0)
+ - memory-augmented NNs / question answering | Hilary (+) | *maybe/ unassigned* (0)
+ - time series forcasting / gaussian processes / anomaly detection | Mike (+) | *maybe/unassigned* (0)
 
 ## Ruled out 1st round
  - Natural language to code generation / sparse pointer models | ruled out first round (-)
