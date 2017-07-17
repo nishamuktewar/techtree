@@ -19,7 +19,7 @@ I.e., survivors of the 2nd round. If any one particlar topic interests you, feel
 
 ### New additions
 It's still time to propose new ideas, please put them here, and feel free to look into them.
- - *more ideas*
+ - federated learning (https://research.googleblog.com/2017/04/federated-learning-collaborative.html)
 
 ### Maybes 1st round 
 Topics to briefly review during next meeting, anything we should bump up? If a particular topic interests you, claim it, research it, and/or make a case for it.
