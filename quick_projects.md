@@ -50,6 +50,7 @@ Please add to this list! Please research and write about things on this list!
  - Object tracking (see [benchmarks](https://github.com/HakaseH/CF_benchmark_results), [paper](https://arxiv.org/abs/1604.01802))
  - Image segmentation (see [benchmarks](https://github.com/davidstutz/superpixel-benchmark), [paper](http://www.cs.toronto.edu/~yaojian/cvpr15.pdf), [topic selection notes](https://github.com/fastforwardlabs/techtree/blob/master/20170705-triage/image_segmentation.md))
  - Data dependent hashing (see [learning to hash](https://cs.nju.edu.cn/lwj/L2H.html))
+ - Validation of topic models [paper](https://arxiv.org/abs/1706.05140)
 
 ## Data science/ML best practices and fundamentals
 
