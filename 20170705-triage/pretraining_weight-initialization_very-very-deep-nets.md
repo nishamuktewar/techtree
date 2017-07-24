@@ -2,8 +2,8 @@
 
 There are two primary reasons for pretraining: 
 
-(1) It allows to use unlabelled data during training, in case labelled data is in short support (unsupervised pretraining). Here, pre-training relates to transfer learning.
-(2) It allows to build very, very deep neural networks. Historically, pretraining was used to train deep neural networks before optimization algorithms were improved to train deep neural networks directly without pre-training. Very, very deep networks are still hard to optimize with SGD. Pre-training is essentially a way to initialize weights, and active area of research (e.g., https://arxiv.org/abs/1511.06422, https://arxiv.org/abs/1704.08863, https://prateekvjoshi.com/2016/03/29/understanding-xavier-initialization-in-deep-neural-networks/), for very, very deep nets. 
+(1) It allows to use unlabelled data during training, in case labelled data is in short support (unsupervised pretraining). Here, pre-training relates to transfer learning. Milestone in deep learning research, but popularity has declined. 
+(2) It allows to build very, very deep neural networks. Historically, pretraining was used to train deep neural networks before optimization algorithms were improved to train deep neural networks directly without pre-training (in this sense, related to regularization). Very, very deep networks are still hard to optimize with SGD. Pre-training is essentially a way to initialize weights, and active area of research (e.g., https://arxiv.org/abs/1511.06422, https://arxiv.org/abs/1704.08863, https://prateekvjoshi.com/2016/03/29/understanding-xavier-initialization-in-deep-neural-networks/), for very, very deep nets. 
 
 Pretraining is related to two major research efforts:
 
@@ -11,7 +11,9 @@ Pretraining is related to two major research efforts:
 (2) Improving optimizers: orthogonal to pretraining, pretraining compensates for lack of optimizers that work for very, very deep neural networks. 
 
  - Original paper [Bengio et al 2007](https://papers.nips.cc/paper/3048-greedy-layer-wise-training-of-deep-networks.pdf)
+ - Systematic [study of why unsupervised pretraining was useful](http://www.jmlr.org/papers/volume11/erhan10a/erhan10a.pdf) (2010, outdated)
  - Recent work for very deep nets [FitNets](https://arxiv.org/abs/1412.6550)
  - Recent work on [16 - 19 layer conv net](https://arxiv.org/pdf/1409.1556.pdf). The paper shows that pre-training doesn't have to be layer-by-layer, it can also happen with assmeblies of layers. 
  - Schmidhuber and team also introduced ["information highway network"](http://papers.nips.cc/paper/5850-training-very-deep-networks.pdf), 
+ - [Ladder networks](https://arxiv.org/abs/1507.02672) "The proposed model is trained to simultaneously minimize the sum of supervised and unsupervised cost functions by backpropagation, avoiding the need for layer-wise pre-training."
 
