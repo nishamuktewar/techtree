@@ -5,7 +5,6 @@ It's still time to propose new ideas, please put them here, and feel free to loo
  - federated learning / distributed learning / mobile/edge processing | Shioulin (+)
  - Pre-training strategies / semi-supervised learning | Friede (+)
  - text classification | Manny (+)
- - NICE algorithm (genetic algorithm) | Niki (+) | Friede (+)
 
 ## To be looked into in more depth
 I.e., survivors of the 2nd round. If any one particlar topic interests you, feel free to claim it and do some research.
@@ -15,8 +14,9 @@ I.e., survivors of the 2nd round. If any one particlar topic interests you, feel
  - Zero or one-short learning / transfer learning | Manny (+) | *unassigned* (+)
  - Assisted writing | Grant (+) | *unassigned* (+)
  - automatic query reformulation / NLQW (natural language query writing) | Ryan, Sepand (+) | *unassigned* (+)
- - learning to learn | Niki (+) | *unassigned* (+)
-
+ - learning to learn --> TPOT ([code](https://github.com/rhiever/tpot), [paper](http://proceedings.mlr.press/v64/olson_tpot_2016.pdf)) / NICE algorithm (genetic algorithm) | Niki (+) | *unassigned* (+)
+ - learning to learn / meta-learning for NN architecture (e.g. [Google Research blog](https://research.googleblog.com/2017/05/using-machine-learning-to-explore.html) | Niki (+) | *unassiged*
+ 
 ---
 
 ## Ruled out 2nd round
