@@ -1,11 +1,5 @@
 # Ideas List from 2017-07 Topic Selection
 
-## New additions
-It's still time to propose new ideas, please put them here, and feel free to look into them.
- - federated learning / distributed learning / mobile/edge processing | Shioulin (+)
- - Pre-training strategies / semi-supervised learning | Friede (+)
- - text classification | Manny (+)
-
 ## To be looked into in more depth
 I.e., survivors of the 2nd round. If any one particlar topic interests you, feel free to claim it and do some research.
  - Multi-modal models / image to text | Manny (+) | *unassigned* (+)
@@ -16,6 +10,8 @@ I.e., survivors of the 2nd round. If any one particlar topic interests you, feel
  - automatic query reformulation / NLQW (natural language query writing) | Ryan, Sepand (+) | *unassigned* (+)
  - learning to learn --> TPOT ([code](https://github.com/rhiever/tpot), [paper](http://proceedings.mlr.press/v64/olson_tpot_2016.pdf)) / NICE algorithm (genetic algorithm) | Niki (+) | *unassigned* (+)
  - learning to learn / meta-learning for NN architecture (e.g. [Google Research blog](https://research.googleblog.com/2017/05/using-machine-learning-to-explore.html) | Niki (+) | *unassiged*
+ - asynchronous stochastic gradient descent (as building block of federated learning) | Shioulin (+) | *unassigned*
+ - text-classification with multi-task learning | Manny (+) | *unassigned*
  
 ---
 
@@ -41,6 +37,7 @@ I.e., survivors of the 2nd round. If any one particlar topic interests you, feel
  - Curriculum Learning | Niki (+) | *maybe/unassigned* (0)
  - memory-augmented NNs / question answering | Hilary (+) | *maybe/ unassigned* (0)
  - time series forcasting / gaussian processes / anomaly detection | Mike (+) | *maybe/unassigned* (0)
+ - Pre-training strategies / semi-supervised learning | Friede (+) | (-)
 
 ## Ruled out 1st round
  - Natural language to code generation / sparse pointer models | ruled out first round (-)
