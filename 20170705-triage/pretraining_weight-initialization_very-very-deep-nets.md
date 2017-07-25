@@ -3,7 +3,7 @@
 There are two primary reasons for pretraining: 
 
 (1) It allows to use unlabelled data during training, in case labelled data is in short support (unsupervised pretraining). Here, pre-training relates to transfer learning. Milestone in deep learning research, but popularity has declined. 
-(2) It allows to build very, very deep neural networks. Historically, pretraining was used to train deep neural networks before optimization algorithms were improved to train deep neural networks directly without pre-training (in this sense, related to regularization). Very, very deep networks are still hard to optimize with SGD. Pre-training is essentially a way to initialize weights, and active area of research (e.g., https://arxiv.org/abs/1511.06422, https://arxiv.org/abs/1704.08863, https://prateekvjoshi.com/2016/03/29/understanding-xavier-initialization-in-deep-neural-networks/), for very, very deep nets. 
+(2) It allows to build very, very deep neural networks. Historically, pretraining was used to train deep neural networks before optimization algorithms were improved to train deep neural networks directly without pre-training (in this sense, related to regularization). Very, very deep networks are still hard to optimize with SGD. Pre-training is essentially a way to initialize weights, and active area of research (e.g., https://arxiv.org/abs/1511.06422, https://arxiv.org/abs/1704.08863, https://prateekvjoshi.com/2016/03/29/understanding-xavier-initialization-in-deep-neural-networks/), for very, very deep nets.   
 
 Pretraining is related to two major research efforts:
 

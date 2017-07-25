@@ -15,7 +15,7 @@ Popular tools/toolkits:
 - Weka
 - LingPipe
 
-## Text Classification with with multi-task learning
+## Text Classification with with *multi-task learning*, i.e., much better text classification
 
 Key references:
  - https://arxiv.org/abs/1605.05101 (multi-task)

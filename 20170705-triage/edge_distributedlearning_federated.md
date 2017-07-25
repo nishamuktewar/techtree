@@ -18,6 +18,7 @@ Not candidate for report topic; important for real life applications but to demo
  for decentralized training. Unlike traditional approaches with centralized training data, federated learning trains with local data (for example: on a mobile phone) and sends a small focused and encrypted update to the cloud. This update is averaged with other users’ to improve the shared model.
 
 Algorithmic advances: 
+* Asynchronous stochastic gradient descent: https://arxiv.org/abs/1609.08326, http://papers.nips.cc/paper/4390-hogwild-a-lock-free-approach-to-parallelizing-stochastic-gradient-descent.pdf, https://cxwangyi.wordpress.com/2013/04/09/why-asynchronous-sgd-works-better-than-its-synchronous-counterpart/ - using many CPUs, other other smaller compute devices, to collectively train a NN.
 * Because data has high latency and is unevenly distributed across millions of devices, Federated Averaging Algorithm was developed to train deep networks using 10-100x less communication. This is possible because the algorithm taps powerful processor on phones to compute higher quality updates instead of simple gradient steps. 
 * Developed compression updates to overcome slow upload speeds
 * Mini tensorflow (TensorFlow Lite)

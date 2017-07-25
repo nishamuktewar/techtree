@@ -1,21 +1,26 @@
 # Ideas List from 2017-07 Topic Selection
 
+Please vote on ideas under "To be looked into in more depth". 
+
 ## To be looked into in more depth
-I.e., survivors of the 2nd round. If any one particlar topic interests you, feel free to claim it and do some research.
- - Multi-modal models / image to text | Manny (+) | *unassigned* (+)
- - GANs / deep generative networks / image generation / video generation / adversarial neural cryptography | Friede (+) | *unassigned* (+)
- - Survivial analysis | Niki (+) | *unassigned* (+) 
- - Zero or one-short learning / transfer learning | Manny (+) | *unassigned* (+)
- - Assisted writing | Grant (+) | *unassigned* (+)
- - automatic query reformulation / NLQW (natural language query writing) | Ryan, Sepand (+) | *unassigned* (+)
- - learning to learn --> TPOT ([code](https://github.com/rhiever/tpot), [paper](http://proceedings.mlr.press/v64/olson_tpot_2016.pdf)) / NICE algorithm (genetic algorithm) | Niki (+) | *unassigned* (+)
- - learning to learn / meta-learning for NN architecture (e.g. [Google Research blog](https://research.googleblog.com/2017/05/using-machine-learning-to-explore.html) | Niki (+) | *unassiged*
- - asynchronous stochastic gradient descent (as building block of federated learning) | Shioulin (+) | *unassigned*
- - text-classification with multi-task learning | Manny (+) | *unassigned*
+| Topic | First pass | Learn more |
+--- | --- | ---
+| GANs / deep generative networks | Friede (+) | [here](gans-deep_generative_networks.md) |
+| Multi-modal models / image to text | Manny (+) | [here](Multimodal_learning_and_ZSL.md)  |
+| Survivial analysis | Niki (+) | [here](Survival%20analysis.md) |
+| N-short learning / transfer learning | Manny (+) | [here](one-shot_transfer-learning.md) |
+| Assisted writing | Grant (+) | [here](assisted-writing-drawing-designing.md) |
+| automatic query reformulation / natural language query writing | Ryan, Sepand (+) | [here](Natural_language_query_formulation.md) |
+| learning to learn - interpreted as - AutoML | Niki (+) | [here](AutoML.md) |
+| learning to learn - interpreted as - meta-learning for NN architecture | Niki (+) | [here](meta-learning.md) |
+| asynchronous stochastic gradient descent as building block of federated learning | Shioulin (+) | [here](edge_distributedlearning_federated.md) |
+| text-classification with multi-task learning | Manny (+) | [here](text-classification.md) |
  
 ---
 
 ## Ruled out 2nd round
+| Topic | First pass | ... |
+--- | --- | ---
  - Image segmentation | Mike (+) | ruled out second round (-)
  - mixed integer programming | Shioulin (+) | ruled out 2nd round (-)
  - multi-objective learning | Micha (+) | ruled out 2nd round (-)
@@ -40,6 +45,8 @@ I.e., survivors of the 2nd round. If any one particlar topic interests you, feel
  - Pre-training strategies / semi-supervised learning | Friede (+) | (-)
 
 ## Ruled out 1st round
+| Topic | First pass | ... |
+--- | --- | ---
  - Natural language to code generation / sparse pointer models | ruled out first round (-)
  - quantum algorithms | ruled out first round (-)
  - recursive NNs | ruled out first round (-)

@@ -12,6 +12,10 @@ This would be a different kind of topic than we hve done, because it is super-fo
 - https://medium.com/@samim/assisted-writing-7adea9aed19 great overview of assisted writing possibilities.
 - https://www.robinsloan.com/notes/writing-with-the-machine/ Robin Sloan sci-fi autocomplete. Great project.
 
+Two interpretations:
+ - generative a la Sunspring movie (NLG) - text quality a serious concern
+ - "suggestive", i.e., help improve a piece of text to better achieve a given objective (text classification models could help with this "suggestive mode")
+
 **Drawing**
 - https://aiexperiments.withgoogle.com/sketch-rnn-demo a drawing autocomplete interface built off the Quickdraw dataset
 
