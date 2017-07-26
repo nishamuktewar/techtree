@@ -52,6 +52,7 @@ Please add to this list! Please research and write about things on this list!
  - Data dependent hashing (see [learning to hash](https://cs.nju.edu.cn/lwj/L2H.html))
  - Validation of topic models [paper](https://arxiv.org/abs/1706.05140)
  - Randomized response for privacy preservation [link](https://security.googleblog.com/2014/10/learning-statistics-with-privacy-aided.html), [discussion towards end here](https://blog.cryptographyengineering.com/2016/06/15/what-is-differential-privacy/), [paper](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42852.pdf)
+ - Efficient Computation of Frequent and Top-k Elements in Data Streams [paper](https://www.cs.ucsb.edu/research/tech-reports/2005-23)
 
 ## Data science/ML best practices and fundamentals
 
