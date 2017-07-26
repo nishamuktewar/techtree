@@ -1,5 +1,5 @@
 +2
- - Survival analysis
+ - Survival analysis (this is a vote for event prediction from time series data, e.g. https://ragulpr.github.io/2016/12/22/WTTE-RNN-Hackless-churn-modeling/, not traditional survival analysis)
  - text-classification with multi-task learning
 
 +1, but worried about prototype
