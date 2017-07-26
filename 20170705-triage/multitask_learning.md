@@ -47,3 +47,9 @@ task).
 I would say this is a research topic and there is a good opportunity for us to
 make some contributions to the field. That being said, it may be hard to find a
 compelling prototype.
+
+## Background added 2017-07-25
+
+[Technical primer](http://ruder.io/multi-task/index.html) (also on [arXiv](https://arxiv.org/abs/1706.05098))
+
+[Deep Learning for NLP Best Practices](http://ruder.io/deep-learning-nlp-best-practices/index.html) puts it into an NLP research context
