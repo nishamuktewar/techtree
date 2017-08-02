@@ -64,4 +64,31 @@ Auxiliary task scenarios
 
 It is still an open research questions which tasks are actually helpful, i.e., no theoretical guidance / definition. In practice, intuition can guide selection of tasks, learning parameter sharing will counteract "negative transfer", i.e., doing less well in MLT setting compared to single task.
 
+---
+
+##### What type of data do we need? 
+
+It depends on the auxiliary task scenario we want to focus on. Related or opposite tasks seems most compelling. 
+
+##### What is the approach we want to take?
+
+- We can focus on multi-task learning and then cover multi-task approaches to e.g., linear models before we go to NN-based multitasking.
+- We can focus on text classification and then cover different, simpler approaches to text classification, i.e., single-task tf-idf + classifier, single-task embeddings + classifier, single-task end-to-end, mutlti-task end-to-end.
+- How much do we want to make this about natural language processing (i.e., POS, NER, SRL) or just classifying text?
+
+##### What's the application?
+
+Personalization is, in a sense, multi-task. Each task for a person.
+Topic & doman prediction
+Assisted writing. 
+Plagiarism detection, "this doesn't sound like the NYT" 
+
+##### What's exciting?
+
+- Learning how tasks relate to one another.
+- Learning task-independent embeddings not just by making the data super general, i.e., all of Wikipedia (transfer learning, pre-training).
+- Making use of all the data you have, in one model, to benefit all tasks you want to solve. 
+- Cool title - "Learning to share, or not."
+
+
 
