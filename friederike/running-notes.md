@@ -26,7 +26,7 @@ They don't use word embeddings (pre Mikolov et al. 2013), but a learned look up 
 
 ---
 
-An Overview of Multi-Task Learningin Deep Neural Networks by Ruder 2017
+### An Overview of Multi-Task Learningin Deep Neural Networks by Ruder 2017
 
 Overview of multi-task learning, the different approaches taken over time. MLT has been around for about 20 years (multi-task learning prior to NNs: linear models, kernel methods, Bayesian algorithms) but until now, hard parameter sharing has been the norm (b/c homogenous (all tasks associated with single output, e.g., MNIST) vs. heterogeneous multi-task learning (each task has a unique set of outputs) until now). With NNs, we can venture into "learning to share", i.e., learning what information should be shared (and converselty, what information is task specific). It is a good overview and motivation for MLT, good for an introduction of the report. 
 
@@ -90,5 +90,26 @@ Plagiarism detection, "this doesn't sound like the NYT"
 - Making use of all the data you have, in one model, to benefit all tasks you want to solve. 
 - Cool title - "Learning to share, or not."
 
+---
+
+### Domain Separation Networks Bousmalis et al. 2016
+
+They use an adversarial network setup in order to obtain from labelled source images good, predicted labels for the target. Specifically, they explicitly model a private and shared space maintained by a loss function that measures similarity in the similarity subspace (penality if dissimilar) and measures difference between the private spaces and the shared subspace (penality if similar). They use several image data sets, e.g., MNIST and MNIST-M, synthetic to real images of traffic signs. The advantage is that you can now cheaply synthesize labelled image data and then use the unlabelled real world data to learn a shared representation that allows to get labels for the real-world data (results look compelling). The paper has a great and clear discussion of the different loss functions they tried, really the key to the approach, DANN is better empirically for similarity loss than MMD (maximum mean discrepancy), empirically, the difference loss matters. CNN & adversarial approach (gradient reversal layer), uses predicted target on source and reconstruction loss simultaneously.
+
+Similar in approach to Adversarial Multi-task learning for text classification by Pengfeng Liu et al. (2016) but more in depth exploration of loss functions, application to images, different intended task of learned shared representation.
+
+Code: https://github.com/tensorflow/models/tree/master/domain_adaptation (2016 and 2017 paper)
+
+---
+
+
+
+
+---
+
+TODO
+- Go through GAN papers to probe viability for report
+- Go through ICML papers RE multi-task, multi-task for text classification, shared vs. private representation learning (which underlies multi-task), GANs (further defined what area): https://2017.icml.cc/Conferences/2017/Schedule?type=Poster
+- Prep 20 minute results discussion in next research meeting
 
 
