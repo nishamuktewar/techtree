@@ -6,6 +6,7 @@
   * [Canonical benchmark/research/industrial datasets with remarks on quality](https://medium.com/startup-grind/fueling-the-ai-gold-rush-7ae438505bc2#.5msid0z1d)
 
 ## Recent (2016/7) finds
+  * [goodbooks-10k](https://github.com/zygmuntz/goodbooks-10k), "six million ratings sorted by time for ten thousand most popular (with most ratings) books"
   * [DocGraph](https://www.docgraph.com/referral-data/), US-based doctor referral data from Medicare with longitudinal information
   * [RepEval](https://repeval2017.github.io/shared/), evaluate natural language understanding models based on sentence encoders
   * [VQA: Visual Question Answering](http://visualqa.org/download.html)
