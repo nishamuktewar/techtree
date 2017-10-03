@@ -31,3 +31,7 @@ http://www.cs.ubc.ca/labs/beta/Projects/autoweka/
 https://github.com/AxeldeRomblay/MLBox
 
 https://github.com/deepmind/learning-to-learn
+
+*Talks
+
+(2016)[Andreas Mueller at SciPy 2016](https://www.youtube.com/watch?v=Wy6EKjJT79M)
