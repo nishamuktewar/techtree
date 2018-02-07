@@ -10,9 +10,10 @@ paper](https://arxiv.org/abs/1608.06807)). It's related to [One class
 classification](https://en.wikipedia.org/wiki/One-class_classification) (where
 there is no unlabled training data).
 
-Here's a stackoverflow question with someone asking for help in this situation.
-Someone active in the field replies and describes it as "an active niche of
-semi-supervised learning".
+Here's a [stackoverflow
+question](https://stats.stackexchange.com/questions/174383/how-to-predict-outcome-with-only-positive-cases-as-training)
+with someone asking for help in this situation. Someone active in the field
+replies and describes it as "an active niche of semi-supervised learning".
 
 ### Examples
 
