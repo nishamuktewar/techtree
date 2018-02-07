@@ -12,6 +12,8 @@ I copy from [here](https://www.oreilly.com/ideas/introducing-capsule-networks?tw
 
 *Overall*: Too early and too limited in its applications (to date). Main advantage is data efficiency and better generalization (not enough for a report), main downside is computationally expensive, only images (so far). No novel capability over and above Deep Learning report. Though, what is exciting is the very general trend towards including more interpretable structure in newly fashionable approaches (cf. PSL).
 
+(Some of what comes for free with CapsNets may, in the future, be the foundation of a new capability.)
+
 - Awesome introduction CapsNets: https://www.oreilly.com/ideas/introducing-capsule-networks?twitter=@bigdata
  - Key paper CapsNets: https://arxiv.org/abs/1710.09829  
  - TF implementation CapsNets: https://github.com/ageron/handson-ml/blob/master/extra_capsnets.ipynb
