@@ -19,6 +19,8 @@ A few more resources:
  - Selecting from generated programs using RL: https://arxiv.org/abs/1801.03526
  - 2017 article that promising impressive results (soon): https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5597726/
  - DeepCoder: https://openreview.net/pdf?id=ByldLrqlx
+ - Glass box program synthesis: https://arxiv.org/abs/1709.08669
+ - 
  
 Also, this paper outlines an algorithm to uncover rules / programs from data (i.e., not clusters) (i.e., reverse probabilistic soft logic): https://papers.nips.cc/paper/5785-unsupervised-learning-by-program-synthesis.pdf
 
