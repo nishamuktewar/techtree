@@ -5,14 +5,14 @@ Verdict - Yes.
                                                                                                      
 - RL trains an agent to learn a policy(set of actions) that maximizes a cumulative reward. To do this we map state-action pairs to the reward we expect them to produce with a Q function. We find the best policy by choosing an action that maximizes Q at each state.                                     
                                                                                                      
-- Deep RL generally means using neural nets to approximate the Q function or a variant of it. By doing so it is learning the mapping between state-action pairs to rewards. Example: if the state is an image, a conv net can learn that we get a reward of 5 by jumping and a reward of 0 by running.         
+- Deep RL generally means using neural nets to approximate the Q function or a variant of it. By doing so it is learning the mapping between state-action pairs to rewards. Example: if the state is an image, a conv net can learn that we get a reward of 5 by jumping and a reward of 0 by running while in that state.
                                                                                                      
                                                                                                      
 ## Prototype ideas                                                                                   
-- Need a simulator. Examples are Anylogic (supply chain), Gazebo (robotics)                     
-- Optimal policy for sales agents (hard to simulate)                                                 
+- We need a simulator to create a world. Agent based models can be used to simulate this "world". Examples are Anylogic (supply chain) and Gazebo (robotics)                     
+- Optimal policy for sales agents (we need data to model customer behavior)                                                 
 - Optimal inventory levels (supply chain simulator, easier to build and define)                      
-- NLP using DRL                                                                                      
+- NLP using Deep RL                                                                                      
                                                                                                      
 ## Papers                                                                                            
                                                                                                      
