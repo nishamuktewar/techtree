@@ -35,10 +35,10 @@ Deals with health care data, informative missingness, i.e., the missing values a
 1. Is it exciting to the team? Would not classify it as exciting but definitely something that needs our attention
 2. Can it be framed as a strong capability (rather than an algorithm)? probably no
 3. Is it a subject that is more possible now than in two years, and likely to be more possible/transformative still in a couple of years. That usually means some or all of the following things are true:
-  i. There is excitement (ideally including concrete breakthroughs) in the research community - maybe
-  ii. Economic constraints (e.g. hardware) have lessened/disappeared
-  iii. There has there been a commoditization of tooling - no
-  iv. Data is available (especially to FFL!) - using some kind of patient healthcare data might make an interesting usecase
+  - There is excitement (ideally including concrete breakthroughs) in the research community - maybe
+  - Economic constraints (e.g. hardware) have lessened/disappeared
+  - There has there been a commoditization of tooling - no
+  - Data is available (especially to FFL!) - using some kind of patient healthcare data might make an interesting usecase
 4. Is it useful to our existing clients? yes
 5. It is appealing to potential clients? yes
 6. It it possible to build a prototype? 
