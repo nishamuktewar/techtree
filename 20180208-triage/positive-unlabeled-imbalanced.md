@@ -10,6 +10,13 @@ paper](https://arxiv.org/abs/1608.06807)). It's related to [One class
 classification](https://en.wikipedia.org/wiki/One-class_classification) (where
 there is no unlabled training data).
 
+This problem has been on the table since about 1998 and solutions fall into two
+categories: creating a secondary model that tries to predict negative classes
+from unlabeled data OR set unlabeled to negative labels and downweight the
+samples in the training process. Much of the current work is being done around
+the latter method in terms of methods of setting the weight values as a tradeoff
+between overfitting and convergence.
+
 Here's a [stackoverflow
 question](https://stats.stackexchange.com/questions/174383/how-to-predict-outcome-with-only-positive-cases-as-training)
 with someone asking for help in this situation. Someone active in the field
