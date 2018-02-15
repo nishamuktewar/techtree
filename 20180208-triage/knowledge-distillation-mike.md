@@ -42,3 +42,9 @@ of trained models, each of which was very large. They worked well but they gave
 up deploying them because of size.
 
 This would be 3 neural network reports in a row.
+
+### Added 2018-02-15
+
+[Pete Warden for O'Reilly on Building Mobile Applications with
+TensorFlow](http://www.oreilly.com/data/free/files/building-mobile-applications-with-tensorflow.pdf).
+Last ~5-10 pages are a very clear discussion of practical quantization.
