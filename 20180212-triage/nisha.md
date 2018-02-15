@@ -8,11 +8,20 @@ One thing that came to my mind is that if we give some random noise as input to 
 ### Are there one or perhaps two algorithms to hang the report on or to focus on in the prototype? 
 
 The report should demonstrate two things:
-1. Demonstrate how one can exploit the sensitivity of ML algorithms and cause them to behave differently. For instance, make them classify a car as a toaster, when from a human vision it still appears as a car. This can be achieved by demonstrating two types of attacks:
+#### 1. Exploiting the sensitivity of ML algorithms that cause them to behave differently 
+
+For instance, make them classify a car as a toaster, when from a human vision it still appears as a car. This can be achieved by demonstrating two types of attacks:
     - non-targeted, where the attacker simply wants to misclassify the image
     - targeted, when the attacker wants to classify the image as a specific class
-This can be achieved by Fast Stochastic Gradient descent technique demonstrated [here](https://github.com/Lextal/adv-attacks-pytorch-101) using a PyTorch library
-2. Then show how to counter them. There are several approaches discussed as Friderike/Brian pointed out:
+
+##### How it can be achieved?
+    - This can be achieved by Fast Stochastic Gradient descent technique demonstrated [here](https://github.com/Lextal/adv-attacks-pytorch-101) using a PyTorch library. A more detailed article [here](). The core idea is to add some weak noise on every step of optimization, drifting towards the desired class oraway from the correct one. Sometimes one will have to limit the amplitude of noise to keep the attack subtle The amplitude might mean the intensity of a pixel’s channel — limiting it ensures that the noise will be almost imperceptible
+    - 
+
+
+#### 2. Countering/ Defending adversarial attacks 
+
+There are several approaches discussed as Friderike/Brian pointed out:
 
 Note: At this stage you probably won't have a chance to get them up and running or test them, but ideally you should have them in mind by the end of your deeper dive.
 
