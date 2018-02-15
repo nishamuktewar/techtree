@@ -19,24 +19,29 @@ For instance, make them classify a car as a toaster, when from a human vision it
 - FSGM (Fast Stochastic Gradient Descent) technique demonstrated [here](https://github.com/Lextal/adv-attacks-pytorch-101) using a PyTorch library. The core idea is to add some weak noise on every step of optimization, drifting towards the desired class oraway from the correct one. Sometimes one will have to limit the amplitude of noise to keep the attack subtle The amplitude might mean the intensity of a pixel’s channel — limiting it ensures that the noise will be almost imperceptible
 - Iterative-FSGM: A stronger variant
 - Deeploop: In the first two approaches one is optimizing the error, here the L2 distance is optimized. It tries to find the nearest hyperplane that separating the original class and any other class. It generates stronger attack than FGSM and I-FGSM.
-Look at CleverHans [repo](https://github.com/tensorflow/cleverhans), a Python library to benchmark machine learning systems' vulnerability to adversarial examples
 
 #### 2. Countering adversarial attacks 
 
-##### Defensive, proactive strategy:
+Defensive, proactive strategy:
+
 1. Adversarial training: 
     - augment the training dataset with adversarial examples
     - examples are generated using one or more chosen attack models and added to the training set
     - increased robustness, but does not perform as well when a different attack strategy is used
-    - 
+    - tends to make the model more robust to white-box attacks than to black-box attacks due to gradient masking
 
-modifying the training data to make the classifier more robust against attacks, e.g., adversarial training which augments the training data of the classifier with adversarial examples (Szegedy et al., 2014; Goodfellow et al., 2015)
-(2) modifying the training procedure of the classifier to reduce the magnitude of gradients, e.g., defensive distillation
-(Papernot et al., 2016d), and 
-(3) attempting to remove the adversarial noise from the input samples (Hendrycks & Gimpel, 2017; Meng & Chen, 2017)
-    - Color depth reduction
-    - Spatial smoothing
-    - Total variance minimization (TVM)
+Libraries/ tools/ API: Look at CleverHans [repo](https://github.com/tensorflow/cleverhans), a Python library to benchmark machine learning systems' vulnerability to adversarial examples
+
+2. Defensive distillation:
+    - trains the classifier in two rounds using a variant of the distillation method. This has the desirable effect of learning a smoother network and reducing the amplitude of gradients around input points, making it difficult for attackers
+to generate adversarial examples
+    - effective against white-box attacks, it fails to adequately protect against black-box attacks transferred from other networks
+  
+3. Input transformations: 
+    - FB research: https://github.com/facebookresearch/adversarial_image_defenses
+    - Implements image quilting, total variation minimization, JPEG compression, pixel quantization
+    
+4. MagNet: 
 
 Note: At this stage you probably won't have a chance to get them up and running or test them, but ideally you should have them in mind by the end of your deeper dive.
 
@@ -55,3 +60,11 @@ We're not looking for a single definitive answer at this stage, but but a a few 
 If a specific concern about your topic came up during our discussions, please be sure to dig into that. Please review the notes for your topic from the previous round and, if they were written by someone other than you, feel free to speak with the author to get their thoughts in more detail, or with anyone who had suggestions about a topic during our meetings.
 
 Remember to document what you find. Negative results become great advice to clients, blog posts and newsletters!
+
+## Conclusion: 
+
+Adversarial examples show that many modern machine learning algorithms can be broken in surprising ways. These failures of machine learning demonstrate that even simple algorithms can behave very differently from what their designers intend.
+
+## Helpful reads:
+https://blog.openai.com/adversarial-example-research/
+http://cs229.stanford.edu/proj2017/final-reports/5241871.pdf
