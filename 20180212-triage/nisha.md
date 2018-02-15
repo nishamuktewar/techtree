@@ -15,13 +15,28 @@ For instance, make them classify a car as a toaster, when from a human vision it
     - targeted, when the attacker wants to classify the image as a specific class
 
 ##### How it can be achieved?
-    - This can be achieved by Fast Stochastic Gradient descent technique demonstrated [here](https://github.com/Lextal/adv-attacks-pytorch-101) using a PyTorch library. A more detailed article [here](). The core idea is to add some weak noise on every step of optimization, drifting towards the desired class oraway from the correct one. Sometimes one will have to limit the amplitude of noise to keep the attack subtle The amplitude might mean the intensity of a pixel’s channel — limiting it ensures that the noise will be almost imperceptible
+
+- FSGM (Fast Stochastic Gradient Descent) technique demonstrated [here](https://github.com/Lextal/adv-attacks-pytorch-101) using a PyTorch library. The core idea is to add some weak noise on every step of optimization, drifting towards the desired class oraway from the correct one. Sometimes one will have to limit the amplitude of noise to keep the attack subtle The amplitude might mean the intensity of a pixel’s channel — limiting it ensures that the noise will be almost imperceptible
+- Iterative-FSGM: A stronger variant
+- Deeploop: In the first two approaches one is optimizing the error, here the L2 distance is optimized. It tries to find the nearest hyperplane that separating the original class and any other class. It generates stronger attack than FGSM and I-FGSM.
+Look at CleverHans [repo](https://github.com/tensorflow/cleverhans), a Python library to benchmark machine learning systems' vulnerability to adversarial examples
+
+#### 2. Countering adversarial attacks 
+
+##### Defensive, proactive strategy:
+1. Adversarial training: 
+    - augment the training dataset with adversarial examples
+    - examples are generated using one or more chosen attack models and added to the training set
+    - increased robustness, but does not perform as well when a different attack strategy is used
     - 
 
-
-#### 2. Countering/ Defending adversarial attacks 
-
-There are several approaches discussed as Friderike/Brian pointed out:
+modifying the training data to make the classifier more robust against attacks, e.g., adversarial training which augments the training data of the classifier with adversarial examples (Szegedy et al., 2014; Goodfellow et al., 2015)
+(2) modifying the training procedure of the classifier to reduce the magnitude of gradients, e.g., defensive distillation
+(Papernot et al., 2016d), and 
+(3) attempting to remove the adversarial noise from the input samples (Hendrycks & Gimpel, 2017; Meng & Chen, 2017)
+    - Color depth reduction
+    - Spatial smoothing
+    - Total variance minimization (TVM)
 
 Note: At this stage you probably won't have a chance to get them up and running or test them, but ideally you should have them in mind by the end of your deeper dive.
 
