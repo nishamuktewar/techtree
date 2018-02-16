@@ -72,10 +72,6 @@ better to samples outside of its training dataset making it difficult for attack
    - that exhibits the capability and the algorithmic innovations we're discussing - yes
    - and, if data is necessary, that data should be available and we should be able to share it with our clients - it's possible
 
-If a specific concern about your topic came up during our discussions, please be sure to dig into that. Please review the notes for your topic from the previous round and, if they were written by someone other than you, feel free to speak with the author to get their thoughts in more detail, or with anyone who had suggestions about a topic during our meetings.
-
-Remember to document what you find. Negative results become great advice to clients, blog posts and newsletters!
-
 ## Conclusion: 
 
 IMHO this topic will make a good report. It not only covers the ML security aspect but also to think of it - making ML models more robust?   
