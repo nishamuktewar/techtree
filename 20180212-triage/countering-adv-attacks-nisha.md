@@ -1,17 +1,11 @@
 # Countering adversarial attacks
 
-The idea is to spend 3-4 hours looking deeper. You should have in mind both the technical focus of a report, and the prototype.
-
-One thing that came to my mind is that if we give some random noise as input to a classifier it will classify it to one of the classes, right? So there's no 
+Adversarial examples show that many modern machine learning algorithms can be broken in surprising ways. These failures of machine learning demonstrate that even simple algorithms can behave very differently from what their designers intend. For instance, make them classify a car as a toaster, when for a human eye it still appears as a car. 
 
 ## What is the technical focus of the report? 
-### Are there one or perhaps two algorithms to hang the report on or to focus on in the prototype? 
-
 The report should demonstrate two things:
-#### 1. Exploiting the sensitivity of ML algorithms that cause them to behave differently 
 
-For instance, make them classify a car as a toaster, when from a human vision it still appears as a car. 
-
+#### 1. Exploit the sensitivity of ML algorithms that cause them to behave differently 
 Types of attacks:
    - non-targeted, where the attacker simply wants to misclassify the image
    - targeted, when the attacker wants to classify the image as a specific class
@@ -78,7 +72,6 @@ Remember to document what you find. Negative results become great advice to clie
 
 ## Conclusion: 
 
-Adversarial examples show that many modern machine learning algorithms can be broken in surprising ways. These failures of machine learning demonstrate that even simple algorithms can behave very differently from what their designers intend.
 
 ## Helpful reads:
 https://blog.openai.com/adversarial-example-research/   
