@@ -74,8 +74,9 @@ better to samples outside of its training dataset making it difficult for attack
 
 ## Conclusion: 
 
-IMHO this topic will make a good report. It not only covers the ML security aspect but also to think of it - making ML models more robust?   
-concerns (no necessarily bad):
+IMHO this topic will make a good report. It not only covers the ML security aspect but also to think of it - making ML models more robust?  
+
+concerns (no necessarily bad):  
    - it's an emerging area
    - success rates in strength can differ based on the attack methods (which could be evolving). The best method working in one scenario may not work well in another.
    - May want to wait for the Defens-GANS library/API
