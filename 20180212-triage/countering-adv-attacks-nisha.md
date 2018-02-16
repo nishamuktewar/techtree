@@ -13,19 +13,19 @@ The report should demonstrate two things:
 For instance, make them classify a car as a toaster, when from a human vision it still appears as a car. 
 
 Types of attacks:
-    - non-targeted, where the attacker simply wants to misclassify the image
-    - targeted, when the attacker wants to classify the image as a specific class
+   - non-targeted, where the attacker simply wants to misclassify the image
+   - targeted, when the attacker wants to classify the image as a specific class
 
 Types of threat models:
-    - black box: the attacker does not have access to the classification model parameters
-    - white box: the attacker has complete access to the model architecture and parameters, including potential defense mechanisms
-    - gray box: the attacker knows everything about the network and defense, except the parameters
+   - black box: the attacker does not have access to the classification model parameters
+   - white box: the attacker has complete access to the model architecture and parameters, including potential defense mechanisms
+   - gray box: the attacker knows everything about the network and defense, except the parameters
     
 Approaches to generating adversarial images:
-    - FSGM (Fast Gradient Sign Method): The core idea is to add some weak noise on every step of optimization, drifting towards the desired class or away from the correct one. Sometimes one will have to limit the amplitude of noise to keep the attack subtle The amplitude might mean the intensity of a pixel’s channel — limiting it ensures that the noise will be almost imperceptible
-    - Iterative-FSGM: A stronger variant
-    - Deeploop: In the first two approaches one is optimizing the error, here the L2 distance is optimized. It tries to find the nearest hyperplane that separates the original class and any other class. It generates stronger attack than FGSM and I-FGSM.
-    - Carlini-Wagner (CW) attack
+   - FSGM (Fast Gradient Sign Method): The core idea is to add some weak noise on every step of optimization, drifting towards the desired class or away from the correct one. Sometimes one will have to limit the amplitude of noise to keep the attack subtle The amplitude might mean the intensity of a pixel’s channel — limiting it ensures that the noise will be almost imperceptible
+   - Iterative-FSGM: A stronger variant
+   - Deeploop: In the first two approaches one is optimizing the error, here the L2 distance is optimized. It tries to find the nearest hyperplane that separates the original class and any other class. It generates stronger attack than FGSM and I-FGSM.
+   - Carlini-Wagner (CW) attack
 
 Library: [FB Research](https://github.com/facebookresearch/adversarial_image_defenses) & [CleverHans] (https://github.com/tensorflow/cleverhans)
 
