@@ -29,8 +29,7 @@ Defensive, proactive strategy:
     - examples are generated using one or more chosen attack models and added to the training set
     - increased robustness, but does not perform as well when a different attack strategy is used
     - tends to make the model more robust to white-box attacks than to black-box attacks due to gradient masking
-
-Libraries/ tools/ API: Look at CleverHans [repo](https://github.com/tensorflow/cleverhans), a Python library to benchmark machine learning systems' vulnerability to adversarial examples
+    - library: CleverHans [repo](https://github.com/tensorflow/cleverhans), a Python library to benchmark machine learning systems' vulnerability to adversarial examples
 
 2. Defensive distillation:
     - trains the classifier in two rounds using a variant of the distillation method. This has the desirable effect of learning a smoother network and reducing the amplitude of gradients around input points, making it difficult for attackers
@@ -42,6 +41,10 @@ to generate adversarial examples
     - Implements image quilting, total variation minimization, JPEG compression, pixel quantization
     
 4. MagNet: 
+    - Consists of two components: 
+        detector - that  that rejects examples that are far from the manifold boundary, and a 
+        reformer that
+    - Library: https://github.com/Trevillie/MagNet
 
 Note: At this stage you probably won't have a chance to get them up and running or test them, but ideally you should have them in mind by the end of your deeper dive.
 
@@ -68,3 +71,4 @@ Adversarial examples show that many modern machine learning algorithms can be br
 ## Helpful reads:
 https://blog.openai.com/adversarial-example-research/
 http://cs229.stanford.edu/proj2017/final-reports/5241871.pdf
+http://blog.ycombinator.com/how-adversarial-attacks-work/
