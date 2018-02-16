@@ -10,10 +10,13 @@ One thing that came to my mind is that if we give some random noise as input to 
 The report should demonstrate two things:
 #### 1. Exploiting the sensitivity of ML algorithms that cause them to behave differently 
 
-For instance, make them classify a car as a toaster, when from a human vision it still appears as a car. This can be achieved by demonstrating two types of attacks:
+For instance, make them classify a car as a toaster, when from a human vision it still appears as a car. 
+Two types of attacks:
     - non-targeted, where the attacker simply wants to misclassify the image
     - targeted, when the attacker wants to classify the image as a specific class
-Two types of attacks:
+
+Types of threat models:
+    
     - black box: the attacker does not have access to the classification model parameters
     - white box: the attacker has complete access to the model architecture and parameters, including potential defense mechanisms
     - gray box: the attacker knows everything about the network and defense, except the parameters
