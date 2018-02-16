@@ -81,7 +81,7 @@ Remember to document what you find. Negative results become great advice to clie
 Adversarial examples show that many modern machine learning algorithms can be broken in surprising ways. These failures of machine learning demonstrate that even simple algorithms can behave very differently from what their designers intend.
 
 ## Helpful reads:
-https://blog.openai.com/adversarial-example-research/
-http://cs229.stanford.edu/proj2017/final-reports/5241871.pdf
-http://blog.ycombinator.com/how-adversarial-attacks-work/
-FGSM demonstrated [here](https://github.com/Lextal/adv-attacks-pytorch-101) using a PyTorch library
+https://blog.openai.com/adversarial-example-research/   
+http://cs229.stanford.edu/proj2017/final-reports/5241871.pdf   
+http://blog.ycombinator.com/how-adversarial-attacks-work/   
+FGSM demonstrated [here](https://github.com/Lextal/adv-attacks-pytorch-101)   
